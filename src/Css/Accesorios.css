@@ -1,0 +1,44 @@
+
+/*Titulo*/
+
+.titulo{
+text-align:justify;
+font-family: Scada;
+font-style: inherit;
+font-size: 56px;
+color: #FFFFFF;
+background-color: rgb(250, 0, 0);
+}
+
+
+
+    /* color: rgb(255, 255, 255);
+    font-size: 50px;
+    background-color:rgb(250, 0, 0) ;
+    
+} */
+
+
+
+
+/*Mujer SECCION*/
+
+.CatMujer img{
+    margin: 5px;
+    float: right;
+    height: 580px; 
+    width: 49%;  
+}
+
+
+
+/*Hombre SECCION*/
+
+.CatHombre img{
+    margin: 5px;
+    float: left;
+    height: 580px; 
+    width: 49%;  
+}
+
+
