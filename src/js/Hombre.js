@@ -57,14 +57,6 @@ const relojes = [{
         imagen: 'https://i.ibb.co/qYkwq3p/G-Shock-Casio-Plateado.jpg'
     },
     {
-        nombre: 'G-Shock-Casio-Protection',
-        imagen: 'https://i.ibb.co/Lpgfj3W/G-Shock-Casio-Protection.jpg'
-    },
-    {
-        nombre: 'G-Shock-Casio-White-Black',
-        imagen: 'https://i.ibb.co/qWQnvJp/G-Shock-Casio-White-Black.jpg'
-    },
-    {
         nombre: 'G-Shock-Casio',
         imagen: 'https://i.ibb.co/s5RKpfy/G-Shock-Casio.jpg'
     },
@@ -103,6 +95,14 @@ const relojes = [{
     {
         nombre: 'X-Sports',
         imagen: 'https://i.ibb.co/KGB5pz7/X-Sports.jpg'
+    },
+    {
+        nombre: 'G-Shock-Casio-Protection',
+        imagen: 'https://i.ibb.co/Lpgfj3W/G-Shock-Casio-Protection.jpg'
+    },
+    {
+        nombre: 'G-Shock-Casio-White-Black',
+        imagen: 'https://i.ibb.co/qWQnvJp/G-Shock-Casio-White-Black.jpg'
     }
 ];
 
@@ -197,15 +197,13 @@ const perfumes = [{
     }
 ];
 
-
-
 /**variables */
 
 const reloj = document.querySelector("#productos-Relojes");
 const billetera = document.querySelector("#productos-Billeteras");
 const perfume = document.querySelector("#productos-Perfumes");
 
-
+/**funcion de los relojes */
 function renderRelojes() {
     for (let info of relojes) {
 
@@ -232,6 +230,8 @@ function renderRelojes() {
     }
 }
 
+/**funcion de los perfumes */
+
 function renderPerfumes() {
 
     for (let info of perfumes) {
@@ -257,6 +257,8 @@ function renderPerfumes() {
 
     }
 }
+
+/**funcion de las billeteras */
 
 function renderBilleteras() {
     for (let info of billeteras) {
