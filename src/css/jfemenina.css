@@ -11,13 +11,11 @@ a:link, a:visited, a:active {
     text-decoration:none;
 }
 
-.title p{
+.title img{
 	float: left;
-	margin: 7px;
-	padding: 9px;
+	margin-left: 10px;
+	width: 500px;
 	display: inline;
-	font-size: 30px;
-	text-indent: 50px;
 }
 
 .buscador{

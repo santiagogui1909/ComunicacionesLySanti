@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto Mono', monospace;
-	
+	box-sizing: border-box;
 }
 
 /* ----- Barra de navegación *Open* ----- */
@@ -11,24 +11,25 @@ a:link, a:visited, a:active {
     text-decoration:none;
 }
 
-.title p{
+/*Estilos de la imagen del nombre de la tienda*/
+.title img{
 	float: left;
-	margin: 7px;
-	padding: 9px;
+	margin-left: 10px;
+	width: 500px;
 	display: inline;
-	font-size: 30px;
-	text-indent: 50px;
 }
 
+/*Estilos del input (Buscar)*/
 .buscador{
 	float: left;
 	margin: 20px;
 }
-
+/* --- Estilos de las listas y la barra de navegación*/
 header{
 	position: fixed;
 	width: 100%;
 	height: 70px;
+	z-index: 100;
 	background-color: beige;
 }
 
@@ -49,6 +50,8 @@ nav ul{
 	text-decoration: none;
 }
 
+/* --- */
+
 /* ----- Barra de navegación *Closed* ----- */
 
 /* ----- Submenu *Open* ----- */
@@ -59,6 +62,7 @@ nav ul{
 	width: 120%;
 	visibility: hidden;
 	opacity: 0;
+
 	transition: opacity 1.5s;
 }
 
@@ -77,6 +81,7 @@ nav ul{
 
 /* ----- Barra de navegación Decoraciones *Open* ----- */  
 
+/*Estilos del logo de la tienda (imagen de la derecha)*/
 .images img{
 	position: relative;
 	float: right;
@@ -86,6 +91,7 @@ nav ul{
 	height: 100px;
 }
 
+/* --- Decoraciones del input (Buscar)*/
 input.src{
 	padding: 9px, 10px, 9px, 32px;
 	outline: none;
@@ -95,8 +101,10 @@ input.src{
 	border: 3px solid #a50559;
 	background: #fff url(../images/search.png)
 		no-repeat 9px center;
-	width: 230px;
-	text-align: center;
+	width: 210px;
+	/* text-align: center; */
+	text-indent: 30px;
+
 	transition: all .5s;
 }
 
@@ -106,6 +114,10 @@ input.src:hover{
 	border-color: #a22;
 	box-shadow: 0 0 5px #6dcff680;
 }
+
+/* --- */
+
+/* --- Decoraciones de las listas (navegación)*/
 
 .link-header::after{
 	content: '';
@@ -121,10 +133,13 @@ input.src:hover{
 	transition: width .3s;
 }
 
+/* --- */
+
 /* ----- Barra de navegación Decoraciones *Closed* ----- */ 
 
 /* ----- Slider *Open* ----- */
 
+/* Estilos del slider*/
 #slider{
 	width: 90%;
 	margin: auto;
@@ -133,12 +148,13 @@ input.src:hover{
 
 }
 
+/* --- Estilos de la tabla del slider*/
 #slider ul{
 	display: flex;
 	padding: 0;
 	width: 500%;	
 
-	animation: slider 20s infinite ease-in-out 0s;
+	animation: slider 20s infinite ease-in-out;
 }
 
 #slider li{
@@ -147,18 +163,21 @@ input.src:hover{
 	list-style: none;
 }
 
+/* --- */
+
+/*Estilos de las imagenes del slider*/
 #slider img{
 	width: 100%;
 	height: 100%;
-
-	transition: .4s;
 }
 
+/*Decoraciones del slider*/
 #slider:hover{
 	box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.474);
 	transition: .6s;
 }
 
+/*Tamaños del slider para la continuidad infinita del slider*/
 @keyframes slider{
 	0%{margin-left: 0;}
 	20%{margin-left: 0;}
@@ -177,10 +196,94 @@ input.src:hover{
 
 /* ----- Slider *Closed* ----- */
 
+/*  ----- Estilos del menú de imagenes *Open* ----- */
 
+/*Estilos de imagenen principal de los colores*/
+#collares{
+	width: 400px;
+	height: 300px;
+	object-fit: contain;
+	cursor: pointer;
+}
 
+/*Estilos de la caja del menu de imagenes*/
+.font{
+	background:#aa2222;
+	/* background-color:rgba(90, 89, 89, 0.767); */
+	margin-left: 100px;
+	margin-right: 100px;
+	padding-bottom: 23px;
+}
 
+.font h2{
+	text-align: center;
+}
 
+/*Icono del menu de imagenes (X)*/
+
+.icon-menu img{
+	width: 20px;
+}
+
+/*Estilos de las imagenes del menu*/
+
+.menu-img img{
+	width: 300px;
+	height: 300px;
+
+}
+
+/*  ----- Estilos del menú de imagenes*Closed* -----  */
+
+/*  ----- Menu de imagenes de los collares *Open* -----  */
+
+#btn-menu{
+	display: none;
+}
+
+.container-menu{
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+
+	transition: all 500ms ease;
+}
+
+#btn-menu:checked ~ .container-menu{
+	opacity: 1;
+	visibility: visible;
+}
+
+.cont-menu{
+	margin-left: 120px;
+	margin-right: 120px;
+	padding-top: 2%;
+	padding-right: 5%;
+	padding-bottom: 2%;
+	padding-left: 5.5%;
+	border: 1px solid #000;
+	background: rgba(0,0,0,.1);
+	position: relative;
+}
+
+.menu-img img{
+	border: 1px solid #000;
+	cursor: pointer;
+	
+	transition: .3s;
+}
+
+.menu-img img:hover{
+	background: rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 3px #000;
+}
+
+.icon-menu{
+	position: absolute;
+	left: 130px;
+	top: 10px;
+	cursor: pointer;
+}
 
 
 
