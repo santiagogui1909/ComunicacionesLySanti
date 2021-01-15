@@ -200,10 +200,11 @@ input.src:hover{
 
 /*Estilos de imagen principal de los collares*/
 #collares{
-	width: 320px;
+	width: 300px;
 	height: 300px;
-	object-fit: cover;
+	object-fit: contain;
 	cursor: pointer;
+	display:block;
 }
 
 /*Estilos de la caja del menu de imagenes*/
@@ -214,16 +215,90 @@ input.src:hover{
 	margin-right: 100px;
 	padding: 23px;
 	padding-left: 5%;
-
+	z-index: 150;
 }
-
+/*Estilos para el texto del menu de imagenes*/
 .font h2{
 	text-align: center;
 }
 
+/*---Estilos para la cajas que contiene los menu de imagenes*/
 .prod-collares, .prod-anillos, .prod-manillas{
+	position: relative;
 	display: inline-block;
+	overflow: hidden;
+    transition: all 300ms;
 }
+
+.prod-collares, .prod-anillos, .prod-manillas img{
+	margin:0 10px;
+}
+
+/*---*/
+
+/*  ----- Estilos del texto con efecto en la imagenes de los collares *Open* ----- */
+
+.prod-collares img{
+    transition: all .5s;
+}
+
+.prod-collares:hover img{
+	transform: scale(1.3) rotate(10deg);
+}
+
+/*Estilos del texto dentro de cada imagen*/
+.prod-collares h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: white;
+    z-index: 100;
+    transition: all 600ms cubic-bezier(1,0,0,1);
+    border: 2px solid white;
+    background: black;
+    padding: 6px
+}
+
+/*Animacion del texto de cada imagen*/
+.prod-collares:hover h1{
+	transform: translate(-50%, -50%) scale(1);
+}
+
+/*Estilos de los componenetes del efecto de las imagenes*/
+/* .prod-collares:before,
+.prod-collares:after{
+    content: '';
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    background: black;
+    opacity: 0.6;
+    transition: all 600ms cubic-bezier(1,0,0,1);
+    border: 4px solid white;
+    z-index: 50;
+} */
+
+/*Pocision de los componentes del efecto de las imagenes*/
+/* .prod-collares:before{
+    transform: rotate(0deg) translateY(-550px) translateX(0px);
+}
+
+.prod-collares:after{
+    transform: rotate(0deg) translateY(550px) translateX(-60px);
+}
+
+.prod-collares:hover:before{
+    transform: rotate(0deg) translateY(-260px) translateX(0px);
+}
+
+.prod-collares:hover:after{
+    transform: rotate(0deg) translateY(160px) translateX(-80px);
+} */
+
+/*  ----- Estilos del texto con efecto en la imagenes de los collares *Closed* ----- */
 
 /*Icono del menu de imagenes (X)*/
 
@@ -236,7 +311,6 @@ input.src:hover{
 .img-collar img{
 	width: 300px;
 	height: 300px;
-
 }
 
 /*  ----- Estilos del menú de imagenes *Closed* -----  */
@@ -302,11 +376,39 @@ input.src:hover{
 
 /* ----- Menu de imagenes de los anillos *Open* -----  */
 
+.prod-anillos img{
+    transition: all .5s;
+}
+
+.prod-anillos:hover img{
+	transform: scale(1.3) rotate(10deg);
+}
+
+/*Estilos del texto dentro de cada imagen*/
+.prod-anillos h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: white;
+    z-index: 100;
+    transition: all 600ms cubic-bezier(1,0,0,1);
+    border: 2px solid white;
+    background: black;
+    padding: 6px
+}
+
+/*Animacion del texto de cada imagen*/
+.prod-anillos:hover h1{
+	transform: translate(-50%, -50%) scale(1);
+}
+
  #anillos{
-	width: 320px;
+	width: 300px;
 	height: 300px;
-	object-fit: cover;
+	object-fit: contain;
 	cursor: pointer;
+	display:block
 }
 
 .icon-anillo img{
@@ -384,12 +486,41 @@ input.src:hover{
 
 /* ----- Menu de imagenes de las manillas *Open* ----- */
 
+/*  ----- Estilos del texto con efecto en la imagenes de las manillas *Open* ----- */
+
+.prod-manillas img{
+    transition: all .5s;
+}
+
+.prod-manillas:hover img{
+	transform: scale(1.3) rotate(10deg);
+}
+
+/*Estilos del texto dentro de cada imagen*/
+.prod-manillas h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: white;
+    z-index: 100;
+    transition: all 600ms cubic-bezier(1,0,0,1);
+    border: 2px solid white;
+    background: black;
+    padding: 6px
+}
+
+/*Animacion del texto de cada imagen*/
+.prod-manillas:hover h1{
+	transform: translate(-50%, -50%) scale(1);
+}
+
 #manillas{
-	width: 320px;
+	width: 300px;
 	height: 300px;
-	
 	object-fit: cover;
 	cursor: pointer;
+	display:block
 }
 
 .icon-manilla img{
