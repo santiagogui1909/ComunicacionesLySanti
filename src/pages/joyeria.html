@@ -8,14 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Css/joyeria.css">
     <link rel="icon" href="../images/icon.png">
-
-
+    <script src="../js/joyeria.js"></script>
 </head>
 
 <body>
     <header>
         <div class="title">
-           <img src="../images/title.png" alt="titulo">
+            <img src="../images/title.png" alt="titulo">
         </div>
         <nav>
 
@@ -32,8 +31,8 @@
                     <li class="link-header"><a href="#">Productos</a>
                         <ul class="submenu">
                             <li><a href="#">Tecnología</a></li>
-						    <li><a href="#">Accesorios</a></li>
-						    <li><a href="#">Joyería</a></li>
+                            <li><a href="#">Accesorios</a></li>
+                            <li><a href="#">Joyería</a></li>
                         </ul>
                     </li>
                     <li class="link-header"><a href="#">Contacto</a></li>
@@ -53,37 +52,83 @@
                 <li><a href="jfemenina.html"><img src="../images/JoyeriaF.jpg" alt="img1"></a></li>
             </ul>
         </div> <br>
+        <!-- Titulo de la caja que contiene el menu de imagenes -->
         <div class="font">
             <h2>Joyería Femenina</h2>
             <br>
-             <!-------------------------------Menu de imagenes de los collares------------------------------->
+            <!-------------------------------Menu de imagenes de los collares------------------------------->
             <div class="prod-collares">
                 <!-- Imagen principal -->
-                <label for="btn-menu"><img src="../images/collar.jpg" alt="collares"
-                 id="collares"></label>
+                <label for="btn-menu"><img src="../images/collar.jpg" alt="collares" id="collares"></label>
             </div>
-        </div>
 
-        <!-- Checkbox para abrir y cerrar el menu -->
-        <input type="checkbox" id="btn-menu">
+            <!-- Checkbox para abrir y cerrar el menu -->
+            <input type="checkbox" id="btn-menu" onclick="uncheck()" name="btn-collar">
 
-        <div class="container-menu">
-         
-            <div class="cont-menu">
-            <!-- Imagenes del menu -->
-                <div class="menu-img">
-                    <img src="../images/icon.png" alt="img1-collar">
-                    <img src="../images/icon.png" alt="img2-collar">
-                    <img src="../images/icon.png" alt="img3-collar">
-                    <img src="../images/icon.png" alt="img4-collar">
+            <div class="menu-collar">
+                <div class="submenu-collar">
+                    <!-- Imagenes del menu -->
+                    <div class="img-collar">
+                        <img src="../images/icon.png" alt="img1-collar">
+                        <img src="../images/icon.png" alt="img2-collar">
+                        <img src="../images/icon.png" alt="img3-collar">
+                        <img src="../images/icon.png" alt="img4-collar">
+                    </div>
                 </div>
-            </div>
                 <!-- Icono para cerrar el menu -->
-                <label for="btn-menu" class="icon-menu"><img src="../images/equis.png" alt=""></label>
-        </div>
-       
-    </aside>
+                <label for="btn-menu" class="icon-collar"><img src="../images/equis.png" alt=""></label>
+            </div>
 
+            <!-------------------------------Menu de imagenes de los anillos------------------------------->
+            <div class="prod-anillos">
+                <!-- Imagen principal -->
+                <label for="btn-menu2"><img src="../images/anillo.jpg" alt="anillos" id="anillos"></label>
+            </div>
+
+            <!-- Checkbox para abrir y cerrar el menu -->
+            <input type="checkbox" id="btn-menu2" onclick="uncheck()" name="btn-anillo">
+
+            <div class="menu-anillo">
+                <div class="submenu-anillo">
+                    <!-- Imagenes del menu -->
+                    <div class="img-anillo">
+                        <img src="../images/anillo.jpg" alt="img1-collar">
+                        <img src="../images/icon.png" alt="img2-collar">
+                        <img src="../images/icon.png" alt="img3-collar">
+                        <img src="../images/icon.png" alt="img4-collar">
+                    </div>
+                </div>
+                <!-- Icono para cerrar el menu -->
+                <label for="btn-menu2" class="icon-anillo"><img src="../images/equis.png" alt=""></label>
+            </div>
+
+            <!-------------------------------Menu de imagenes de las maninillas------------------------------->
+
+
+            <div class="prod-manillas">
+                <!-- Imagen principal -->
+                <label for="btn-menu3"><img src="../images/manilla.jpg" alt="manillas" id="manillas"></label>
+            </div>
+
+            <!-- Checkbox para abrir y cerrar el menu -->
+            <input type="checkbox" id="btn-menu3" onclick="uncheck()" name="btn-manilla">
+
+            <div class="menu-manilla">
+                <div class="submenu-manilla">
+                    <!-- Imagenes del menu -->
+                    <div class="img-manilla">
+                        <img src="../images/manilla.jpg" alt="img1-collar">
+                        <img src="../images/icon.png" alt="img2-collar">
+                        <img src="../images/icon.png" alt="img3-collar">
+                        <img src="../images/icon.png" alt="img4-collar">
+                    </div>
+                </div>
+                <!-- Icono para cerrar el menu -->
+                <label for="btn-menu3" class="icon-manilla"><img src="../images/equis.png" alt=""></label>
+            </div>
+
+        </div>
+    </aside>
 
 
 </body>

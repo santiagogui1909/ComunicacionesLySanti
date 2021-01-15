@@ -79,7 +79,7 @@ nav ul{
 
 /* ----- Submenu *Closed* ----- */
 
-/* ----- Barra de navegación Decoraciones *Open* ----- */  
+/* ----- Barra de navegación Decoraciones *Open* ----- */
 
 /*Estilos del logo de la tienda (imagen de la derecha)*/
 .images img{
@@ -135,7 +135,7 @@ input.src:hover{
 
 /* --- */
 
-/* ----- Barra de navegación Decoraciones *Closed* ----- */ 
+/* ----- Barra de navegación Decoraciones *Closed* ----- */
 
 /* ----- Slider *Open* ----- */
 
@@ -152,7 +152,7 @@ input.src:hover{
 #slider ul{
 	display: flex;
 	padding: 0;
-	width: 500%;	
+	width: 500%;
 
 	animation: slider 20s infinite ease-in-out;
 }
@@ -198,11 +198,11 @@ input.src:hover{
 
 /*  ----- Estilos del menú de imagenes *Open* ----- */
 
-/*Estilos de imagenen principal de los colores*/
+/*Estilos de imagen principal de los collares*/
 #collares{
-	width: 400px;
+	width: 320px;
 	height: 300px;
-	object-fit: contain;
+	object-fit: cover;
 	cursor: pointer;
 }
 
@@ -212,36 +212,45 @@ input.src:hover{
 	/* background-color:rgba(90, 89, 89, 0.767); */
 	margin-left: 100px;
 	margin-right: 100px;
-	padding-bottom: 23px;
+	padding: 23px;
+	padding-left: 5%;
+
 }
 
 .font h2{
 	text-align: center;
 }
 
+.prod-collares, .prod-anillos, .prod-manillas{
+	display: inline-block;
+}
+
 /*Icono del menu de imagenes (X)*/
 
-.icon-menu img{
+.icon-collar img{
 	width: 20px;
 }
 
 /*Estilos de las imagenes del menu*/
 
-.menu-img img{
+.img-collar img{
 	width: 300px;
 	height: 300px;
 
 }
 
-/*  ----- Estilos del menú de imagenes*Closed* -----  */
+/*  ----- Estilos del menú de imagenes *Closed* -----  */
 
 /*  ----- Menu de imagenes de los collares *Open* -----  */
+
+/*Botón oculto para darle su función a las imagenes*/
 
 #btn-menu{
 	display: none;
 }
 
-.container-menu{
+/*Estilos de la Caja padre que encierra el menu de imagenes*/
+.menu-collar{
 	position: absolute;
 	opacity: 0;
 	visibility: hidden;
@@ -249,42 +258,208 @@ input.src:hover{
 	transition: all 500ms ease;
 }
 
-#btn-menu:checked ~ .container-menu{
+/*Condicionamos el checkbox para que muestre y oculte los productos*/
+#btn-menu:checked ~ .menu-collar{
 	opacity: 1;
 	visibility: visible;
 }
 
-.cont-menu{
-	margin-left: 120px;
-	margin-right: 120px;
-	padding-top: 2%;
-	padding-right: 5%;
+/*Subcaja para darle estilos al menu de imagenes*/
+
+.submenu-collar{
+	margin-right: 164px;
+	padding-top: 3%;
+	padding-right: 2%;
+	padding-left: 2%;
 	padding-bottom: 2%;
-	padding-left: 5.5%;
-	border: 1px solid #000;
 	background: rgba(0,0,0,.1);
 	position: relative;
 }
 
-.menu-img img{
+/*Estilos para las imagenes de los productos*/
+.img-collar img{
 	border: 1px solid #000;
 	cursor: pointer;
-	
+
 	transition: .3s;
 }
 
-.menu-img img:hover{
+/*Efecto para las imagenes de los producto*/
+.img-collar img:hover{
 	background: rgba(0,0,0,0.2);
 	box-shadow: 1px 1px 3px #000;
 }
 
-.icon-menu{
+/*Estilos del botón (X) para cerrar el menu de imagenes*/
+.icon-collar{
 	position: absolute;
-	left: 130px;
+	left: 10px;
 	top: 10px;
 	cursor: pointer;
 }
 
+/*  ----- Menu de imagenes de los collares *Closed* -----  */
 
+/* ----- Menu de imagenes de los anillos *Open* -----  */
 
+ #anillos{
+	width: 320px;
+	height: 300px;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+.icon-anillo img{
+	width: 20px;
+} 
+
+/*Estilos de las imagenes del menu*/
+
+.img-anillo img{
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+}
+
+/*  ----- Estilos del menú de imagenes *Closed* -----  */
+
+/*  ----- Menu de imagenes de los anillos *Open* -----  */
+
+/*Botón oculto para darle su función a las imagenes*/
+
+#btn-menu2{
+	display: none;
+}
+
+/*Estilos de la Caja padre que encierra el menu de imagenes*/
+.menu-anillo{
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+
+	transition: all 500ms ease;
+}
+
+/*Condicionamos el checkbox para que muestre y oculte los productos*/
+#btn-menu2:checked ~ .menu-anillo{
+	opacity: 1;
+	visibility: visible;
+}
+
+/*Subcaja para darle estilos al menu de imagenes*/
+
+.submenu-anillo{
+	margin-right: 164px;
+	padding-top: 3%;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-bottom: 2%;
+	background: rgba(0,0,0,.1);
+	position: relative;
+}
+
+/*Estilos para las imagenes de los productos*/
+.img-anillo img{
+	border: 1px solid #000;
+	cursor: pointer;
+
+	transition: .3s;
+}
+
+/*Efecto para las imagenes de los producto*/
+.img-anillo img:hover{
+	background: rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 3px #000;
+}
+
+/*Estilos del botón (X) para cerrar el menu de imagenes*/
+.icon-anillo{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+/* ----- Menu de imagenes de los collares *Closed* ----- */
+
+/* ----- Menu de imagenes de las manillas *Open* ----- */
+
+#manillas{
+	width: 320px;
+	height: 300px;
+	
+	object-fit: cover;
+	cursor: pointer;
+}
+
+.icon-manilla img{
+	width: 20px;
+} 
+
+/*Estilos de las imagenes del menu*/
+
+.img-manilla img{
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+}
+
+/*  ----- Estilos del menú de imagenes *Closed* -----  */
+
+/*  ----- Menu de imagenes de las manillas *Open* -----  */
+
+/*Botón oculto para darle su función a las imagenes*/
+
+#btn-menu3{
+	display: none;
+}
+
+/*Estilos de la Caja padre que encierra el menu de imagenes*/
+.menu-manilla{
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+
+	transition: all 500ms ease;
+}
+
+/*Condicionamos el checkbox para que muestre y oculte los productos*/
+#btn-menu3:checked ~ .menu-manilla{
+	opacity: 1;
+	visibility: visible;
+}
+
+/*Subcaja para darle estilos al menu de imagenes*/
+
+.submenu-manilla{
+	margin-right: 164px;
+	padding-top: 3%;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-bottom: 2%;
+	background: rgba(0,0,0,.1);
+	position: relative;
+}
+
+/*Estilos para las imagenes de los productos*/
+.img-manilla img{
+	border: 1px solid #000;
+	cursor: pointer;
+
+	transition: .3s;
+}
+
+/*Efecto para las imagenes de los producto*/
+.img-manilla img:hover{
+	background: rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 3px #000;
+}
+
+/*Estilos del botón (X) para cerrar el menu de imagenes*/
+.icon-manilla{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	cursor: pointer;
+}
 
