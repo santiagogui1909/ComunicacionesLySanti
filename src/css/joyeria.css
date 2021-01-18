@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,8 +9,12 @@
 
 /* ----- Barra de navegación *Open* ----- */
 
-a:link, a:visited, a:active {
+a:link, a:visited{
     text-decoration:none;
+}
+
+a:active{
+	color: #a22;
 }
 
 /*Estilos de la imagen del nombre de la tienda*/
@@ -29,7 +35,7 @@ header{
 	position: fixed;
 	width: 100%;
 	height: 70px;
-	z-index: 100;
+	z-index: 150;
 	background-color: beige;
 }
 
@@ -101,7 +107,7 @@ input.src{
 	border: 3px solid #a50559;
 	background: #fff url(../images/search.png)
 		no-repeat 9px center;
-	width: 210px;
+	width: 180px;
 	/* text-align: center; */
 	text-indent: 30px;
 
@@ -109,7 +115,7 @@ input.src{
 }
 
 input.src:hover{
-	width: 300px;
+	width: 290px;
 	background-color: #fff;
 	border-color: #a22;
 	box-shadow: 0 0 5px #6dcff680;
@@ -213,13 +219,41 @@ input.src:hover{
 	/* background-color:rgba(90, 89, 89, 0.767); */
 	margin-left: 100px;
 	margin-right: 100px;
-	padding: 23px;
-	padding-left: 5%;
-	z-index: 150;
+	padding-left: 100px;
+	padding-right: 80px;
+	padding-bottom: 23px;
 }
+
 /*Estilos para el texto del menu de imagenes*/
-.font h2{
-	text-align: center;
+.title__products__father{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-products{
+	display: inline-block;
+	position: relative;
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+}
+
+.title-products::after, .title-products::before{
+	content: "";
+	position: absolute;
+	width: 120px;
+	height: 3px;
+	background-color: #000;
+	/* background-color: currentColor; */
+	top: 0.6em;
+}
+
+.title-products::before{
+	left: -130px;
+}
+
+.title-products::after{
+	right: -130px;
 }
 
 /*---Estilos para la cajas que contiene los menu de imagenes*/
@@ -227,11 +261,8 @@ input.src:hover{
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
-    transition: all 300ms;
-}
 
-.prod-collares, .prod-anillos, .prod-manillas img{
-	margin:0 10px;
+    transition: all 300ms;
 }
 
 /*---*/
@@ -265,52 +296,17 @@ input.src:hover{
 	transform: translate(-50%, -50%) scale(1);
 }
 
-/*Estilos de los componenetes del efecto de las imagenes*/
-/* .prod-collares:before,
-.prod-collares:after{
-    content: '';
-    width: 500px;
-    height: 400px;
-    position: absolute;
-    top: 0;
-    left: -5px;
-    background: black;
-    opacity: 0.6;
-    transition: all 600ms cubic-bezier(1,0,0,1);
-    border: 4px solid white;
-    z-index: 50;
-} */
-
-/*Pocision de los componentes del efecto de las imagenes*/
-/* .prod-collares:before{
-    transform: rotate(0deg) translateY(-550px) translateX(0px);
-}
-
-.prod-collares:after{
-    transform: rotate(0deg) translateY(550px) translateX(-60px);
-}
-
-.prod-collares:hover:before{
-    transform: rotate(0deg) translateY(-260px) translateX(0px);
-}
-
-.prod-collares:hover:after{
-    transform: rotate(0deg) translateY(160px) translateX(-80px);
-} */
-
-/*  ----- Estilos del texto con efecto en la imagenes de los collares *Closed* ----- */
-
 /*Icono del menu de imagenes (X)*/
 
 .icon-collar img{
-	width: 20px;
+	width: 30px;
 }
 
 /*Estilos de las imagenes del menu*/
 
 .img-collar img{
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
 }
 
 /*  ----- Estilos del menú de imagenes *Closed* -----  */
@@ -341,13 +337,12 @@ input.src:hover{
 /*Subcaja para darle estilos al menu de imagenes*/
 
 .submenu-collar{
-	margin-right: 164px;
-	padding-top: 3%;
-	padding-right: 2%;
-	padding-left: 2%;
-	padding-bottom: 2%;
-	background: rgba(0,0,0,.1);
 	position: relative;
+	margin-right: 190px;
+	padding: 10px;
+	padding-left: 60px;
+	background: rgba(0,0,0,.1);
+	
 }
 
 /*Estilos para las imagenes de los productos*/
@@ -377,6 +372,7 @@ input.src:hover{
 /* ----- Menu de imagenes de los anillos *Open* -----  */
 
 .prod-anillos img{
+	border: 2px solid #fff;
     transition: all .5s;
 }
 
@@ -412,15 +408,15 @@ input.src:hover{
 }
 
 .icon-anillo img{
-	width: 20px;
+	width: 30px;
 } 
 
 /*Estilos de las imagenes del menu*/
 
 .img-anillo img{
 	display: inline-block;
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
 }
 
 /*  ----- Estilos del menú de imagenes *Closed* -----  */
@@ -451,13 +447,11 @@ input.src:hover{
 /*Subcaja para darle estilos al menu de imagenes*/
 
 .submenu-anillo{
-	margin-right: 164px;
-	padding-top: 3%;
-	padding-right: 2%;
-	padding-left: 2%;
-	padding-bottom: 2%;
-	background: rgba(0,0,0,.1);
 	position: relative;
+	margin-right: 190px;
+	padding: 10px;
+	padding-left: 60px;
+	background: rgba(0,0,0,.1);
 }
 
 /*Estilos para las imagenes de los productos*/
@@ -515,7 +509,7 @@ input.src:hover{
 	transform: translate(-50%, -50%) scale(1);
 }
 
-#manillas{
+ #manillas{
 	width: 300px;
 	height: 300px;
 	object-fit: cover;
@@ -524,20 +518,20 @@ input.src:hover{
 }
 
 .icon-manilla img{
-	width: 20px;
+	width: 30px;
 } 
 
 /*Estilos de las imagenes del menu*/
 
 .img-manilla img{
 	display: inline-block;
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
 }
 
 /*  ----- Estilos del menú de imagenes *Closed* -----  */
 
-/*  ----- Menu de imagenes de las manillas *Open* -----  */
+/*  ----- Menu de imagenes de los anillos *Open* -----  */
 
 /*Botón oculto para darle su función a las imagenes*/
 
@@ -563,13 +557,11 @@ input.src:hover{
 /*Subcaja para darle estilos al menu de imagenes*/
 
 .submenu-manilla{
-	margin-right: 164px;
-	padding-top: 3%;
-	padding-right: 2%;
-	padding-left: 2%;
-	padding-bottom: 2%;
-	background: rgba(0,0,0,.1);
 	position: relative;
+	margin-right: 190px;
+	padding: 10px;
+	padding-left: 60px;
+	background: rgba(0,0,0,.1);
 }
 
 /*Estilos para las imagenes de los productos*/
@@ -589,8 +581,7 @@ input.src:hover{
 /*Estilos del botón (X) para cerrar el menu de imagenes*/
 .icon-manilla{
 	position: absolute;
-	left: 10px;
+	right: 200px;
 	top: 10px;
 	cursor: pointer;
 }
-
