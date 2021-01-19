@@ -1,4 +1,3 @@
-
 function uncheck() {
     var checkbox1 = document.getElementById("btn-menu");
     var checkbox2 = document.getElementById("btn-menu2");
