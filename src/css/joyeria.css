@@ -51,6 +51,7 @@ nav ul{
 }
 
 .menu li a{
+	color: black;
 	display: block;
 	padding: 8px;
 	text-decoration: none;
@@ -202,6 +203,41 @@ input.src:hover{
 
 /* ----- Slider *Closed* ----- */
 
+
+/* ----- Info separator ----- */
+hr{
+	width: 50%;
+	margin-left: 25%;
+}
+
+.info__separator{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.info__separator__children{
+	text-align: center;
+	width: 90%;
+	padding: 20px;
+	background-color: #f4f5f6;
+}
+
+.info__separator__children h1{
+	margin-bottom: 7px;
+	color: #000
+	
+}
+
+.info__separator__children p{
+	color: #000;
+
+}
+
+.info__separator__children a:link, a:visited{
+	text-decoration:none;
+}
+
 /* Estilos del separador con efecto parallax*/
 .separator__parallax{
 	text-align: center;
@@ -302,7 +338,7 @@ input.src:hover{
 }
 
 /*Estilos del texto dentro de cada imagen*/
-.prod-collares h1 {
+.prod-collares h2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -316,7 +352,7 @@ input.src:hover{
 }
 
 /*Animacion del texto de cada imagen*/
-.prod-collares:hover h1{
+.prod-collares:hover h2{
 	transform: translate(-50%, -50%) scale(1);
 }
 
@@ -405,7 +441,7 @@ input.src:hover{
 }
 
 /*Estilos del texto dentro de cada imagen*/
-.prod-anillos h1 {
+.prod-anillos h2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -419,7 +455,7 @@ input.src:hover{
 }
 
 /*Animacion del texto de cada imagen*/
-.prod-anillos:hover h1{
+.prod-anillos:hover h2{
 	transform: translate(-50%, -50%) scale(1);
 }
 
@@ -515,7 +551,7 @@ input.src:hover{
 }
 
 /*Estilos del texto dentro de cada imagen*/
-.prod-aretes h1 {
+.prod-aretes h2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -529,7 +565,7 @@ input.src:hover{
 }
 
 /*Animacion del texto de cada imagen*/
-.prod-aretes:hover h1{
+.prod-aretes:hover h2{
 	transform: translate(-50%, -50%) scale(1);
 }
 
@@ -640,5 +676,16 @@ input.src:hover{
 	border: 2px solid #a22;
 	padding: 5px;
 	box-shadow: 5px 10px 18px rgba(170, 34, 34, 0.5) inset;
+}
+
+.map{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.map iframe{
+	width: 1000px;
+	height: 200px;
 }
 
