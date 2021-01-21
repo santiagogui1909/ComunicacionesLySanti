@@ -136,72 +136,79 @@ const billeteras = [{
 ];
 
 const perfumes = [{
-        nombre: 'perfumes:',
-        imagen: 'https://picsum.photos/id/30/600'
+        nombre: 'Polize',
+        imagen: 'https://i.ibb.co/85M6PZ3/Polize.jpg'
     },
     {
-        nombre: 'perfumes:',
-        imagen: 'https://picsum.photos/id/30/600'
+        nombre: 'Black Suede Avon',
+        imagen: 'https://i.ibb.co/BBDMwHS/Black-Suede-Avon.jpg'
     },
     {
-        nombre: 'perfumes:',
-        imagen: 'https://picsum.photos/id/30/600'
+        nombre: 'D´orsay Class',
+        imagen: 'https://i.ibb.co/QH3LLpg/D-orsay-Class.jpg'
     },
     {
-        nombre: 'perfumes:',
-        imagen: 'https://picsum.photos/id/30/600'
+        nombre: 'D´orsay',
+        imagen: 'https://i.ibb.co/Vwy3sbw/D-orsay.jpg'
     },
     {
-        nombre: 'perfumes:',
-        imagen: 'https://picsum.photos/id/30/600'
+        nombre: 'Explosion X',
+        imagen: 'https://i.ibb.co/31DrrX6/Explosion-X.jpg'
     },
     {
-        nombre: 'perfumes:',
-        imagen: 'https://picsum.photos/id/30/600'
+        nombre: 'Individual Blue Avon',
+        imagen: 'https://i.ibb.co/bKYjwV3/Individual-Blue-Avon.jpg'
     },
     {
-        nombre: 'perfumes:',
-        imagen: 'https://picsum.photos/id/30/600'
+        nombre: 'It-s You ésika',
+        imagen: 'https://i.ibb.co/nRzVWJc/It-s-You-sika.jpg'
     },
     {
-        nombre: 'perfumes:',
-        imagen: 'https://picsum.photos/id/30/600'
+        nombre: 'Mesmerize Avon',
+        imagen: 'https://i.ibb.co/VpGXvYh/Mesmerize-Avon.jpg'
     },
     {
-        nombre: 'perfumes:',
-        imagen: 'https://picsum.photos/id/30/600'
+        nombre: 'Nitro Air',
+        imagen: 'https://i.ibb.co/wB4nLQV/Nitro-Air.jpg'
     },
     {
-        nombre: 'perfumes:',
-        imagen: 'https://picsum.photos/id/30/600'
+        nombre: 'Nitro',
+        imagen: 'https://i.ibb.co/7krdnpF/Nitro.jpg'
     },
     {
-        nombre: 'perfumes:',
-        imagen: 'https://picsum.photos/id/30/600'
+        nombre: '300-Km-h Avon',
+        imagen: 'https://i.ibb.co/68W5mCy/300-Km-h-Avon.jpg'
     },
     {
-        nombre: 'perfumes:',
-        imagen: 'https://picsum.photos/id/30/600'
+        nombre: 'Vanilla For Men sika',
+        imagen: 'https://i.ibb.co/tpLrXvx/Vanilla-For-Men-sika.jpg'
     },
     {
-        nombre: 'perfumes:',
-        imagen: 'https://picsum.photos/id/30/600'
+        nombre: 'Wild Country 1967 Avon',
+        imagen: 'https://i.ibb.co/4sjKz69/Wild-Country-1967-Avon.jpg'
     },
     {
-        nombre: 'perfumes:',
-        imagen: 'https://picsum.photos/id/30/600'
-    },
-    {
-        nombre: 'perfumes:',
-        imagen: 'https://picsum.photos/id/30/600'
+        nombre: 'Wild Country Musk Avon',
+        imagen: 'https://i.ibb.co/Cs3mbyz/Wild-Country-Musk-Avon.jpg'
     }
 ];
 
+const otros = [{
+        nombre: 'Desodorante Roll-on sika Hombre',
+        imagen: 'https://i.ibb.co/zhtFsf7/Desodorante-Roll-on-sika-Hombre.jpg'
+    },
+    {
+        nombre: 'Talcos Para Pies',
+        imagen: 'https://i.ibb.co/5B8v7dL/Talcos.jpg'
+    }
+
+];
 /**variables */
 
 const reloj = document.querySelector("#productos-Relojes");
 const billetera = document.querySelector("#productos-Billeteras");
 const perfume = document.querySelector("#productos-Perfumes");
+const otrosProducto = document.querySelector("#otros-productos")
 
 /**funcion de los relojes */
 function renderRelojes() {
@@ -247,8 +254,8 @@ function renderPerfumes() {
         miNodoTitle.textContent = info['nombre'];
 
         let miNodoImagen = document.createElement('img');
-        miNodoImagen.classList.add('img-fluid');
-        miNodoImagen.setAttribute('src',info['imagen']);
+        miNodoImagen.classList.add('img-fluid-perfumes');
+        miNodoImagen.setAttribute('src', info['imagen']);
 
         miNodoCardBody.appendChild(miNodoImagen);
         miNodoCardBody.appendChild(miNodoTitle);
@@ -275,6 +282,34 @@ function renderBilleteras() {
         miNodoCardBody.appendChild(miNodoImagen);
         miNodo.appendChild(miNodoCardBody);
         billetera.appendChild(miNodo);
+    }
+}
+
+/**funcion de las otros productos */
+
+function renderOtrosProduct () {
+
+    for (let info of otros) {
+
+        let miNodo = document.createElement('div');
+        miNodo.classList.add('card-otros');
+
+        let miNodoCardBody = document.createElement('div');
+        miNodoCardBody.classList.add('card-body-otros');
+
+        let miNodoTitle = document.createElement('h3');
+        miNodoTitle.classList.add('card-title-otros');
+        miNodoTitle.textContent = info['nombre'];
+
+        let miNodoImagen = document.createElement('img');
+        miNodoImagen.classList.add('img-fluid-otros');
+        miNodoImagen.setAttribute('src', info['imagen']);
+
+        miNodoCardBody.appendChild(miNodoImagen);
+        miNodoCardBody.appendChild(miNodoTitle);
+        miNodo.appendChild(miNodoCardBody);
+        otrosProducto.appendChild(miNodo);
+
     }
 }
 
@@ -325,3 +360,5 @@ renderRelojes();
 renderPerfumes();
 
 renderBilleteras();
+
+renderOtrosProduct();
