@@ -375,9 +375,13 @@ hr{
 
 /*Estilos para el texto del menu de imagenes*/
 .title__products__father{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
+	top: auto;
+}
+
+.subtitle-products{
+	text-align: left;
+	top: 1px;
 }
 
 .title-products{
