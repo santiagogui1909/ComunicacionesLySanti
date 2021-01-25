@@ -12,6 +12,7 @@
 	font-family: 'Roboto Mono', monospace;
 }
 
+/* ---- Estilos de la pantalla de carga */
 #contenedor_carga{
 	background-color: rgba(250, 240, 245, 0.9);
 	height: 100%;
@@ -25,7 +26,7 @@
 
 #carga{
 	border: 15px solid #ccc;
-	border-top-color: #642a73;
+	border-top-color: #aa2222;
 	border-top-style: groove;
 	height: 100px;
 	width: 100px;
@@ -47,11 +48,12 @@
 	to{ transform: rotate(360deg);}
 }
 
-/* ----- Barra de navegación *Open* ----- */
-
+/* Animación de la navegación interna */
 html{
 	scroll-behavior: smooth;
 }
+
+/* ----- Barra de navegación ----- */
 
 a:link, a:visited{
     text-decoration:none;
@@ -61,51 +63,163 @@ a:active{
 	color: #a22;
 }
 
-/*Estilos de la imagen del nombre de la tienda*/
-.title img{
-	float: left;
-	margin-left: 10px;
-	width: 500px;
-	display: inline;
+/* --- Estilos de las listas y la barra de navegación*/
+#btn-menu{
+    display: none;
 }
 
-/*Estilos del input (Buscar)*/
-.buscador{
-	float: left;
-	margin: 20px;
+header label {
+    cursor: pointer;
+    display:none;
 }
-/* --- Estilos de las listas y la barra de navegación*/
+
+/*estilos generales menu*/
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+nav li {
+    position: relative;
+}
+
+nav li ul{
+    position: absolute;
+}
+
+nav a{
+    color: #ddd;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+nav a:hover{
+    background:rgba(0, 0, 0, 0.986);
+}
+
+nav ul ul{
+    display: none;
+}
+
+/*estilos primer nivel*/
+
+nav > ul {
+    display: table;
+    width: 100%;
+}
+
+nav > ul > li {
+    float: right;
+}
+
+/*estilos segundo nivel*/
+
+nav li li {
+    background:rgba(0, 0, 0, 0.89);
+    width: 148px;
+}
+
+nav li li:hover {
+    background:rgba(0, 0, 0, 0.966);
+    width: 148px;
+}
+
+nav > ul > li > ul{
+    top: 100%;
+}
+
+/*estilos tercer nivel*/
+
+nav ul ul ul {
+    right: 100%;
+    top:0;
+}
+
+.menu a span{
+    margin-left: 10px;
+    transition: all 0.8s;
+}
+/*---------------------------------------*/
+
+.menu ul li:hover ul{
+    position: absolute;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: rgba(245, 3, 3, 0.986);
+}
+
+/*pantalla pequeña*/
+@media (max-width: 764px) {
+    header label {
+        display: table;
+        position: fixed;
+        bottom: 90%;
+    }
+
+    .menu{
+        font-size: 14px;
+        transform: translatey(-200%);
+        transition: all 0.5s;
+    }
+
+    nav ul li ul li ul:hover ul {
+        display: none;
+        position: static;
+    }
+
+    #btn-menu:checked ~ .menu{
+        transform: translatey(0%);
+    }
+}
+
+
+.logo {
+    width: 165px;
+    padding: 15px; 
+    display: block;
+    float: left;
+    left: 25px;
+    margin-left:4%;
+    transition:all 0.1s;
+}
+
+.animacionImagen{
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	width:100%;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.8s;
+}
+
+/**imagen*/
+
 header {
     width: 100%;
-    height: 600px;
+    height: 620px;
     background: #eb575793;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #00000071, #EB5757), url(../img/Portada.jpg);
+    background: -webkit-linear-gradient(to right, #00000071, #EB5757), url(/src/images/Principal/Portada.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     ;
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #00000071, #eb575796), url(../img/Portada.jpg);
+    background: linear-gradient(to right, #00000071, #eb575796), url(/src/images/Principal/Portada.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-
-}
-
-nav {
-    text-align: right;
-    padding: 30px 50px 0 0;
-}
-
-nav>a {
-    color: #fff;
-    font-weight: 300;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-nav>a:hover {
-    text-decoration: underline;
 }
 
 header .textos-header {
@@ -134,11 +248,7 @@ header .textos-header {
     bottom: 0;
     width: 100%;
 }
-/* --- */
-
-/* ----- Barra de navegación Decoraciones *Closed* ----- */
-
-/* ----- Slider *Open* ----- */
+/* ----- Slider ----- */
 
 /* Estilos del slider*/
 #slider{
@@ -168,7 +278,7 @@ header .textos-header {
 
 /*Estilos de las imagenes del slider*/
 #slider img{
-	width: 100%;
+	width: 20%;
 	height: 100%;
 }
 
@@ -179,7 +289,7 @@ header .textos-header {
 }
 
 /*Tamaños del slider para la continuidad infinita del slider*/
-@keyframes slider{
+/* @keyframes slider{
 	0%{margin-left: 0;}
 	20%{margin-left: 0;}
 
@@ -193,10 +303,7 @@ header .textos-header {
 	95%{margin-left: -300%;}
 
 	100%{margin-left: -400%;}
-}
-
-/* ----- Slider *Closed* ----- */
-
+} */
 
 /* ----- Info separator ----- */
 hr{
@@ -256,26 +363,14 @@ hr{
 	padding: 10px;
 }
 
-/*  ----- Estilos del menú de imagenes *Open* ----- */
-
-/*Estilos de imagen principal de los collares*/
-#collares{
-	width: 300px;
-	height: 300px;
-	object-fit: contain;
-	cursor: pointer;
-	display:block;
-}
+/*  ----- Estilos del menú de imagenes  ----- */
 
 /*Estilos de la caja del menu de imagenes*/
 .font{
-	background:#642a73;
+	text-align: center;
+	background:#aa2222;
 	/* background-color:rgba(90, 89, 89, 0.767); */
-	margin-left: 100px;
-	margin-right: 100px;
-	padding-left: 100px;
-	padding-right: 80px;
-	padding-bottom: 23px;
+	padding: 120px 0px;
 }
 
 /*Estilos para el texto del menu de imagenes*/
@@ -319,9 +414,14 @@ hr{
     transition: all 300ms;
 }
 
-/*---*/
-
-/*  ----- Estilos del texto con efecto en la imagenes de los collares *Open* ----- */
+/*  ----- Estilos del texto con efecto en la imagenes de los collares ----- */
+#collares{
+	width: 300px;
+	height: 300px;
+	object-fit: contain;
+	cursor: pointer;
+	display:block;
+}
 
 .prod-collares img{
     transition: all .5s;
@@ -350,80 +450,14 @@ hr{
 	transform: translate(-50%, -50%) scale(1);
 }
 
-/*Icono del menu de imagenes (X)*/
-
-.icon-collar img{
-	width: 30px;
-}
-
-/*Estilos de las imagenes del menu*/
-
-.img-collar img{
-	width: 250px;
-	height: 250px;
-}
-
-/*  ----- Estilos del menú de imagenes *Closed* -----  */
-
-/*  ----- Menu de imagenes de los collares *Open* -----  */
-
-/*Botón oculto para darle su función a las imagenes*/
-
-#btn-menu{
-	display: none;
-}
-
-/*Estilos de la Caja padre que encierra el menu de imagenes*/
-.menu-collar{
-	position: absolute;
-	opacity: 0;
-	visibility: hidden;
-
-	transition: all 500ms ease;
-}
-
-/*Condicionamos el checkbox para que muestre y oculte los productos*/
-#btn-menu:checked ~ .menu-collar{
-	opacity: 1;
-	visibility: visible;
-}
-
-/*Subcaja para darle estilos al menu de imagenes*/
-
-.submenu-collar{
-	position: relative;
-	margin-right: 190px;
-	padding: 10px;
-	padding-left: 60px;
-	background: rgba(0,0,0,.1);
-	
-}
-
-/*Estilos para las imagenes de los productos*/
-.img-collar img{
-	border: 1px solid #000;
+/* ----- Estilos del texto con efecto en la imagenes de los anillos -----  */
+#anillos{
+	width: 300px;
+	height: 300px;
+	object-fit: contain;
 	cursor: pointer;
-
-	transition: .3s;
+	display:block
 }
-
-/*Efecto para las imagenes de los producto*/
-.img-collar img:hover{
-	background: rgba(0,0,0,0.2);
-	box-shadow: 1px 1px 3px #000;
-}
-
-/*Estilos del botón (X) para cerrar el menu de imagenes*/
-.icon-collar{
-	position: absolute;
-	left: 10px;
-	top: 10px;
-	cursor: pointer;
-}
-
-/*  ----- Menu de imagenes de los collares *Closed* -----  */
-
-/* ----- Menu de imagenes de los anillos *Open* -----  */
 
 .prod-anillos img{
 	border: 2px solid #fff;
@@ -453,88 +487,14 @@ hr{
 	transform: translate(-50%, -50%) scale(1);
 }
 
- #anillos{
+/*  ----- Estilos del texto con efecto en la imagenes de las aretes ----- */
+#aretes{
 	width: 300px;
 	height: 300px;
-	object-fit: contain;
+	object-fit: cover;
 	cursor: pointer;
 	display:block
 }
-
-.icon-anillo img{
-	width: 30px;
-} 
-
-/*Estilos de las imagenes del menu*/
-
-.img-anillo img{
-	display: inline-block;
-	width: 250px;
-	height: 250px;
-}
-
-/*  ----- Estilos del menú de imagenes *Closed* -----  */
-
-/*  ----- Menu de imagenes de los anillos *Open* -----  */
-
-/*Botón oculto para darle su función a las imagenes*/
-
-#btn-menu2{
-	display: none;
-}
-
-/*Estilos de la Caja padre que encierra el menu de imagenes*/
-.menu-anillo{
-	position: absolute;
-	opacity: 0;
-	visibility: hidden;
-
-	transition: all 500ms ease;
-}
-
-/*Condicionamos el checkbox para que muestre y oculte los productos*/
-#btn-menu2:checked ~ .menu-anillo{
-	opacity: 1;
-	visibility: visible;
-}
-
-/*Subcaja para darle estilos al menu de imagenes*/
-
-.submenu-anillo{
-	position: relative;
-	margin-right: 190px;
-	padding: 10px;
-	padding-left: 60px;
-	background: rgba(0,0,0,.1);
-}
-
-/*Estilos para las imagenes de los productos*/
-.img-anillo img{
-	border: 1px solid #000;
-	cursor: pointer;
-
-	transition: .3s;
-}
-
-/*Efecto para las imagenes de los producto*/
-.img-anillo img:hover{
-	background: rgba(0,0,0,0.2);
-	box-shadow: 1px 1px 3px #000;
-}
-
-/*Estilos del botón (X) para cerrar el menu de imagenes*/
-.icon-anillo{
-	position: absolute;
-	left: 10px;
-	top: 10px;
-	cursor: pointer;
-}
-
-/* ----- Menu de imagenes de los collares *Closed* ----- */
-
-/* ----- Menu de imagenes de las aretes *Open* ----- */
-
-/*  ----- Estilos del texto con efecto en la imagenes de las aretes *Open* ----- */
 
 .prod-aretes img{
     transition: all .5s;
@@ -563,87 +523,10 @@ hr{
 	transform: translate(-50%, -50%) scale(1);
 }
 
- #aretes{
-	width: 300px;
-	height: 300px;
-	object-fit: cover;
-	cursor: pointer;
-	display:block
-}
-
-.icon-arete img{
-	width: 30px;
-} 
-
-/*Estilos de las imagenes del menu*/
-
-.img-arete img{
-	display: inline-block;
-	width: 250px;
-	height: 250px;
-}
-
-/*  ----- Estilos del menú de imagenes *Closed* -----  */
-
-/*  ----- Menu de imagenes de los anillos *Open* -----  */
-
-/*Botón oculto para darle su función a las imagenes*/
-
-#btn-menu3{
-	display: none;
-}
-
-/*Estilos de la Caja padre que encierra el menu de imagenes*/
-.menu-arete{
-	position: absolute;
-	opacity: 0;
-	visibility: hidden;
-
-	transition: all 500ms ease;
-}
-
-/*Condicionamos el checkbox para que muestre y oculte los productos*/
-#btn-menu3:checked ~ .menu-arete{
-	opacity: 1;
-	visibility: visible;
-}
-
-/*Subcaja para darle estilos al menu de imagenes*/
-
-.submenu-arete{
-	position: relative;
-	margin-right: 190px;
-	padding: 10px;
-	padding-left: 60px;
-	background: rgba(0,0,0,.1);
-}
-
-/*Estilos para las imagenes de los productos*/
-.img-arete img{
-	border: 1px solid #000;
-	cursor: pointer;
-
-	transition: .3s;
-}
-
-/*Efecto para las imagenes de los producto*/
-.img-arete img:hover{
-	background: rgba(0,0,0,0.2);
-	box-shadow: 1px 1px 3px #000;
-}
-
-/*Estilos del botón (X) para cerrar el menu de imagenes*/
-.icon-arete{
-	position: absolute;
-	right: 200px;
-	top: 10px;
-	cursor: pointer;
-}
-
 /* Estilos del boton para retornar a los productos*/
-
 .button__return{
 	text-align: center;
+	padding: 10px;
 }
 
 .button__return__btn{
@@ -668,7 +551,6 @@ hr{
 }
 
 /* Ubicación de GoogleMaps */
-
 .map{
 	display: flex;
 	justify-content: center;
@@ -681,7 +563,6 @@ hr{
 }
 
 /* Footer */
-
 footer {
     background: #414141;
     padding: 60px 0 30px 0;
