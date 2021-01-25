@@ -1,0 +1,463 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+/**menu*/
+
+#btn-menu{
+    display: none;
+}
+
+header label {
+    cursor: pointer;
+    display:none;
+}
+
+/*estilos generales menu*/
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+nav li {
+    position: relative;
+}
+
+nav li ul{
+    position: absolute;
+}
+
+nav a{
+    color: #ddd;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+nav a:hover{
+    background:rgba(0, 0, 0, 0.986);
+}
+
+nav ul ul{
+    display: none;
+}
+
+/*estilos primer nivel*/
+
+nav > ul {
+    display: table;
+    width: 100%;
+}
+
+nav > ul > li {
+    float: right;
+}
+
+/*estilos segundo nivel*/
+
+nav li li {
+    background:rgba(0, 0, 0, 0.89);
+    width: 148px;
+}
+
+nav li li:hover {
+    background:rgba(0, 0, 0, 0.966);
+    width: 148px;
+}
+
+nav > ul > li > ul{
+    top: 100%;
+}
+
+/*estilos tercer nivel*/
+
+nav ul ul ul {
+    right: 100%;
+    top:0;
+}
+
+.menu a span{
+    margin-left: 10px;
+    transition: all 0.8s;
+}
+
+.menu ul li:hover ul{
+    position: absolute;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: rgba(245, 3, 3, 0.986);
+}
+
+/*pantalla pequeña*/
+@media (max-width: 764px) {
+    header label {
+        display: table;
+        position: fixed;
+        bottom: 90%;
+    }
+
+    .menu{
+        font-size: 14px;
+        transform: translatey(-200%);
+        transition: all 0.5s;
+    }
+
+    nav ul li ul li ul:hover ul {
+        display: none;
+        position: static;
+    }
+
+    #btn-menu:checked ~ .menu{
+        transform: translatey(0%);
+    }
+}
+
+.logo {
+    width: 165px;
+    padding: 5px; 
+    display: block;
+    float: left;
+    margin-left:4%;
+}
+
+.animacionImagen{
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	width:100%;
+    background-color: rgba(0, 0, 0, 0.705);
+    transition: all 0.8s;
+}
+
+/**imagen*/
+
+header {
+    width: 100%;
+    height: 130px;
+    background: #eb575793;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00000071, #EB5757), url(/src/images/Principal/Portada.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00000071, #eb575796), url(/src/images/Principal/Portada.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+/**menu de hombres*/
+.menu-hombre {
+    columns: 3;
+    padding: 5%;
+    text-align: center;
+    background-color: rgba(209, 208, 208, 0.207);
+}
+
+.menu-hombre img {
+    width: 50%;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.billetera:hover img {
+    box-shadow: 0px 8px 15px 5px rgba(0, 0, 0, 0.474);
+}
+
+.perfume:hover img {
+    box-shadow: 0px 8px 15px 5px rgba(0, 0, 0, 0.474);
+}
+
+.reloj:hover img {
+    box-shadow: 0px 8px 15px 5px rgba(0, 0, 0, 0.474);
+}
+
+
+/*Tarjetas*/
+
+
+.titulo-Hombre {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(100, 19, 167);
+    padding: 30px;
+}
+
+.targetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(197, 197, 197, 0.124);
+    -webkit-transition: margin 0.8s ease-out;
+    -moz-transition: margin 0.8s ease-out;
+    -ms-transition: margin 0.8s ease-out;
+    transition: margin 0.8s ease-out;
+}
+
+.card-reloj {
+    width: 35%;
+    text-align: center;
+    flex-grow: 1;
+    margin: 50px;
+    max-width: 210px;
+    cursor: pointer;
+}
+
+.card-perfume {
+    width: 55%;
+    text-align: center;
+    flex-grow: 1;
+    margin: 50px;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.card-billetera {
+    width: 35%;
+    text-align: center;
+    flex-grow: 1;
+    margin: 50px;
+    max-width: 210px;
+    cursor: pointer;
+}
+
+.card-body {
+    width: 115%;
+    transition: 0.6s;
+    border: 1.5px solid rgba(121, 121, 121, 0.741);
+    background-color: rgb(255, 255, 255);
+}
+
+.card-body:hover {
+    box-shadow: 0px 8px 15px 5px rgba(0, 0, 0, 0.474);
+    margin-top: 10px;
+}
+
+.card-title {
+    font-size: 20px;
+    background: rgb(250, 0, 0);
+    font-family: Rancho;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.img-fluid {
+    width: 80%;
+    padding: 15px 5px;
+}
+
+.img-fluid-perfumes {
+    width: 75%;
+    padding: 15px 5px;
+    height: 350px;
+}
+
+/**otros productos*/
+
+.targetas-otros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(197, 197, 197, 0.124);
+    -webkit-transition: margin 0.8s ease-out;
+    -moz-transition: margin 0.8s ease-out;
+    -ms-transition: margin 0.8s ease-out;
+    transition: margin 0.8s ease-out;
+}
+
+.card-otros {
+    flex-grow: 1;
+    margin: 30px;
+    max-width: 640px;
+    text-align: center;
+}
+
+.card-title-otros {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-family: Slabo 50px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 25px;
+    
+}
+
+
+.img-fluid-otros{
+    width: 100%;
+    border: 3px solid rgba(0, 0, 0, 0.741);
+}
+
+
+
+/*boton flotante volver*/
+
+.btn-flotante {
+    font-size: 30px;
+    /* Cambiar el tamaño de la tipografia */
+    color: #ffffff;
+    /* Color del texto */
+    border-radius: 30px;
+    /* Borde del boton */
+    background-color: #fc0000e3;
+    /* Color de fondo */
+    padding: 8px;
+    /* Relleno del boton */
+    position: fixed;
+    bottom: 5%;
+    right: 20px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.268);
+    z-index: 99;
+    text-decoration: none;
+    /**quitar el subrayado del ipervinculo*/
+}
+
+.btn-flotante:hover {
+    background-color: #7c0594a1;
+    /* Color de fondo al pasar el cursor */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.563);
+    transform: translateY(-7px);
+}
+
+@media only screen and (max-width: 150px) {
+    .btn-flotante {
+        font-size: 25px;
+        padding: 12px 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+.volver {
+    margin: 15px;
+}
+
+.btn-volver {
+    font-size: 25px;
+    color: #ffffff;
+    border-radius: 14px;
+    letter-spacing: 5px;
+    background-color: #fc0000e3;
+    padding: 10px;
+    margin: 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.268);
+    text-decoration: none;
+    margin-left: 14%;
+}
+
+/* footer */
+
+footer {
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.content-foo {
+    text-align: center;
+
+}
+
+.content-foo h4 {
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p {
+    color: #ccc;
+
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+
+}
+
+@media screen and (max-width:900px) {
+    header{
+        background-position: center;
+    }
+}
+
+/**editar la barra lateral*/
+body::-webkit-scrollbar {
+    width: 15px;
+  }
+  body::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 20px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 0px;
+  }
