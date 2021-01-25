@@ -1,64 +1,167 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-
-}
-
-body {
     font-family: 'open sans';
 }
 
-.contenedor {
-    padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-
+#btn-menu{
+    display: none;
 }
 
-.titulo {
-    color: #642a73;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 60px;
+header label {
+    cursor: pointer;
+    display:none;
 }
 
-/* Header */
+/*estilos generales menu*/
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+nav li {
+    position: relative;
+}
+
+nav li ul{
+    position: absolute;
+}
+
+nav a{
+    color: #ddd;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+nav a:hover{
+    background:rgba(0, 0, 0, 0.986);
+}
+
+nav ul ul{
+    display: none;
+}
+
+/*estilos primer nivel*/
+
+nav > ul {
+    display: table;
+    width: 100%;
+}
+
+nav > ul > li {
+    float: right;
+}
+
+/*estilos segundo nivel*/
+
+nav li li {
+    background:rgba(0, 0, 0, 0.89);
+    width: 148px;
+}
+
+nav li li:hover {
+    background:rgba(0, 0, 0, 0.966);
+    width: 148px;
+}
+
+nav > ul > li > ul{
+    top: 100%;
+}
+
+/*estilos tercer nivel*/
+
+nav ul ul ul {
+    right: 100%;
+    top:0;
+}
+
+.menu a span{
+    margin-left: 10px;
+    transition: all 0.8s;
+}
+/*---------------------------------------*/
+
+.menu ul li:hover ul{
+    position: absolute;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: rgba(245, 3, 3, 0.986);
+}
+
+/*pantalla pequeña*/
+@media (max-width: 764px) {
+    header label {
+        display: table;
+        position: fixed;
+        bottom: 90%;
+    }
+
+    .menu{
+        font-size: 14px;
+        transform: translatey(-200%);
+        transition: all 0.5s;
+    }
+
+    nav ul li ul li ul:hover ul {
+        display: none;
+        position: static;
+    }
+
+    #btn-menu:checked ~ .menu{
+        transform: translatey(0%);
+    }
+}
+
+
+.logo {
+    width: 165px;
+    padding: 15px; 
+    display: block;
+    float: left;
+    left: 25px;
+    margin-left:4%;
+    transition:all 0.1s;
+}
+
+.animacionImagen{
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	width:100%;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.8s;
+}
+
+
+/**imagen*/
 
 header {
     width: 100%;
-    height: 600px;
+    height: 620px;
     background: #eb575793;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #00000071, #EB5757), url(../img/Portada.jpg);
+    background: -webkit-linear-gradient(to right, #00000071, #EB5757), url(/src/images/Principal/Portada.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     ;
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #00000071, #eb575796), url(../img/Portada.jpg);
+    background: linear-gradient(to right, #00000071, #eb575796), url(/src/images/Principal/Portada.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-
-}
-
-nav {
-    text-align: right;
-    padding: 30px 50px 0 0;
-
-}
-
-nav>a {
-    color: #fff;
-    font-weight: 300;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-nav>a:hover {
-    text-decoration: underline;
 }
 
 header .textos-header {
@@ -70,9 +173,6 @@ header .textos-header {
     flex-direction: column;
     text-align: center;
 }
-
-
-
 
 .textos-header h1 {
     font-size: 50px;
@@ -91,12 +191,13 @@ header .textos-header {
     width: 100%;
 }
 
+
 /* About us */
 .contenedor-sobre-nosotros {
     display: flex;
     justify-content: space-evenly;
-
-
+    padding: 10px;
+    margin: 50px;
 }
 
 .imagen-about-us {
@@ -135,8 +236,25 @@ header .textos-header {
 
 /* Galeria */
 
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
 .portafolio {
     background: #f2f2f2;
+    flex-wrap: 500px;
 }
 
 .galeria-port {
@@ -199,6 +317,8 @@ header .textos-header {
 }
 
 .cards .card {
+    margin: 10px;
+    padding:20px;
     background: #4d0686;
     display: flex;
     width: 46%;
@@ -207,6 +327,7 @@ header .textos-header {
     justify-content: space-evenly;
     border-radius: 5px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+
 }
 
 .cards .card img {
@@ -239,15 +360,14 @@ header .textos-header {
 }
 
 .servicio-cont {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    columns: 4;
 }
 
 .servicio-ind {
-    width: 28%;
     text-align: center;
-
+    margin: 15px;
+    padding: 8px;
 }
 
 .servicio-ind img {
@@ -314,3 +434,54 @@ footer {
         background-position: center;
     }
 }
+
+/**boton arriba*/
+
+.btn-arriba {
+    font-size: 30px;
+    /* Cambiar el tamaño de la tipografia */
+    color: #ffffff;
+    /* Color del texto */
+    border-radius: 24px;
+    /* Borde del boton */
+    background-color: #fc0000e3;
+    /* Color de fondo */
+    padding: 8px;
+    /* Relleno del boton */
+    position: fixed;
+    bottom: 5%;
+    right: 20px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.268);
+    z-index: 99;
+    text-decoration: none;
+    /**quitar el subrayado del ipervinculo*/
+}
+
+.btn-arriba:hover {
+    background-color: #7c0594a1;
+    /* Color de fondo al pasar el cursor */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.563);
+    transform: translateY(-7px);
+}
+
+@media only screen and (max-width: 150px) {
+    .btn-arriba {
+        font-size: 25px;
+        padding: 12px 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+  }
+  body::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 20px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 0px;
+  }
