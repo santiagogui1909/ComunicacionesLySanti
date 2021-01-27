@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+@font-face{
+	font-family: 'myFont';
+	src: url(../font/font_personalized/ExodusDemo-Striped.otf);
+}
 
 *, *:active, *:before{
     margin: 0;
@@ -9,7 +16,7 @@
 }
 
 *{
-	font-family: 'Roboto Mono', monospace;
+	font-family: 'Open Sans', sans-serif;
 }
 
 /* ---- Estilos de la pantalla de carga */
@@ -63,7 +70,8 @@ a:active{
 	color: #a22;
 }
 
-/* --- Estilos de las listas y la barra de navegación*/
+/**menu*/
+
 #btn-menu{
     display: none;
 }
@@ -79,6 +87,7 @@ nav ul {
     list-style: none;
     padding: 0;
     justify-content: flex-end;
+	z-index: 150;
 }
 
 nav li {
@@ -143,7 +152,6 @@ nav ul ul ul {
     margin-left: 10px;
     transition: all 0.8s;
 }
-/*---------------------------------------*/
 
 .menu ul li:hover ul{
     position: absolute;
@@ -178,15 +186,12 @@ header nav ul li a:hover {
     }
 }
 
-
 .logo {
     width: 165px;
-    padding: 15px; 
+    padding: 5px; 
     display: block;
     float: left;
-    left: 25px;
     margin-left:4%;
-    transition:all 0.1s;
 }
 
 .animacionImagen{
@@ -200,7 +205,7 @@ header nav ul li a:hover {
 	z-index:1000;
 	top:0;
 	width:100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.705);
     transition: all 0.8s;
 }
 
@@ -208,7 +213,7 @@ header nav ul li a:hover {
 
 header {
     width: 100%;
-    height: 620px;
+    height: 130px;
     background: #eb575793;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #00000071, #EB5757), url(/src/images/Principal/Portada.jpg);
@@ -248,9 +253,9 @@ header .textos-header {
     bottom: 0;
     width: 100%;
 }
+
 /* ----- Slider ----- */
 
-/* Estilos del slider*/
 #slider{
 	width: 90%;
 	margin: auto;
@@ -306,36 +311,54 @@ header .textos-header {
 } */
 
 /* ----- Info separator ----- */
-hr{
-	width: 50%;
-	margin-left: 25%;
-}
-
-.info__separator{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.info__separator__children{
-	text-align: center;
-	width: 90%;
-	padding: 20px;
-	background-color: #f2f2f2;
-}
-
-.info__separator__children h1{
-	margin-bottom: 7px;
-	color: #642a73;
+/*  */
+.container-font{
+	background-color: #aa2222;
+	height: 100vh;
+	clip-path: polygon(60% 0, 100% 0, 100% 100%, 30% 100%);
 	
 }
 
-.info__separator__children p{
-	color: #000;
-
+.ubicacion__img{
+	position: absolute;
+	width: 250px;
+	left: 70%;
+	top: -270px;
 }
 
-.info__separator__children a:link, a:visited{
+hr{
+	width: 50%;
+	margin-left: 58%;
+	
+}
+
+.info__separator{
+	position: relative;
+	text-align: center;
+	top: 45%;
+	left: 250px;
+	width: 70%;
+}
+
+.info__separator p, h1{
+	position: relative;
+	margin: 20px 250px;
+	left: 300px;
+}
+
+.info__separator h1{
+	font-size: 30px;
+	margin-bottom: 7px;
+	color: #642a73;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.info__separator p{
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.info__separator a:link, a:visited{
 	text-decoration:none;
 }
 
@@ -380,14 +403,22 @@ hr{
 }
 
 .subtitle-products{
+	position: relative;
 	text-align: left;
-	top: 1px;
+	margin-left: 60px;
+	top: -50px;
+	font-family: 'myFont';
+	font-size: 20px;
+	text-decoration-line: underline;
+	text-decoration-style: double;
+	text-decoration-color: #f2f2f2;
+	
 }
 
 .title-products{
 	display: inline-block;
 	position: relative;
-	font-family: 'Dancing Script', cursive;
+	font-family: 'myFont';
 	font-size: 40px;
 }
 
@@ -397,16 +428,18 @@ hr{
 	width: 120px;
 	height: 3px;
 	background-color: #000;
-	/* background-color: currentColor; */
+	/* background-color: currentColor;  */
 	top: 0.6em;
-}
+} 
 
 .title-products::before{
 	left: -130px;
+	top: 50px;
 }
 
 .title-products::after{
 	right: -130px;
+	top: 50px;
 }
 
 /*---Estilos para la cajas que contiene los menu de imagenes*/
@@ -414,15 +447,17 @@ hr{
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
-
+	margin-left: 20px;
+	margin-right: 20px;
+	
     transition: all 300ms;
 }
 
 /*  ----- Estilos del texto con efecto en la imagenes de los collares ----- */
-#collares{
-	width: 300px;
-	height: 300px;
-	object-fit: contain;
+#collares, #anillos, #aretes{
+	width: 355px;
+	height: 450px;
+	object-fit: cover;
 	cursor: pointer;
 	display:block;
 }
@@ -432,105 +467,137 @@ hr{
 }
 
 .prod-collares:hover img{
-	transform: scale(1.3) rotate(10deg);
+	transform: scale(1.1) rotate(0deg);
 }
 
 /*Estilos del texto dentro de cada imagen*/
-.prod-collares h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    color: white;
-    z-index: 100;
-    transition: all 600ms cubic-bezier(1,0,0,1);
-    border: 2px solid white;
+.prod__collares__text h2{
+	position: relative;
+	top: 180px;
+	font-family: 'myFont';
+	border: 2px solid white;
     background: black;
-    padding: 6px
+	padding: 6px;
+}
+
+.prod__collares__text{
+	position: relative;
+	top: 180px;
+	font-family: 'myFont';
+    background: black;
+	padding: 6px;
+}
+
+.prod__collares__text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+	transform: scale(0);
+	transition: .5s;
+	z-index: 100;
 }
 
 /*Animacion del texto de cada imagen*/
-.prod-collares:hover h2{
-	transform: translate(-50%, -50%) scale(1);
+.prod-collares:hover .prod__collares__text{
+	transform: scale(1);
 }
 
 /* ----- Estilos del texto con efecto en la imagenes de los anillos -----  */
-#anillos{
-	width: 300px;
-	height: 300px;
-	object-fit: contain;
-	cursor: pointer;
-	display:block
-}
 
 .prod-anillos img{
-	border: 2px solid #fff;
     transition: all .5s;
 }
 
 .prod-anillos:hover img{
-	transform: scale(1.3) rotate(10deg);
+	transform: scale(1.1) rotate(0deg);
 }
 
+
 /*Estilos del texto dentro de cada imagen*/
-.prod-anillos h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    color: white;
-    z-index: 100;
-    transition: all 600ms cubic-bezier(1,0,0,1);
-    border: 2px solid white;
+.prod__anillos__text h2{
+	position: relative;
+	top: 180px;
+	font-family: 'myFont';
+	border: 2px solid white;
     background: black;
-    padding: 6px
+	padding: 6px;
+}
+
+.prod__anillos__text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+	transform: scale(0);
+	transition: .5s;
+	z-index: 100;
 }
 
 /*Animacion del texto de cada imagen*/
-.prod-anillos:hover h2{
-	transform: translate(-50%, -50%) scale(1);
+.prod-anillos:hover .prod__anillos__text{
+	transform: scale(1);
+		
 }
 
 /*  ----- Estilos del texto con efecto en la imagenes de las aretes ----- */
-#aretes{
-	width: 300px;
-	height: 300px;
-	object-fit: cover;
-	cursor: pointer;
-	display:block
-}
 
 .prod-aretes img{
     transition: all .5s;
 }
 
 .prod-aretes:hover img{
-	transform: scale(1.3) rotate(10deg);
+	transform: scale(1.1) rotate(0deg);
 }
 
-/*Estilos del texto dentro de cada imagen*/
-.prod-aretes h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    color: white;
-    z-index: 100;
-    transition: all 600ms cubic-bezier(1,0,0,1);
-    border: 2px solid white;
+.prod__aretes__text h2{
+	position: relative;
+	top: 180px;
+	font-family: 'myFont';
+	border: 2px solid white;
     background: black;
-    padding: 6px
+	padding: 6px;
+}
+
+
+/*Estilos del texto dentro de cada imagen*/
+.prod__aretes__text{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+	transform: scale(0);
+	transition: .5s;
+	z-index: 100;
 }
 
 /*Animacion del texto de cada imagen*/
-.prod-aretes:hover h2{
-	transform: translate(-50%, -50%) scale(1);
+.prod-aretes:hover .prod__aretes__text{
+	transform: scale(1);
 }
 
 /* Estilos del boton para retornar a los productos*/
 .button__return{
 	text-align: center;
-	padding: 10px;
+	margin-top: 50px;
 }
 
 .button__return__btn{

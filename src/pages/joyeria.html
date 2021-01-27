@@ -22,19 +22,18 @@
     <header>
         <input type="checkbox" id="btn-menu">
         <label for="btn-menu" class="icon-menu-outline"></label>
-
         <nav class="menu">
-
             <ul>
                 <li><a href="#">Contacto</a></li>
                 <li class="subMenu"><a href="#">Ofertas<span class="icon-down-circle"></span></a>
                     <ul>
-                        <li><a href="#ofertas">Ofertas</a></li>
-                        <li><a href="#clientes">Clientes</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#">shoals</a></li>
+                        <li><a href="#">shoals</a></li>
+                        <li><a href="#">shoals</a></li>
+                        <li><a href="#">shoals</a></li>
                     </ul>
                 </li>
-                <li class="subMenu"><a href="#">Productos<span class="icon-down-circle"></span></a>
+                <li class="subMenu"><a>Productos<span class="icon-down-circle"></span></a>
                     <ul>
                         <li class="subMenu"><a href="#">Tecnologia<span class="icon-down-circle"></span></a>
                             <ul>
@@ -43,47 +42,43 @@
                                 <li><a href="#">Accesorios</a></li>
                             </ul>
                         </li>
-
                         <li class="subMenu"><a href="#">Ellos & Ellas<span class="icon-down-circle"></span></a>
                             <ul>
                                 <li><a href="/src/pages/Mujer.html">Mujer</a></li>
                                 <li><a href="/src/pages/Hombre.html">Hombre</a></li>
                             </ul>
                         </li>
-
                         <li><a href="#">Joyeria</a></li>
                         <li><a href="#">Dulceria</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="/src/pages/Principal.html">Inicio</a></li>
             </ul>
         </nav>
-        <section class="textos-header">
-            <h1>Lo inolvidable de la Tecnologia!!!!</h1>
-            <h2>Lo encuentras en Comunicaciones LySanti</h2>
-        </section>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
+        <div class="wave" style="height: 60px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 170%; width: 100%;">
                 <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
                     style="stroke: none; fill: #fff;"></path>
-            </svg></div>
+            </svg>
+        </div>
     </header>
-    <br><br><br><br>
-    <aside>
+
+    <section>
         <div id="slider">
             <ul>
                 <li><a href="jfemenina.html"><img src="../images/JoyeriaF.jpg" alt="img1"></a></li>
             </ul>
         </div>
-        <br>
-        <!-- Redirecionamiento a Maps en la página -->
-        <div class="info__separator">
-            <div class="info__separator__children">
+        <br> <br>
+        <div class="container-font">
+            <!-- Redirecionamiento a Maps en la página -->
+            <div class="info__separator">
                 <hr><br>
                 <a href="#ubication">
+                    <img src="../images/prueba_ubicacion.png" alt="ubc" class="ubicacion__img">
                     <h1>¿Dónde estamos ubicados?</h1>
-                    <p>Nos puedes encontrar en "dirección". Si deseas más información sobre nuestra <br>
-                        ubicación puedes contactar con nosotros al número telefonico, o bien puedes<br>
+                    <p>Nos puedes encontrar en "dirección".Si deseas más información sobre nuestra
+                        ubicación puedes contactar con nosotros al número telefonico, o bien puedes
                         presionar sobre este mensaje para ver la ubicación.
                     </p>
                 </a>
@@ -91,34 +86,43 @@
                 <hr>
             </div>
         </div>
-        <br>
+    </section>
+    <br>
+    <section>
         <!-- Titulo de la caja que contiene el menu de imagenes -->
         <div class="font" id="products">
             <div class="title__products__father">
                 <h2 class="subtitle-products">Nuestros Productos</h2>
-                <h2 class="title-products">Joyería Femenina</h2>
+                <h2 class="title-products">Joyería <br> Femenina</h2>
             </div>
             <br>
             <!-------------------------------Menu de imagenes de los collares------------------------------->
             <div class="prod-collares">
-                <h2>Collares</h2>
+                <div class="prod__collares__text">
+                    <h2>Collares</h2>
+                </div>
                 <!-- Imagen principal -->
                 <label><img src="../images/collar.jpg" alt="collares" id="collares"></label>
             </div>
             <!-------------------------------Menu de imagenes de los anillos------------------------------->
             <div class="prod-anillos">
-                <h2>Anillos</h2>
+                <div class="prod__anillos__text">
+                    <h2>Anillos</h2>
+                </div>
                 <!-- Imagen principal -->
                 <label><img src="../images/anillo.jpg" alt="anillos" id="anillos"></label>
             </div>
             <!-------------------------------Menu de imagenes de las maninillas------------------------------->
             <div class="prod-aretes">
-                <h2>Aretes</h2>
+                <div class="prod__aretes__text">
+                    <h2>Aretes</h2>
+                </div>
                 <!-- Imagen principal -->
                 <label><img src="../images/aretes.jpg" alt="aretes" id="aretes"></label>
             </div>
+
             <div class="button__return">
-                <a href="#products"> <button class="button__return__btn">Ver productos</button> </a>
+                <a href="#products"> Ver todos los productos </a>
             </div>
         </div>
         <br>
@@ -135,7 +139,7 @@
                 tabindex="0"></iframe>
         </div>
         <br><br>
-    </aside>
+    </section>
 
     <footer>
         <div class="contenedor-footer">
