@@ -27,26 +27,26 @@ $("ul").click(function (valor){
 
 /**aparecer logo */
 
-function aparecerLogo() {
-    var html = document.getElementsByTagName("html")[0];
-    var animacionImagen = document.getElementsByClassName("animacionImagen");
+// function aparecerLogo() {
+//     var html = document.getElementsByTagName("html")[0];
+//     var animacionImagen = document.getElementsByClassName("animacionImagen");
 
-    document.addEventListener("wheel", function() {
-        var topvent = html.scrollTop;
+//     document.addEventListener("wheel", function() {
+//         var topvent = html.scrollTop;
 
-        for (var i = 0; i < animacionImagen.length; i++) {
-            var altura = animacionImagen[i].offsetTop;
+//         for (var i = 0; i < animacionImagen.length; i++) {
+//             var altura = animacionImagen[i].offsetTop;
 
-            if (topvent > altura ) {
-                animacionImagen[i].style.opacity = 1;
-            } else {
-                animacionImagen[i].style.opacity = 0;
-            }
-        } 
-    });
-}
+//             if (topvent > altura ) {
+//                 animacionImagen[i].style.opacity = 1;
+//             } else {
+//                 animacionImagen[i].style.opacity = 0;
+//             }
+//         } 
+//     });
+// }
 
-aparecerLogo();
+// aparecerLogo();
 
 
 
