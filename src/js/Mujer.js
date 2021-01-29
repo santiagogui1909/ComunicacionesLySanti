@@ -173,48 +173,30 @@
      {
          nombre: 'Naturalcare',
          imagen: 'https:i.ibb.co/sHJkyYZ/Naturalcare.jpg'
-     },
-     {
-         nombre: 'Pink',
-         imagen: 'https:i.ibb.co/1nmwjp2/Pink.jpg'
-     },
+     }
  ];
 
  const billetera = [{
-
-         imagen: 'https:picsum.photos/id/30/600'
+         imagen: 'https://i.ibb.co/8NYvgwD/IMG-20210125-133646.jpg'
      },
      {
-         imagen: 'https:picsum.photos/id/30/600'
+         imagen: 'https://i.ibb.co/yNt5VZX/IMG-20210125-133655.jpg'
      },
      {
-         imagen: 'https:picsum.photos/id/30/600'
+         imagen: 'https://i.ibb.co/47FQB4K/IMG-20210125-133708.jpg'
      },
      {
-         imagen: 'https:picsum.photos/id/30/600'
+         imagen: 'https://i.ibb.co/mz1tFS9/IMG-20210125-133715.jpg'
      },
      {
-         imagen: 'https:picsum.photos/id/30/600'
+         imagen: 'https://i.ibb.co/R42m52j/IMG-20210125-133513.jpg'
      },
      {
-         imagen: 'https:picsum.photos/id/30/600'
+         imagen: 'https://i.ibb.co/crL8wCL/IMG-20210125-133550.jpg"'
      },
      {
-         imagen: 'https:picsum.photos/id/30/600'
-     },
-     {
-         imagen: 'https:picsum.photos/id/30/600'
-     },
-     {
-         imagen: 'https:picsum.photos/id/30/600'
-     },
-     {
-         imagen: 'https:picsum.photos/id/30/600'
-     },
-     {
-         imagen: 'https:picsum.photos/id/30/600'
+         imagen: 'https://i.ibb.co/RTJwq4f/IMG-20210125-133619.jpg'
      }
-
  ];
 
 
@@ -305,3 +287,17 @@
  renderPefumeMujer();
 
  renderBilleteraMujer();
+
+
+ /**slider function */
+
+ $(document).ready(function () {
+
+     $('.flexslider').flexslider({
+         prevText: "",
+         nextText: "",
+         pauseOnAction: false,
+         slideshowSpeed: 2500,
+         touch: true
+     });
+ });

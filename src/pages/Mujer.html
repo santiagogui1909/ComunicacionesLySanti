@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/src/images/Principal/etiqueta.png" type="image/x-icon">
     <link rel="stylesheet" href="../Css/Mujer.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="../Css/fontello.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/src/js/jquery-3.5.1.js"></script>
+    <script src="/src/js/jquery.flexslider.js"></script>
     <title>Mujer</title>
 </head>
 
@@ -51,7 +52,7 @@
                             </ul>
                         </li>
 
-                        <li><a href="#">Joyeria</a></li>
+                        <li><a href="/src/pages/joyeria.html">Joyeria</a></li>
                         <li><a href="#">Dulceria</a></li>
                     </ul>
                 </li>
@@ -60,33 +61,38 @@
             </ul>
         </nav>
 
-        <!-- <div class="wave" style="height: 60px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        <div class="wave" style="height: 60px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 170%; width: 100%;">
                 <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
                     style="stroke: none; fill: #fff;"></path>
             </svg>
-        </div> -->
+        </div>
     </header>
 
     <a class="btn-flotante" href="../../src/pages/Mujer.html">&#8593</a>
 
-    <div class="volver">
-        <a class="btn-volver" href="../../src/pages/Accesorios.html">volver</a>
-    </div>
-
     <!--------------------------------Menu mujeres------------------------------------------------------------------------------------->
-    <div class="menu-mujer">
-        <div class="reloj">
-            <a href="#relojesMujer"><img src="/src/images/MujerReloj/Calvin Klein Blue.jpg"></a>
-        </div>
-
-        <div class="perfume">
-            <a href="#perfumeMujer"><img src="/src/images/perfumes mujer/In Love Cy°zone.jpg"></a>
-        </div>
-
-        <div class="billetera">
-            <a href="#billeteraMujer"><img src="/src/images/HombreReloj/Casio Gris.jpg"></a>
-        </div>
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="https:i.ibb.co/0rfx4vQ/Calvin-Klein-White.jpg"/>
+                <section class="caption">
+                    <a href="#relojesMujer">Ver Reloj</a>
+                </section>
+            </li>
+            <li>
+                <img src="https://i.ibb.co/4sjKz69/Wild-Country-1967-Avon.jpg"/>
+                <section class="caption">
+                    <a href="#perfumeMujer">Ver Perfumes</a>
+                </section>
+            </li>
+            <li>
+                <img src="https://i.ibb.co/qxkZqbg/IMG-20210104-172324.jpg"/>
+                <section class="caption">
+                    <a href=#billeteraMujer> Ver Billeteras</a>
+                </section>
+            </li>
+        </ul>
     </div>
 
     <!--------------------------------------------------------------------------------------------------------------------------->

@@ -23,8 +23,9 @@ header label {
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 0px;
     justify-content: flex-end;
+    z-index: 150;
 }
 
 nav li {
@@ -81,7 +82,7 @@ nav > ul > li > ul{
 /*estilos tercer nivel*/
 
 nav ul ul ul {
-    right: 100%;
+    left: 100%;
     top:0;
 }
 
@@ -192,34 +193,223 @@ header .textos-header {
 }
 
 /**menu de hombres*/
-.menu-hombre {
-    columns: 3;
-    padding: 5%;
-    text-align: center;
-    background-color: rgba(209, 208, 208, 0.207);
-}
-
-.menu-hombre img {
-    width: 50%;
-    cursor: pointer;
-    transition: 0.6s;
-}
-
-.billetera:hover img {
-    box-shadow: 0px 8px 15px 5px rgba(0, 0, 0, 0.474);
-}
-
-.perfume:hover img {
-    box-shadow: 0px 8px 15px 5px rgba(0, 0, 0, 0.474);
-}
-
-.reloj:hover img {
-    box-shadow: 0px 8px 15px 5px rgba(0, 0, 0, 0.474);
-}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* SLIDER ==============================*/
+  
+  .flexslider{  
+      width: 95%;
+      max-width: 1000px;
+      margin: 17px auto;
+      border: 5px solid #fff;
+      border-radius: 8px;
+      box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.70);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+  }
+  
+  .slides,
+  .slides li,
+  .slides li img{
+      width: 100%;
+      height: 480px;
+  }
+  
+  .slides li{
+      margin-bottom: -5px;
+  }
+  
+  /* PAGINACION =======================*/
+  
+  .flex-control-nav.flex-control-paging{
+      width: 120px;
+      padding: 20px 0px;
+      background: #ff0000;
+      border: 2px solid rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.80);
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+  
+      list-style: none;
+  
+      position: absolute;
+      bottom: -29px;
+      z-index: 3;
+  }
+  
+  .flex-control-nav li{
+      display: inline-block;
+      margin: 0 5px;
+  }
+  
+  .flex-control-nav li a{
+      display: block;
+      width: 15px;
+      height: 15px;
+      background: rgb(0, 0, 0);
+      border-radius: 50%;
+      text-indent: -9999px;
+      box-shadow: inset 0px -3px 2px 0px rgba(0,0,0,0.55);
+  }
+  
+  .flex-control-nav li a.flex-active{
+      background: #ffffff;
+  }
+  
+  /* NAVEGACION ===============*/
+  .flex-direction-nav{
+      z-index: 3;
+      list-style: none;
+  }
+  
+  .flex-direction-nav a{
+      width: 60px;
+      height: 60px;
+      background: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.836);
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      text-decoration: none;
+      opacity: 0;
+  
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+  
+      transition: all 0.3s ease-in-out;
+  }
+  
+  .flex-direction-nav a::before{
+      content: "\f104";
+      font: normal normal normal 14px/1 FontAwesome;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  
+      font-size: 50px;
+      color: rgb(255, 0, 0);
+  }
+  
+  .flex-direction-nav a.flex-next::before{
+      content: "\f105";
+  }
+  
+  .flex-direction-nav .flex-prev{
+      left: 0px;
+  }
+  
+  .flex-direction-nav .flex-next{
+      right: 0px;
+  }
+  
+  .flexslider:hover .flex-direction-nav .flex-prev{
+      opacity: 1;
+      left: 15px;
+  }
+  
+  .flexslider:hover .flex-direction-nav .flex-next{
+      opacity: 1;
+      right: 15px;
+  }
+  
+  /* CAPTION ==================*/
+  .caption{
+      width: 100%;
+      height: 100%;
+  
+      display: flex;
+      align-items: center;
+  
+      position: absolute;
+      top: 0px;
+      left: 100px;
+      z-index: 2;
+  }
+  
+  .caption a{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.836);
+    border-radius: 14px;
+    letter-spacing: 5px;
+    background-color: #fc0000;
+    padding: 15px;
+    margin: 30px;
+    text-decoration: none;
+  }
+  
+  /* RESPONSIVE ========== */
+  
+  @media screen and (max-width: 770px){
+      .flex-direction-nav a{
+          opacity: 1;
+      }
+  
+      .flex-direction-nav .flex-prev{
+          left: 15px;
+      }
+  
+      .flex-direction-nav .flex-next{
+          right: 15px;
+      }
+  
+      .caption h2{
+          font-size: 50px;
+      }
+  
+  }
+  
+  @media screen and (max-width: 600px){
+      .caption h2{
+          font-size: 40px;
+      }
+  
+      .flexslider{
+          width: 100%;
+          border-radius: 0px;
+          border: none;
+      }
+  
+      .slides li{
+          overflow: hidden;
+      }
+  
+      .slides li img{
+          width: 600px;
+      }
+  
+      .flex-direction-nav a{
+          top: auto;
+      }
+  }
+  
+  @media screen and (max-width: 450px){
+      .slides li img{
+          transform: translateX(-90px);
+      }
+  
+      #page-title{
+          font-size: 40px;
+      }
+  }
 
 
 /*Tarjetas*/
-
 
 .titulo-Hombre {
     font-size: 30px;
@@ -232,7 +422,7 @@ header .textos-header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgba(197, 197, 197, 0.124);
+    background-color: rgba(197, 197, 197, 0.308);
     -webkit-transition: margin 0.8s ease-out;
     -moz-transition: margin 0.8s ease-out;
     -ms-transition: margin 0.8s ease-out;
@@ -299,13 +489,103 @@ header .textos-header {
     height: 350px;
 }
 
+
+/*Estilos para el texto del menu de imagenes*/
+.title__products__father{
+	text-align: center;
+	top: auto;
+}
+
+.subtitle-products{
+	position: relative;
+	text-align: center;
+	top: -50px;
+	font-family: 'myFont';
+	font-size: 40px;
+	text-decoration-line: underline;
+	text-decoration-style: double;
+	text-decoration-color: #ffffff;
+	
+}
+
+.title-products{
+	display: inline-block;
+	position: relative;
+	font-family: 'myFont';
+    font-size: 40px;
+    color: #6f048a;
+    padding: 30px;
+}
+
+.title-products::after, .title-products::before{
+	content: "";
+	position: absolute;
+	width: 120px;
+	height: 3px;
+	background-color: rgb(0, 0, 0);
+	/* background-color: currentColor;  */
+	top: 0.6em;
+} 
+
+.title-products::before{
+	left: -130px;
+	top: 80px;
+}
+
+.title-products::after{
+	right: -130px;
+	top: 80px;
+}
+/*targetas informacion*/
+
+.preferencias-contenedor{
+    display: inline-block;
+	display: flex;
+	position: relative;
+	background: rgba(118, 0, 252, 0.9);
+	text-align: center;     /*targetas derecha*/
+}
+
+.preferencias-contenedor img {
+    width: 45%;
+    padding: 15px 5px;
+    border: 10px solid rgb(0, 0, 0);
+    background:rgb(0, 0, 0);
+}
+
+.contenido {
+	text-align: center;
+	padding:80px;
+	width: 80%;
+}
+
+.preferencias-contenedor .contenido h1{
+	font-family: 'open sans';
+	display: inline-block;
+	position: relative;
+	font-size: 40px;
+	color: #f8f8f8;     
+}
+
+.preferencias-contenedor .contenido p {
+    padding: 10px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	font-size: 25px;
+	color: #ffffff;
+}
+
+
+
+
+
+
 /**otros productos*/
 
 .targetas-otros {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgba(197, 197, 197, 0.124);
     -webkit-transition: margin 0.8s ease-out;
     -moz-transition: margin 0.8s ease-out;
     -ms-transition: margin 0.8s ease-out;
@@ -313,10 +593,12 @@ header .textos-header {
 }
 
 .card-otros {
-    flex-grow: 1;
-    margin: 30px;
-    max-width: 640px;
+    width: 55%;
     text-align: center;
+    flex-grow: 1;
+    margin: 50px;
+    max-width:550px;
+    cursor: pointer;
 }
 
 .card-title-otros {
@@ -461,3 +743,4 @@ body::-webkit-scrollbar {
     background-color: rgba(0, 0, 0, 0.781);
     border-radius: 0px;
   }
+

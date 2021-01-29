@@ -118,7 +118,8 @@ nav ul ul{
 
 nav > ul {
     display: table;
-    width: 100%;
+	width: 100%;
+	
 }
 
 nav > ul > li {
@@ -144,7 +145,7 @@ nav > ul > li > ul{
 /*estilos tercer nivel*/
 
 nav ul ul ul {
-    right: 100%;
+    left: 100%;
     top:0;
 }
 
