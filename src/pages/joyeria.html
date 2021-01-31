@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Joyería ComunicacionesLySanti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/joyeria.css">
+    <link rel="stylesheet" href="../Css/fontello.css">
+    <link rel="icon" href="../images/icon.png">
+    <script src="/src/js/jquery-3.5.1.js"></script>
+    <script src="../js/joyeria.js"></script>
+</head>
+
+<body>
+
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+    </div>
+
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="icon-menu-outline"></label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li class="subMenu"><a href="#">Ofertas<span class="icon-down-circle"></span></a>
+                    <ul>
+                        <li><a href="#">shoals</a></li>
+                        <li><a href="#">shoals</a></li>
+                        <li><a href="#">shoals</a></li>
+                        <li><a href="#">shoals</a></li>
+                    </ul>
+                </li>
+                <li class="subMenu"><a>Productos<span class="icon-down-circle"></span></a>
+                    <ul>
+                        <li class="subMenu"><a href="#">Tecnologia<span class="icon-down-circle"></span></a>
+                            <ul>
+                                <li><a href="#">Celulares</a></li>
+                                <li><a href="#">Parlantes</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                            </ul>
+                        </li>
+                        <li class="subMenu"><a href="#">Ellos & Ellas<span class="icon-down-circle"></span></a>
+                            <ul>
+                                <li><a href="/src/pages/Mujer.html">Mujer</a></li>
+                                <li><a href="/src/pages/Hombre.html">Hombre</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Joyeria</a></li>
+                        <li><a href="#">Dulceria</a></li>
+                    </ul>
+                </li>
+                <li><a href="/src/pages/Principal.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <div class="wave" style="height: 60px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 170%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg>
+        </div>
+    </header>
+
+    <section>
+        <div id="slider">
+            <ul>
+                <li><a href="jfemenina.html"><img src="../images/JoyeriaF.jpg" alt="img1"></a></li>
+            </ul>
+        </div>
+        <br> <br>
+        <div class="container-font">
+            <!-- Redirecionamiento a Maps en la página -->
+            <div class="info__separator">
+                <hr><br>
+                <a href="#ubication">
+                    <img src="../images/prueba_ubicacion.png" alt="ubc" class="ubicacion__img">
+                    <h1>¿Dónde estamos ubicados?</h1>
+                    <p>Nos puedes encontrar en "dirección".Si deseas más información sobre nuestra
+                        ubicación puedes contactar con nosotros al número telefonico, o bien puedes
+                        presionar sobre este mensaje para ver la ubicación.
+                    </p>
+                </a>
+                <br>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section>
+        <!-- Titulo de la caja que contiene el menu de imagenes -->
+        <div class="font" id="products">
+            <div class="title__products__father">
+                <h2 class="subtitle-products">Nuestros Productos</h2>
+                <h2 class="title-products">Joyería <br> Femenina</h2>
+            </div>
+            <br>
+            <!-------------------------------Menu de imagenes de los collares------------------------------->
+            <div class="prod-collares">
+                <div class="prod__collares__text">
+                    <h2>Collares</h2>
+                </div>
+                <!-- Imagen principal -->
+                <label><img src="../images/collar.jpg" alt="collares" id="collares"></label>
+            </div>
+            <!-------------------------------Menu de imagenes de los anillos------------------------------->
+            <div class="prod-anillos">
+                <div class="prod__anillos__text">
+                    <h2>Anillos</h2>
+                </div>
+                <!-- Imagen principal -->
+                <label><img src="../images/anillo.jpg" alt="anillos" id="anillos"></label>
+            </div>
+            <!-------------------------------Menu de imagenes de las maninillas------------------------------->
+            <div class="prod-aretes">
+                <div class="prod__aretes__text">
+                    <h2>Aretes</h2>
+                </div>
+                <!-- Imagen principal -->
+                <label><img src="../images/aretes.jpg" alt="aretes" id="aretes"></label>
+            </div>
+
+            <div class="button__return">
+                <a href="#products"> Ver todos los productos </a>
+            </div>
+        </div>
+        <br>
+        <!-- Seperador con efecto parallax -->
+        <div class="separator__parallax">
+            <p><cite>Si deseas más información ponte en contacto con nosotros.<br>
+                    Num - Telefonico</cite></p>
+        </div>
+        <br><br><br><br><br>
+        <div class="map" id="ubication">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1404.808468508488!2d-74.8970369307745!3d5.199911449221707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4804ecd5c8411d0f!2sComunicaciones%20Lysanti!5e0!3m2!1ses!2sco!4v1611114159238!5m2!1ses!2sco"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+        <br><br>
+    </section>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>3005893148</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>ComunicacionesLySanti@hotmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Location</h4>
+                <p>Ibague-Tolima</p>
+            </div>
+        </div>
+
+        <h2 class="titulo-final">&copy; ComunicacionesLySanti</h2>
+
+    </footer>
+
+    <script src="../js/MenuFooter.js"></script>
+
+</body>
+
+</html>
