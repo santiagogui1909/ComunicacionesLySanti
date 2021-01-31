@@ -206,7 +206,7 @@ header nav ul li a:hover {
 	z-index:1000;
 	top:0;
 	width:100%;
-    background-color: rgba(0, 0, 0, 0.705);
+    background-color: rgb(0, 0, 0);
     transition: all 0.8s;
 }
 
@@ -676,4 +676,19 @@ footer {
     margin: 20px 0 0 0;
     color: #9e9797;
 
+}
+
+/**editar la barra lateral*/
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 0px;
 }

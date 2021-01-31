@@ -494,7 +494,7 @@ footer {
 
 /**boton arriba*/
 
-.btn-arriba {
+.btn-flotante {
     font-size: 30px;
     /* Cambiar el tamaño de la tipografia */
     color: #ffffff;
@@ -513,9 +513,16 @@ footer {
     z-index: 99;
     text-decoration: none;
     /**quitar el subrayado del ipervinculo*/
+    opacity: 0;
+    scroll-behavior: smooth;
 }
 
-.btn-arriba:hover {
+.volver-fixed {
+    opacity: 1;
+    transition: all 0.8s;
+}
+
+.btn-flotante:hover {
     background-color: #7c0594a1;
     /* Color de fondo al pasar el cursor */
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.563);

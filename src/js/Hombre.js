@@ -376,3 +376,24 @@ $(document).ready(function(){
 		touch: true
 	});
 });
+
+
+/**aparecer info*/
+function aparecerInfo() {
+    var html = document.getElementsByTagName("html")[0];
+    var animacionImagen = document.getElementsByClassName("animado");
+
+    document.addEventListener("wheel", function() {
+        var topvent = html.scrollTop;
+
+        for (var i = 0; i < animacionImagen.length; i++) {
+            var altura = animacionImagen[i].offsetTop;
+
+            if (topvent > altura - 600 ) {
+                animacionImagen[i].style.opacity = 1;
+            } 
+        } 
+    });
+}
+
+aparecerInfo();

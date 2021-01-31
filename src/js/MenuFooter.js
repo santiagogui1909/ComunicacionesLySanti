@@ -13,6 +13,34 @@ $(document).ready(function () {
 
 });
 
+/**Boton Volver */
+
+$(document).ready(function () {
+    var altura = $('.btn-flotante').offset().top;
+
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() > altura) {
+            $('.btn-flotante').addClass('volver-fixed');
+        } else {
+            $('.btn-flotante').removeClass('volver-fixed');
+        }
+    });
+
+});
+
+
+$(document).ready(function(){
+    var ir_a = $(".desplazar");
+
+    ir_a.click(function (evento){
+
+        evento.preventDefault();
+        $("body,html").animate({
+            scrollTop: $(this.hash).offset().top,
+        },1000);
+    });
+});
+
 
 /**menu hamburguesa */
 
@@ -29,7 +57,7 @@ $("ul").click(function (valor){
 
 // function aparecerLogo() {
 //     var html = document.getElementsByTagName("html")[0];
-//     var animacionImagen = document.getElementsByClassName("animacionImagen");
+//     var animacionImagen = document.getElementsByClassName("animado");
 
 //     document.addEventListener("wheel", function() {
 //         var topvent = html.scrollTop;
