@@ -664,7 +664,7 @@ header .textos-header {
 }
 
 .btn-flotante:hover {
-    background-color: #7c0594a1;
+    background-color: #4d4d4dfd;
     /* Color de fondo al pasar el cursor */
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.563);
     transform: translateY(-7px);
