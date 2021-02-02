@@ -313,46 +313,6 @@ function renderOtrosProduct () {
     }
 }
 
-// $(document).ready(function () {        pedir ayuda con esto <<<<-------------------------------------------------------
-
-
-//     var btnReloj = $("#reloj");
-
-//     // var btnPerfume = $("#perfumme");
-
-//     var btnBilletera = $("#billetera");
-
-//     var reloj = $("#relojes");
-
-//     // var perfume = $("#perfumes");
-
-//     var billetera = $("#billeterasHombre");
-
-
-//     reloj.hide();
-//     // perfume.hide();
-//     billetera.hide();
-
-
-//     btnReloj.click(function () {
-//         reloj.show();
-//         perfume.hide();
-//         billetera.show();
-//     });
-
-//     // btnPerfume.click(function () {
-//     //     reloj.hide();
-//     //     perfume.show();
-//     //     billetera.hide();
-//     // });
-
-//     btnBilletera.click(function () {
-//         reloj.hide();
-//         perfume.hide();
-//         billetera.show();
-//     });
-
-// });
 
 
 renderRelojes();
@@ -363,20 +323,46 @@ renderBilleteras();
 
 renderOtrosProduct();
 
+$(document).ready(function () {        
 
-/**slider function */
 
-$(document).ready(function(){
+    var btnReloj = $("#BtnReloj");
 
-    $('.flexslider').flexslider({
-        prevText: "",
-		nextText: "",
-		pauseOnAction: false,
-		slideshowSpeed: 2500,
-		touch: true
-	});
+    var btnPerfume = $("#BtnPerfume");
+
+    var btnBilletera = $("#BtnBilletera");
+
+    var reloj = $("#relojes");
+
+    var perfume = $("#perfumes");
+
+    var billetera = $("#billeteras");
+
+
+    reloj.hide();
+    perfume.hide();
+    billetera.hide();
+
+
+    btnReloj.click(function () {
+        reloj.show();
+        perfume.hide();
+        billetera.hide();
+    });
+
+    btnPerfume.click(function () {
+        reloj.hide();
+        perfume.show();
+        billetera.hide();
+    });
+
+    btnBilletera.click(function () {
+        reloj.hide();
+        perfume.hide();
+        billetera.show();
+    });
+
 });
-
 
 /**aparecer info*/
 function aparecerInfo() {
