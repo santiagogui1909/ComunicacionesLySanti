@@ -289,15 +289,44 @@
  renderBilleteraMujer();
 
 
- /**slider function */
+ $(document).ready(function () {        
 
- $(document).ready(function () {
 
-     $('.flexslider').flexslider({
-         prevText: "",
-         nextText: "",
-         pauseOnAction: false,
-         slideshowSpeed: 2500,
-         touch: true
-     });
- });
+    var btnReloj = $("#BtnReloj");
+
+    var btnPerfume = $("#BtnPerfume");
+
+    var btnBilletera = $("#BtnBilletera");
+
+    var reloj = $("#relojesMujer");
+
+    var perfume = $("#perfumeMujer");
+
+    var billetera = $("#billeteraMujer");
+
+
+    reloj.hide();
+    perfume.hide();
+    billetera.hide();
+
+
+    btnReloj.click(function () {
+        reloj.show();
+        perfume.hide();
+        billetera.hide();
+    });
+
+    btnPerfume.click(function () {
+        reloj.hide();
+        perfume.show();
+        billetera.hide();
+    });
+
+    btnBilletera.click(function () {
+        reloj.hide();
+        perfume.hide();
+        billetera.show();
+    });
+
+});
+ 

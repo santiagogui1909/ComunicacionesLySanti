@@ -53,6 +53,19 @@ $("ul").click(function (valor){
 
 });
 
+/**slider function */
+
+$(document).ready(function () {
+
+    $('.flexslider').flexslider({
+        prevText: "",
+        nextText: "",
+        pauseOnAction: false,
+        slideshowSpeed: 2500,
+        touch: true
+    });
+});
+
 /**aparecer logo */
 
 // function aparecerLogo() {
