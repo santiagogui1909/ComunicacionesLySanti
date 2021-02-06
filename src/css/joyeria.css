@@ -73,33 +73,33 @@ a:link, a:visited{
 
 /**menu*/
 
-#btn-menu{
+#btn-menu {
     display: none;
 }
 
 header label {
     cursor: pointer;
-    display:none;
+    display: none;
 }
 
 /*estilos generales menu*/
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 0px;
     justify-content: flex-end;
-	z-index: 150;
+    z-index: 150;
 }
 
 nav li {
     position: relative;
 }
 
-nav li ul{
+nav li ul {
     position: absolute;
 }
 
-nav a{
+nav a {
     color: #ddd;
     display: block;
     padding: 10px;
@@ -107,54 +107,54 @@ nav a{
     transition: all .4s;
 }
 
-nav a:hover{
-    background:rgba(0, 0, 0, 0.986);
+nav a:hover {
+    background: rgba(0, 0, 0, 0.986);
 }
 
-nav ul ul{
+nav ul ul {
     display: none;
 }
 
 /*estilos primer nivel*/
 
-nav > ul {
+nav>ul {
     display: table;
     width: 100%;
 }
 
-nav > ul > li {
+nav>ul>li {
     float: right;
 }
 
 /*estilos segundo nivel*/
 
 nav li li {
-    background:rgba(0, 0, 0, 0.89);
+    background: rgba(0, 0, 0, 0.89);
     width: 148px;
 }
 
 nav li li:hover {
-    background:rgba(0, 0, 0, 0.966);
+    background: rgba(0, 0, 0, 0.966);
     width: 148px;
 }
 
-nav > ul > li > ul{
+nav>ul>li>ul {
     top: 100%;
 }
 
 /*estilos tercer nivel*/
 
 nav ul ul ul {
-    right: 100%;
-    top:0;
+    left: 100%;
+    top: 0;
 }
 
-.menu a span{
+.menu a span {
     margin-left: 10px;
     transition: all 0.8s;
 }
 
-.menu ul li:hover ul{
+.menu ul li:hover ul {
     position: absolute;
 }
 
@@ -171,7 +171,7 @@ header nav ul li a:hover {
         bottom: 90%;
     }
 
-    .menu{
+    .menu {
         font-size: 14px;
         transform: translatey(-200%);
         transition: all 0.5s;
@@ -182,31 +182,31 @@ header nav ul li a:hover {
         position: static;
     }
 
-    #btn-menu:checked ~ .menu{
+    #btn-menu:checked~.menu {
         transform: translatey(0%);
     }
 }
 
 .logo {
     width: 165px;
-    padding: 5px; 
+    padding: 5px;
     display: block;
     float: left;
-    margin-left:4%;
+    margin-left: 4%;
 }
 
-.animacionImagen{
+.animacionImagen {
     opacity: 0;
     transition: all 0.8s;
 }
 
 /* --- Clase que agregaremos cuando el usuario haga scroll --- */
 .menu-fixed {
-	position:fixed;
-	z-index:1000;
-	top:0;
-	width:100%;
-    background-color: rgba(0, 0, 0, 0.705);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
     transition: all 0.8s;
 }
 
@@ -251,7 +251,7 @@ header .textos-header {
 
 .wave {
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
 }
 

@@ -18,6 +18,9 @@ const dataBase = [
         imagen: 'https://i.ibb.co/RYynhb5/Canasta-Cajas-Medianas.jpg'
     },
     {
+        imagen: 'https://i.ibb.co/tHmw8qH/Vaso-Con-Target6.jpg'
+    },
+    {
         imagen: 'https://i.ibb.co/q0CsBhP/Canasta-Mini-Target.jpg'
     },
     {
@@ -50,9 +53,7 @@ const dataBase = [
     {
         imagen: 'https://i.ibb.co/vYJvXjp/Vaso-Con-Target5.jpg'
     },
-    {
-        imagen: 'https://i.ibb.co/tHmw8qH/Vaso-Con-Target6.jpg'
-    },
+
     {
         imagen: 'https://i.ibb.co/Mkc7NKh/Vaso-Con-Target7.jpg'
     },   
@@ -76,7 +77,6 @@ function renderDulceria(){
         let miNodoImagen = document.createElement('img');
         miNodoImagen.classList.add('img-fluid');
         miNodoImagen.setAttribute('src', info['imagen']);
-
         miNodoCardBody.appendChild(miNodoImagen);
         miNodo.appendChild(miNodoCardBody);
         dulceria.appendChild(miNodo);
