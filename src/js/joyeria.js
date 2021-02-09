@@ -6,7 +6,7 @@ window.onload = function(){
     contenedor.style.opacity = '0';
 }
 
-// Slider
+// Slider Automatico - Manual.
 const slider = document.querySelector("#slider");
 let sliderSection = document.querySelectorAll(".slider__section");
 let sliderSectionLast = sliderSection[sliderSection.length -1];
@@ -50,3 +50,52 @@ btnLeft.addEventListener('click', function(){
 setInterval( function(){
     Next();
 }, 6000);
+
+
+// Animaciones al scrollear
+// let animado = document.querySelectorAll(".prod-animados");
+
+// function showScroll(){
+//     let scrollTop= document.documentElement.scrollTop;
+//     for (var i = 0; i < animado.length; i++){
+//         let alturaAnimado = animado[i].offsetTop;
+//         if (alturaAnimado -500 < scrollTop){
+//             animado[i].style.opacity = 1;
+//             animado[i].classList.add("mostrar__prod-animados")
+//         }
+//     }
+// }
+
+// window.addEventListener('scroll', showScroll);
+
+window.sr = ScrollReveal();
+
+    sr.reveal('.prod-animados',{
+        duration: 1200,
+        origin: 'top',
+        distance: '-200px'
+    });
+
+    ScrollReveal().reveal('.prod-animados', { reset: true });
+
+
+    window.sr = ScrollReveal();
+
+    sr.reveal('.info__joyeria',{
+        duration: 3000,
+        origin: 'right',
+        distance: '-500px'
+    });
+
+    window.sr = ScrollReveal();
+
+    sr.reveal('.info__separator',{
+        duration: 3000,
+        origin: 'left',
+        distance: '-500px'
+    });
+
+    
+
+
+

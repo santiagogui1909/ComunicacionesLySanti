@@ -77,6 +77,7 @@ function renderDulceria(){
         let miNodoImagen = document.createElement('img');
         miNodoImagen.classList.add('img-fluid');
         miNodoImagen.setAttribute('src', info['imagen']);
+        
         miNodoCardBody.appendChild(miNodoImagen);
         miNodo.appendChild(miNodoCardBody);
         dulceria.appendChild(miNodo);
@@ -84,3 +85,14 @@ function renderDulceria(){
 }
 
 renderDulceria();
+
+
+window.sr = ScrollReveal();
+
+    sr.reveal('.card-item',{
+        duration: 1000,
+        origin: 'top',
+        distance: '-100px'
+    });
+
+    // ScrollReveal().reveal('.card-item', { reset: true });

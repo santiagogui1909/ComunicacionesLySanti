@@ -11,31 +11,23 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="icon" href="../images/principal-joyeria/icon.png">
+    <script src="../js/scrollreveal.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 </head>
 
-<!-- TODO; cambiar las imagenes de los clip-path, 
-    dar animaciones a las imagenes de la pagina-->
-
 <body>
-    
     <div id="contenedor_carga">
         <div id="carga"></div>
     </div>
-    <!-- Redirecionamiento a Whatsapp -->
-    <a href="https://wa.me/573208524244" class="whatsapp" target="_blank"> <i
-            class="fab fa-whatsapp whatsapp-icon"></i></a>
     <!-- Enbacabezado de la página -->
     <header>
         <input type="checkbox" id="btn-menu">
         <label for="btn-menu" class="icon-menu-outline"></label>
 
         <nav class="menu">
-
             <ul>
                 <li><a href="#">Contacto</a></li>
-
                 <li class="subMenu"><a href="#">Ofertas<span class="icon-down-circle"></span></a>
                     <ul>
                         <li><a href="#">ofertas</a></li>
@@ -74,17 +66,27 @@
         <div class="wave" style="height: 60px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 170%; width: 100%;">
                 <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #fff;"></path>
+                    style="stroke: none; fill: #f3f7fd;"></path>
             </svg>
         </div>
     </header>
+
+    <section>
+        <div class="redes-sociales">
+            <a class="redes-buttom red-facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="redes-buttom red-whatsapp" href="https://wa.me/573208524244" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a class="redes-buttom red-instagram" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+            <!-- Volver arriba -->
+    </section>
+
     <section>
         <!-- <div class="buttons-top">
             <a class="btn-top" href=""><i class="fas fa-tags"></i></i></a>
             <a class="btn-top" href=""><i class="fas fa-map-marked-alt"></i></a>
             <a class="btn-top" href=""><i class="fas fa-mail-bulk"></i></a>
         </div> -->
-        <div class="container-slider">
+        <div class="container-slider" id="top">
             <div class="slider" id="slider">
                 <div class="slider__section">
                     <img src="../images/principal-joyeria/JoyeriaF.jpg" alt="" class="slider__img">
@@ -142,7 +144,7 @@
             </div>
             <br>
             <!-------------------------------Menu de imagenes de los collares------------------------------->
-            <div class="prod-collares">
+            <div class="prod-collares prod-animados">
                 <div class="prod__collares__text">
                     <h2>Collares</h2>
                 </div>
@@ -150,7 +152,7 @@
                 <label><img src="../images/principal-joyeria/collar.jpg" alt="collares" id="collares"></label>
             </div>
             <!-------------------------------Menu de imagenes de los anillos------------------------------->
-            <div class="prod-anillos">
+            <div class="prod-anillos prod-animados">
                 <div class="prod__anillos__text">
                     <h2>Anillos</h2>
                 </div>
@@ -158,7 +160,7 @@
                 <label><img src="../images/principal-joyeria/anillo.jpg" alt="anillos" id="anillos"></label>
             </div>
             <!-------------------------------Menu de imagenes de las maninillas------------------------------->
-            <div class="prod-aretes">
+            <div class="prod-aretes prod-animados">
                 <div class="prod__aretes__text">
                     <h2>Aretes</h2>
                 </div>
@@ -182,6 +184,7 @@
                 tabindex="0"></iframe>
         </div>
         <br><br>
+        <a class="return-up" href="#top"><i class="fas fa-chevron-up"></i></a>
     </section>
 
     <footer>
@@ -201,7 +204,6 @@
         </div>
 
         <h2 class="titulo-final">&copy; ComunicacionesLySanti</h2>
-
     </footer>
 
     <script src="../js/joyeria.js"></script>
