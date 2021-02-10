@@ -95,4 +95,4 @@ window.sr = ScrollReveal();
         distance: '-100px'
     });
 
-    // ScrollReveal().reveal('.card-item', { reset: true });
+// ScrollReveal().reveal('.card-item', { reset: true });

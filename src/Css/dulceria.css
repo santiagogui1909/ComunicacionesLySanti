@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
+@font-face{
+	font-family: 'myFont';
+	src: url(../font/font_personalized/ExodusDemo-Striped.otf);
+}
+
+body{
+	background-color: #f3f7fd;
+    margin: 0;
+}
+
 *, *:active, *:before{
     text-decoration: none;
     margin: 0;
@@ -13,8 +23,9 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-body{
-    margin: 0;
+/* Animación de la navegación interna */
+html{
+	scroll-behavior: smooth;
 }
 
 /**menu*/
@@ -307,15 +318,23 @@ header .textos-header {
     filter: brightness(80%);
 }
 
+#frase1-section{
+    position: relative;
+    font-size: 25px;
+    left: 150px;
+}
+
 #separate-info{
     font-size: 30px;
+    position: relative;
+    left: 20px;
 }
 
 #separate-contacto{
-    font-size: 15px;
+    font-size: 16px;
     color: #000;
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 22px;
     font-family: 'Be Vietnam', sans-serif;
 }
 
@@ -329,34 +348,190 @@ header .textos-header {
     /* background-color: #aa2222; */
 }
 
-.section-lateral figure img{
-    width: 300px;
-    margin: 30px;
-    
-    -webkit-animation: movimiento 2.5s linear infinite;
-	-o-animation: movimiento 2.5s linear infinite;
-	animation: movimiento 2.5s linear infinite;
+.section-lateral h2{
+    text-align: center;
+    color: #000;
+    padding-top: 40px;
+    font-size: 30px;
+    font-family: 'myFont';
 }
 
-@keyframes movimiento{
+.section-lateral h2::after, .section-lateral h2::before{
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 3px;
+	background-color: red;
+	/* background-color: currentColor;  */
+} 
+
+.section-lateral h2::before{
+    visibility: hidden;
+}
+
+.section-lateral h2::after{
+    visibility: hidden;
+}
+
+.section-lateral h2:hover::after{
+    visibility: visible;
+    left: 160px;
+    top: 70%;
+    transform: rotate(-150deg);
+}
+
+.section-lateral h2:hover::before{
+    visibility: visible;
+    right: 160px;
+	top: 70%;
+    transform: rotate(150deg);
+}
+
+.section-lateral h2:hover{
+    filter: blur(1.2px);
+}
+
+.section-lateral h4{
+    position: relative;
+    top: 65px;
+}
+
+#frase2-section{
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: -30px;
+}
+
+.fondo__images1 img{
+    position: absolute;
+    top: 250em;
+    bottom: 0%;
+    left: 70% ;
+    width: 30px;
+    opacity: .3;
+
+    animation: animationImg 8s linear infinite;
+    animation-delay: 3s;
+}
+
+.fondo__images2 img{
+    position: absolute;
+    top: 245em;
+    bottom: 0%;
+    left: 75% ;
+    width: 60px;
+    opacity: .3;
+
+    animation: animationImg 8s linear infinite;
+    animation-delay: 5s;
+}
+
+.fondo__images3 img{
+    position: absolute;
+    top: 253em;
+    bottom: 0%;
+    left: 80% ;
+    width: 40px;
+    opacity: .3;
+
+    animation: animationImg 7s linear infinite;
+    animation-delay: 7s;
+
+}
+
+.fondo__images4 img{
+    position: absolute;
+    top: 248em;
+    bottom: 0%;
+    left: 85% ;
+    width: 40px;
+    opacity: .3;
+
+    animation: animationImg 9s linear infinite;
+    animation-delay: 3s;
+}
+
+.fondo__images5 img{
+    position: absolute;
+    top: 251em;
+    bottom: 0%;
+    left: 90% ;
+    width: 45px;
+    opacity: .3;
+
+    animation: animationImg 12s linear infinite;
+    animation-delay: 1s;
+}
+
+.fondo__images6 img{
+    position: absolute;
+    top: 245em;
+    bottom: 0%;
+    left: 95% ;
+    width: 42px;
+    opacity: .3;
+
+    animation: animationImg 9s linear infinite;
+    animation-delay: 5s;    
+}
+
+.fondo__images7 img{
+    position: absolute;
+    top: 253em;
+    bottom: 0%;
+    left: 83% ;
+    width: 35px;
+    opacity: .3;
+
+    animation: animationImg 7s linear infinite;
+    animation-delay: 5s;
+}
+
+.fondo__images8 img{
+    position: absolute;
+    top: 253em;
+    bottom: 0%;
+    left: 96% ;
+    width: 37px;
+    opacity: .3;
+
+    animation: animationImg 8s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animationImg{
     0%{
-        transform: translateY(0);
+        bottom: 0;
+        opacity: 0;
+    }
+    25%{
+        opacity: .4;
+    }
+    45%{
+        opacity: .8;
     }
     50%{
-        transform: translateY(30px);
+        opacity: .10;
+    }
+    75%{
+        opacity: .8;
+    }
+    95%{
+        opacity: .4;
     }
     100%{
-        transform: translateY(0);
+        top: 100vh;
+        opacity: 0;
     }
 }
 
 /* Google map */
-.map iframe{
-    position: relative;
+/* .map iframe{
+    position: absolute;
 	width: 350px;
 	height: 200px;
-    top: 155em;
-}
+    top: 240em;
+} */
 
 /* Contenedor de las imagenes */
 .targets{
