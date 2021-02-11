@@ -208,13 +208,14 @@ const otros = [{
 const reloj = document.querySelector("#productos-Relojes");
 const billetera = document.querySelector("#productos-Billeteras");
 const perfume = document.querySelector("#productos-Perfumes");
-const otrosProducto = document.querySelector("#otros-productos")
+const otrosProducto = document.querySelector("#otros-productos");
+
 
 /**funcion de los relojes */
 function renderRelojes() {
     for (let info of relojes) {
 
-        // Estructura
+        // Estructura1
         let miNodo = document.createElement('div');
         miNodo.classList.add('card-reloj');
         // Body

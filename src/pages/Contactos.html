@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/images/Principal/etiqueta.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Css/Contactos.css">
+    <link rel="stylesheet" href="../Css/fontello.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <script src="/src/js/jquery-3.5.1.js"></script>
+    <title>Comunicaciones LySanti</title>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="icon-menu"></label>
+
+        <nav class="menu">
+
+            <ul>
+                <li><a href="/src/pages/Contactos.html">Contacto</a></li>
+
+                <li class="subMenu"><a href="#">Ofertas<span class="icon-angle-circled-down"></span></a>
+                    <ul>
+                        <li><a href="#">ofertas</a></li>
+                        <li><a href="#">shoals</a></li>
+                        <li><a href="#">shoals</a></li>
+                        <li><a href="#">shoals</a></li>
+                    </ul>
+                </li>
+
+                <li class="subMenu"><a href="#">Productos<span class="icon-angle-circled-down"></span></a>
+                    <ul>
+                        <li class="subMenu"><a href="#">Tecnologia<span class="icon-angle-circled-down"></span></a>
+                            <ul>
+                                <li><a href="#">Celulares</a></li>
+                                <li><a href="#">Parlantes</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="subMenu"><a href="#">Ellos & Ellas<span class="icon-angle-circled-down"></span></a>
+                            <ul>
+                                <li><a href="/src/pages/Mujer.html">Mujer</a></li>
+                                <li><a href="/src/pages/Hombre.html">Hombre</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/src/pages/joyeria.html">Joyeria</a></li>
+                        <li><a href="#">Dulceria</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="/src/pages/Principal.html">Inicio</a></li>
+            </ul>
+        </nav>
+
+        <div class="wave" style="height: 60px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 170%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg>
+        </div>
+    </header>
+
+    <a class="btn-flotante" href="../../src/pages/Mujer.html">&#8593</a>
+
+    <h1 class="contacto-Titulo">Contacto</h1>
+
+    <div class="map" id="ubication">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1404.808468508488!2d-74.8970369307745!3d5.199911449221707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4804ecd5c8411d0f!2sComunicaciones%20Lysanti!5e0!3m2!1ses!2sco!4v1611114159238!5m2!1ses!2sco"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+    </div>
+
+    <!------------------------------------------------------------- cajon de informacion-------------------------------------------------------------->
+    <div class="informacion">
+        <div class="contenidoContacto">
+            <h4>¡Contactanos por aqui!</h4>
+            <a><span class="icon-whatsapp"> </span>3138409535</a>
+            <p><span class="icon-gmail"> </span> ComunicacionesLySanti@gmail.com</p>
+        </div>
+
+        <div class="contenidoContacto">
+            <h4>Conoce nuestro horario de atencion</h4>
+            <p><span class="icon-location"> </span> Cra. 4 #3-141 a 3-107, Mariquita, Tolima</p>
+            <p><span class="icon-clock"> </span> Horario de Atencion: 8 Am - 7 Pm</p>
+        </div>
+    </div>
+
+
+    <!--------------------------------------formulario--------------------------------------------------------->
+
+    <div class="FondoFormulario">
+        <section class="form_wrap">
+            <form action="Envio.php" method="post" class="form_contact">
+                <h2>Envia un mensaje</h2>
+                <div class="user_info">
+                    <label for="names">Nombres *</label>
+                    <input type="text" id="names" name="nombre" required>
+
+                    <label for="phone">Telefono / Celular</label>
+                    <input type="text" id="phone" name="telefono">
+
+                    <label for="email">Correo electronico *</label>
+                    <input type="text" id="email" name="correo" required>
+
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+
+                    <input type="submit" value="Enviar Mensaje" id="btnSend">
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <!------------------------------------------------------------- cajon de redes-------------------------------------------------------------->
+
+
+    <div class="Container-redes">
+        <div class="redes">
+            <h4>Siguenos en nuestras redes sociales</h4>
+            <a href=""><span class="icon-facebook-official"></span></a>
+            <a href=""><span class="icon-instagram-filled"></span></a>
+        </div>
+    </div>
+
+    <!--------------------------------------footer--------------------------------------------------------->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>3005893148</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>ComunicacionesLySanti@hotmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicacion</h4>
+                <a href="#ubication">Ibague-Tolima</a>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; ComunicacionesLySanti 2021</h2>
+    </footer>
+
+    <script src="../../src/js/MenuFooter.js"></script>
+</body>
+
+</html>
