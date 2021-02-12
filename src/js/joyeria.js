@@ -76,7 +76,7 @@ window.sr = ScrollReveal();
         distance: '-200px'
     });
 
-    ScrollReveal().reveal('.prod-animados', { reset: true });
+    // ScrollReveal().reveal('.prod-animados', { reset: true });
 
 
     window.sr = ScrollReveal();
