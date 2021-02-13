@@ -95,7 +95,7 @@ window.sr = ScrollReveal();
         distance: '-500px'
     });
 
-    
+
 
 
 
