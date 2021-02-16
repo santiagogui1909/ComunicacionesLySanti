@@ -1443,5 +1443,12 @@ footer {
 		border-top-right-radius: 0px;
 		border-bottom-right-radius: 0px;
 	}
+
+	.content-foo p {
+        color: #ccc;
+        font-size: 13px ;
+    
+    }
+	
 }
 

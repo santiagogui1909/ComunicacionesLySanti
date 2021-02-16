@@ -750,4 +750,201 @@ footer {
 
 }
 
+/*  ------------------RESPONSIVE TABLET------------------ */
+
+@media screen and (max-width: 800px){
+
+    #dulceria-info{
+        display: inline-block;
+        position: relative;
+        font-size: 60px;
+        padding: 0 0 0 60px;
+    }
+    
+    #products-info{
+        font-size: 20px;
+        padding-left: 60px;
+    }
+    
+    #image{
+        position: absolute;
+        width: 350px;
+        height: 280px;
+        left: 48%;
+        top: 80px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+    }
+    
+    
+    #frase1-section{
+        position: relative;
+        font-size: 22px;
+        left: 10px;
+        top: 90px;
+    }
+
+    #separate-info{
+        font-size: 22px;
+        position: relative;
+        left: 10px;
+        padding-top: 100px;
+    }
+
+    #separate-contacto{
+        display: inline-block;
+        font-size: 16px;
+        color: #000;
+        padding-top: 10px;
+        padding-left: 100px;
+        font-family: 'Be Vietnam', sans-serif;
+    }
+
+    #separate-contacto:before{
+        content: "";
+        position: absolute;
+        width: 8%;
+        top: 103px;
+        height: 3px;
+        background-color: #642a73;
+        z-index: 500;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s ease-in-out;
+        visibility: hidden;
+    }
+
+    #separate-contacto:hover:before{
+        transform: scaleX(1);
+        transform-origin: left;
+        visibility: hidden;
+
+    }
+
+    .targets{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        padding-left: 45px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .section-lateral{
+        float: right;
+        width: 30vw;
+        height: 472.7vh;
+        z-index: -2;
+        /* background-color: #aa2222; */
+        display: none;
+    }   
+}
+
+/*  ------------------RESPONSIVE CELULAR------------------ */
+
+@media screen and (max-width: 480px){
+
+    #dulceria-info{
+        display: inline-block;
+        position: relative;
+        font-size: 60px;
+        padding: 0 0 0 60px;
+        top: -60px;
+    }
+    
+    #products-info{
+        position: relative;
+        font-size: 20px;
+        padding-left: 60px;
+        top: -60px;
+    }
+    
+    #image{
+        position: relative;
+        width: 350px;
+        height: 270px;
+        left: 75px;
+        top: -50px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+    }
+    
+    #frase1-section{
+        position: relative;
+        font-size: 22px;
+        left: 10px;
+        top: 10px;
+        display: none;
+    }
+
+    #separate-info{
+        font-size: 15px;
+        position: absolute;
+        padding-left: -100px;
+        padding-top: 10px;
+        display: none;
+    }
+
+    #separate-contacto{
+        display: inline-block;
+        position: relative;
+        font-size: 20px;
+        color: #000;
+        padding-top: 0;
+        padding-left: 110px;
+        font-family: 'Be Vietnam', sans-serif;
+    }
+
+    #separate-contacto:before{
+        content: "";
+        position: absolute;
+        width: 8%;
+        top: 103px;
+        height: 3px;
+        background-color: #642a73;
+        z-index: 500;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s ease-in-out;
+        visibility: hidden;
+    }
+
+    #separate-contacto:hover:before{
+        transform: scaleX(1);
+        transform-origin: left;
+        visibility: hidden;
+
+    }
+
+    .targets{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        padding-left: 45px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .section-lateral{
+        float: right;
+        width: 30vw;
+        height: 472.7vh;
+        z-index: -2;
+        /* background-color: #aa2222; */
+        display: none;
+    } 
+    
+    .content-foo p {
+        color: #ccc;
+        font-size: 13px ;
+    
+    }
+
+}
 
