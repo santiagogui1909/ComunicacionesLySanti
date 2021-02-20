@@ -488,6 +488,7 @@ hr{
 }
 
 .info__joyeria{
+	flex-wrap: wrap;
 	position: absolute;
 	top: 100%;
 	left: 65px;
@@ -848,6 +849,94 @@ footer {
 
 }
 
+ @media screen and (max-width: 1300px) and (min-width: 801px){
+
+	.text-link p{
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 30px;
+		font-size: 20px;
+		text-decoration: underline;
+		color: #000;
+		font-family: 'Be Vietnam', sans-serif;
+	}
+	
+	.text-link p:before{
+		content: "";
+		visibility: hidden;
+	}
+	
+	.text-link p:hover:before{
+		visibility: hidden;
+	}
+		
+	/* ----- Info separator ----- */
+	.container-info{
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.container-info__ubc{
+		background-color: #9e9797;
+		clip-path: none;
+	}
+
+	.form-img, .form-img2{
+		display: inline-block;
+		width: 180px;
+	}
+		
+	hr{
+		width: 70%;
+		margin-left: 20%;
+	}
+	
+	.info__joyeria{
+		position: relative;
+		top: 130%;
+		left: 15%;
+		width: 70%;
+	}
+	
+	.info__joyeria h3{
+		font-family: 'myFont';
+		margin-top: 50px;
+		text-align: center;
+		font-size: 40px;
+		text-transform: uppercase;
+	}
+
+	.ubicacion__img{
+		margin: auto;
+		/* left: 145px; */
+		width: 200px;
+	}
+		
+	.info__separator{
+		position: relative;
+		text-align: center;
+		left: 100px;
+		width: 70%;
+	}
+	
+	.info__separator h1{
+		margin-left: auto;
+		/* text-align: center; */
+		font-size: 30px;
+		color: #642a73;
+		font-family: 'Open Sans', sans-serif;
+	}
+	
+	.info__separator p{
+		white-space: pre;
+		margin-left: auto;
+		text-align: center;
+		color: #000;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+		
+} 
 
 /*  ------------------RESPONSIVE TABLET------------------ */
 

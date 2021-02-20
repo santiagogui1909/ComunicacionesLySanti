@@ -94,8 +94,3 @@ window.sr = ScrollReveal();
         origin: 'left',
         distance: '-500px'
     });
-
-
-
-
-
