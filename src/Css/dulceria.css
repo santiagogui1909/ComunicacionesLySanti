@@ -279,7 +279,7 @@ header .textos-header {
 .container{
     position: relative;
     background-color: rgb(232, 227, 211);
-    width: 98.9vw;
+    width: 100vw;
     height: 100vh;
     padding-top: 100px;
     overflow: hidden;
@@ -316,14 +316,8 @@ header .textos-header {
 }
 
 #image img{
-    width: 200%;
+    width: 100%;
     height: 100%;
-    transition: 2s;
-}
-
-#image img:hover{
-    transform: translateX(-50%);
-    filter: brightness(80%);
 }
 
 #frase1-section{
@@ -727,17 +721,12 @@ footer {
         display: none;
     }
 
-    .cancel-icon{
-        font-size: 25px;
-    }
-
     .lists label{
         position: absolute;
         left: 32em;
         top: 46.8em;
     }
     
-
     #dulceria-info{
         display: inline-block;
         position: relative;
@@ -965,7 +954,7 @@ footer {
 
 /*  ------------------RESPONSIVE TABLET------------------ */
 
-@media screen and (max-width: 899px){
+@media screen and (max-width: 820px){
 
     #dulceria-info{
         display: inline-block;
@@ -1035,6 +1024,35 @@ footer {
 
     }
 
+    .list-section ul{
+        float: left;
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+
+    .list-section .item-1{
+        margin-bottom: 80px;
+    }
+
+    .list-section ul li{
+        width: 300px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .list2-section ul li{
+        width: 300px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    
+
+    .list2-section ul{
+        float: right;
+        margin-top: 5px;
+        margin-right: 30px;
+    }
+
     .targets{
         display: flex;
         flex-wrap: wrap;
@@ -1045,10 +1063,9 @@ footer {
         grid-column-gap: 20px;
         grid-row-gap: 20px;
     }
-
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 769px){
 
     #dulceria-info{
         position: relative;
@@ -1072,10 +1089,6 @@ footer {
         overflow: hidden;
         cursor: pointer;
         box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
-    }
-
-    #image img:hover{
-        transform: translateX(0);
     }
     
     #frase1-section{
@@ -1118,11 +1131,50 @@ footer {
         visibility: hidden;
 
     }
-}
 
+    .list-section ul{
+        float: left;
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+
+    .list-section .item-1{
+        margin-bottom: 80px;
+    }
+
+    .list-section ul li{
+        width: 300px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .list2-section ul li{
+        width: 300px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    
+
+    .list2-section ul{
+        float: right;
+        margin-top: 5px;
+        /* margin-right: 15px; */
+    }
+
+
+    .img-fluid{
+        width: 330px;
+        height: 250px;
+        object-fit: cover;
+        border: 4px solid;
+        border-image-source: linear-gradient(45deg, #642a73, #aa2222);
+        border-image-slice: 1;   
+    
+}
+}
 /*  ------------------RESPONSIVE CELULAR------------------ */
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 749px){
 
     #dulceria-info{
         display: inline-block;
@@ -1214,5 +1266,41 @@ footer {
     
     }
 
-}
+    .list-section ul{
+        float: left;
+        margin-top: 20px;
+        margin-left: 100px;
 
+    }
+
+    .list-section .item-1{
+        margin-bottom: 80px;
+    }
+
+    .list-section ul li{
+        width: 300px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .list2-section ul li{
+        width: 300px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    
+
+    .list2-section ul{
+        float: left;
+        margin-top: 35px;
+        margin-left: 100px;
+    }
+
+    .sub-section-lateral{
+        width: 100%;
+        height: 49em;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+
+}
