@@ -16,18 +16,30 @@ $(document).ready(function () {
 /**Boton Volver */
 
 $(document).ready(function () {
-    var altura = $('.btn-flotante').offset().top;
+    var altura = $('.return-up').offset().top;
 
     $(window).on('scroll', function () {
         if ($(window).scrollTop() > altura) {
-            $('.btn-flotante').addClass('volver-fixed');
+            $('.return-up').addClass('volver-fixed');
         } else {
-            $('.btn-flotante').removeClass('volver-fixed');
+            $('.return-up').removeClass('volver-fixed');
         }
     });
 
 });
 
+$(document).ready(function () {
+    var altura = $('.redes-sociales').offset().top;
+
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() > altura) {
+            $('.redes-sociales').addClass('volver-fixed');
+        } else {
+            $('.redes-sociales').removeClass('volver-fixed');
+        }
+    });
+
+});
 
 $(document).ready(function(){
     var ir_a = $(".desplazar");
@@ -136,6 +148,34 @@ $(document).ready(function(){
     });
 
 });
+
+
+    // ScrollReveal().reveal('.prod-animados', { reset: true });
+
+    window.sr = ScrollReveal();
+
+    sr.reveal('.prod-animados',{
+        duration: 1200,
+        origin: 'top',
+        distance: '-200px'
+    });
+
+
+    window.sr = ScrollReveal();
+
+    sr.reveal('.info-ComunicacionesLySanti',{
+        duration: 3000,
+        origin: 'right',
+        distance: '-500px'
+    });
+
+    window.sr = ScrollReveal();
+
+    sr.reveal('.info__separator',{
+        duration: 3000,
+        origin: 'rigth',
+        distance: '-500px'
+    });
 
 
 /**aparecer logo */

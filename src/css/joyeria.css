@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@700&display=swap');
 
 @font-face{
 	font-family: 'myFont';
 	src: url(../font/font_personalized/ExodusDemo-Striped.otf);
+}
+
+body{
+	background-color: #f3f7fd;
 }
 
 *, *:active, *:before{
@@ -70,143 +75,101 @@ a:active{
 	color: #a22;
 }
 
+/* --- Botones Principales --- */
 
-/* ----- Slider ----- */
-
-#slider{
-	width: 90%;
-	margin: auto;
-	overflow: hidden;
-	cursor: pointer;
-
-}
-
-/* --- Estilos de la tabla del slider*/
-#slider ul{
-	display: flex;
-	padding: 0;
-	width: 500%;
-
-	animation: slider 20s infinite ease-in-out;
-}
-
-#slider li{
-	width: 100%;
-	height: 400px;
-	list-style: none;
-}
-
-/* --- */
-
-/*Estilos de las imagenes del slider*/
-#slider img{
-	width: 20%;
-	height: 100%;
-}
-
-/*Decoraciones del slider*/
-#slider:hover{
-	box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.474);
-	transition: .6s;
-}
-
-/*Tamaños del slider para la continuidad infinita del slider*/
-/* @keyframes slider{
-	0%{margin-left: 0;}
-	20%{margin-left: 0;}
-
-	25%{margin-left: -100%;}
-	45%{margin-left: -100%;}
-
-	50%{margin-left: -200%;}
-	70%{margin-left: -200%;}
-
-	75%{margin-left: -300%;}
-	95%{margin-left: -300%;}
-
-	100%{margin-left: -400%;}
-} */
-
-/* ----- Info separator ----- */
-/*  */
-.container-font{
-	background-color: #aa2222;
-	height: 100vh;
-	clip-path: polygon(60% 0, 100% 0, 100% 100%, 30% 100%);
-	
-}
-
-.ubicacion__img{
-	position: absolute;
-	width: 250px;
-	left: 70%;
-	top: -270px;
-}
-
-hr{
-	width: 50%;
-	margin-left: 58%;
-	
-}
-
-.info__separator{
+/* .buttons-top{
 	position: relative;
-	text-align: center;
-	top: 45%;
-	left: 250px;
-	width: 70%;
-}
-
-.info__separator p, h1{
-	position: relative;
-	margin: 20px 250px;
-	left: 300px;
-}
-
-.info__separator h1{
-	font-size: 30px;
-	margin-bottom: 7px;
-	color: #642a73;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.info__separator p{
-	color: #000;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.info__separator a:link, a:visited{
-	text-decoration:none;
-}
-
-/* Estilos del separador con efecto parallax*/
-.separator__parallax{
-	text-align: center;
-	color: #fff;
-	width: 100%;
-	height: 250px;
-	background-image: url(../images/separador2.jpg);
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-}
-
-.separator__parallax p{
-	background-color: rgba(0, 0, 0, 0.5);
-	height: 100%;
-	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 24px;
-	font-family: 'Noto Serif', serif;
-	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.btn-top{
+	width: 100px;
+	height: 100px;
+	margin-left: 100px;
+	border: 2px solid ;
+	border-radius: 50%;
+	border-color: #642a73;
+}
+
+.fas{
+	position: relative;
+	font-size: 3.3em;
+	left: 20px;
+	top: 23px;
+	color: #000;
+} */
+
+/* .btn-top:hover{
+	background-color: rgba(0, 0, 0, 0.2);
+	transition: all .3s ease;
+} */
+
+/* ----- Slider ----- */
+
+.container-slider{
+	position: relative;
+	width: 80%;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 40px;
+	border: 3px solid #642a73;
+
+}
+
+.slider{
+	display: flex;
+	width: 400%;
+	height: 450px;
+	margin-left: -100%;
+}
+
+.slider__section{
+	width: 100%; 
+}
+
+.slider img{
+	display: block;
+	width: 100%; 
+	height: 100%;
+	object-fit: cover;
+}
+
+.slider__btn{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	background-color: rgba(0, 0, 0, 0.5);
+	transform: translateY(-50%);
+	font-size: 30px;
+	font-weight: bold;
+	font-family: monospace;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slider__btn__left{
+	left: 10px;
+}
+
+.slider__btn__rigth{
+	right: 10px;
+}
+
+/*Decoraciones del slider*/
+.slider__btn:hover{
+	background-color: #222;
 }
 
 /*  ----- Estilos del menú de imagenes  ----- */
 
 /*Estilos de la caja del menu de imagenes*/
-.font{
+.cont-joyeria{
 	text-align: center;
 	background:#aa2222;
 	/* background-color:rgba(90, 89, 89, 0.767); */
@@ -214,29 +177,13 @@ hr{
 }
 
 /*Estilos para el texto del menu de imagenes*/
-.title__products__father{
-	text-align: center;
-	top: auto;
-}
-
-.subtitle-products{
-	position: relative;
-	text-align: left;
-	margin-left: 60px;
-	top: -50px;
-	font-family: 'myFont';
-	font-size: 20px;
-	text-decoration-line: underline;
-	text-decoration-style: double;
-	text-decoration-color: #f2f2f2;
-	
-}
 
 .title-products{
 	display: inline-block;
 	position: relative;
 	font-family: 'myFont';
 	font-size: 40px;
+	top: -35px;
 }
 
 .title-products::after, .title-products::before{
@@ -411,42 +358,33 @@ hr{
 	transform: scale(1);
 }
 
-/* Estilos del boton para retornar a los productos*/
-.button__return{
+
+/* Estilos del separador con efecto parallax*/
+.separator__parallax{
 	text-align: center;
-	margin-top: 50px;
+	color: #fff;
+	width: 90%;
+	height: 250px;
+	margin: auto;
+	margin-top: 30px;
+	background-image: url(../images/principal-joyeria/separador2.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
-.button__return__btn{
-	width: 200px;
-	height: 70px;
-	border-radius: 4px;
-	border: 3px solid #000;
-	text-transform: uppercase;
-	color: #000;
-	font-size: 15px;
-	overflow: hidden;
-	cursor: pointer;
-	border: 2px solid #a22;
-
-	transition: all 500ms ease;
-}
-
-.button__return__btn:hover{
-	border: 2px solid #a22;
-	padding: 5px;
-	box-shadow: 5px 10px 18px rgba(170, 34, 34, 0.5) inset;
-}
-
-/* Ubicación de GoogleMaps */
-.map{
+.separator__parallax p{
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	width: 100%;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	font-family: 'Noto Serif', serif;
+	padding: 10px;
 }
 
-.map iframe{
-	width: 1000px;
-	height: 200px;
-}
+
+
 

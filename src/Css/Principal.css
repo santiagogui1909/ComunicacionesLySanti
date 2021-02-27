@@ -33,6 +33,7 @@ nav li ul{
 nav a{
     color: #ddd;
     display: block;
+    /* font-size: 16px; */
     padding: 10px;
     text-decoration: none;
     transition: all .4s;
@@ -150,7 +151,7 @@ header nav ul li a:hover {
 
 header {
     width: 100%;
-    height: 620px;
+    height: 600px;
     background: #eb575793;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #00000071, #EB5757), url(/src/images/Principal/Portada.jpg);
@@ -226,8 +227,8 @@ header .textos-header {
     color: #f8f8f8;
 }
 
-/* Estilos del separador con efecto parallax*/
-.separator__parallax{
+/* Estilos del separador con efecto parallax */
+/* .separator__parallax{
 	text-align: center;
 	color: #fff;
 	width: 100%;
@@ -247,6 +248,221 @@ header .textos-header {
 	font-size: 24px;
 	font-family: 'Noto Serif', serif;
 	padding: 5px;
+}
+*/
+
+/* Estilos de los iconos de las redes sociales */
+
+.redes-sociales{
+    position: fixed;
+    display: flex;
+    top: 35%;
+    left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 30px;
+    z-index: 200;
+    opacity: 0;
+}
+
+.redes-buttom{
+    display: block;
+	text-align:center;
+    padding: .7rem;
+    transition: .5s;
+    /* border-bottom-right-radius: 12px; */
+}
+
+.redes-buttom:nth-child(1){
+    border-top-right-radius: 12px;
+}
+
+.redes-buttom:nth-child(3){
+    border-bottom-right-radius: 12px;
+}
+
+.red-facebook{
+	box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+    background-color: #1877f2;
+    color: #fff;
+    padding-left: 17.5px;
+}
+
+.red-whatsapp{
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+    background-color: #25d366;
+    color: #fff; 
+}
+
+.red-instagram{
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    color: #fff;
+}
+
+.redes-buttom:hover{
+    padding-left: 3rem;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+/* Linea de separación vertical */
+
+/*Estilos de texto que redirigen a los productos*/
+
+.container-info{
+	margin-top: 0px;
+} 
+
+.text__link-products p{
+	text-align: right;
+	margin-right: 100px;
+	margin-top: 50px;
+	color: #000;
+	font-family: 'Be Vietnam', sans-serif;
+}
+
+.text__link-products p:before{
+	content: "";
+	position: absolute;
+	width: 14%;
+	height: 3px;
+	top: 131em;
+	background-color: #fff;
+	z-index: 1;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.5s ease-in-out;
+}
+
+.text__link-products p:hover:before{
+	transform: scaleX(1);
+	transform-origin: left;
+}
+	
+.text-link p{
+	display: inline-block;
+	text-align: left;
+	margin-top: 50px;
+	color: #000;
+	font-family: 'Be Vietnam', sans-serif;
+}
+
+.text-link p:before{
+	content: "";
+	position: absolute;
+	width: 16%;
+	height: 3px;
+	top: 101%;
+	background-color: #642a73;
+	z-index: 1;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.5s ease-in-out;
+}
+
+.text-link p:hover:before{
+	transform: scaleX(8);
+	transform-origin: left;
+}
+
+p span{
+	color: #642a73;
+	background-color: rgba(0,0,0,0.2);
+}
+
+/* ----- Info separator ----- */
+
+
+
+.ubicacion__img{
+	position: absolute;
+	width: 250px;
+	margin-left: 58%;
+	top: 0px;
+}
+
+hr{
+	width: 50%;
+	margin-left: 45%;
+	
+}
+
+.info-ComunicacionesLySanti{
+	position: absolute;
+	top: 100%;
+	left: 65px;
+	width: 70%;
+    padding: 20px;
+}
+
+
+.info-ComunicacionesLySanti h3{
+	font-family: 'myFont';
+	text-align: left;
+	font-size: 50px;
+	text-transform: uppercase;
+    top: 100%;
+	left: 65px;
+
+}
+
+.info-ComunicacionesLySanti p{
+	position: absolute;
+	text-align: left;
+	font-size: 18px;
+	text-transform: uppercase;
+    top: 100%;
+	left: 20px;
+}
+
+
+
+/* .info-ComunicacionesLySanti:before{
+	content: "";
+	width: 60px;
+	height: 2px;
+	position: absolute;
+	top: 34em;
+	background-color: #642a73;
+	left: 35em;
+	z-index: 100;
+
+	transform: rotate(90deg);
+} */
+
+.form-img, .form-img2{
+	width: 150px;
+	margin-top: 50px;
+}
+
+.form-img{
+	clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+.form-img2{
+	clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.info__separator{
+	position: relative;
+	top: 150px;
+	left: 20%;
+	width: 80%;
+    padding: 230px 0px;
+}
+
+.info__separator h1{
+	margin-left: 45%;
+	font-size: 30px;
+	margin-bottom: 3%;
+	color: #642a73;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.info__separator p{
+	margin-left: 45%;
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
 }
 
 /* About us */
@@ -499,50 +715,43 @@ footer {
 
 }
 
-/**boton arriba*/
-
-.btn-flotante {
-    font-size: 30px;
-    /* Cambiar el tamaño de la tipografia */
-    color: #ffffff;
-    /* Color del texto */
-    border-radius: 24px;
-    /* Borde del boton */
-    background-color: #fc0000e3;
-    /* Color de fondo */
-    padding: 8px;
-    /* Relleno del boton */
-    position: fixed;
-    bottom: 5%;
-    right: 20px;
-    transition: all 300ms ease 0ms;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.268);
-    z-index: 99;
-    text-decoration: none;
-    /**quitar el subrayado del ipervinculo*/
-    opacity: 0;
-    scroll-behavior: smooth;
-}
-
-.volver-fixed {
-    opacity: 1;
-    transition: all 0.8s;
-}
-
-.btn-flotante:hover {
-    background-color: #7c0594a1;
-    /* Color de fondo al pasar el cursor */
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.563);
-    transform: translateY(-7px);
-}
+/*boton flotante volver*/
 
 @media only screen and (max-width: 150px) {
-    .btn-arriba {
+    .return-up{
         font-size: 25px;
         padding: 12px 20px;
         bottom: 20px;
         right: 20px;
     }
+}
+
+.return-up{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:5px;
+	padding-top: 7px;
+	background-color:#b500e2;
+	color:#fff;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+	z-index:100;
+    opacity: 0;
+}
+
+.return-up:hover{
+	text-decoration: none;
+	color: #fff;
+	background-color: #aa2222;
+}
+
+.volver-fixed {
+    opacity: 1;
+    transition: all 0.8s;
 }
 
 body::-webkit-scrollbar {

@@ -9,54 +9,61 @@
     <link rel="stylesheet" href="../Css/joyeria.css">
     <link rel="stylesheet" href="/src/Css/MenuFooter.css">
     <link rel="stylesheet" href="../Css/fontello.css">
-    <link rel="icon" href="../images/icon.png">
-    <link rel="shortcut icon" href="/src/images/Principal/etiqueta.png" type="image/x-icon">
-    <script src="/src/js/jquery-3.5.1.js"></script>
-    <script src="../js/joyeria.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="icon" href="../images/principal-joyeria/icon.png">
+    <script src="../js/scrollreveal.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
 <body>
-
-    <div id="contenedor_carga">
+    <!-- <div id="contenedor_carga">
         <div id="carga"></div>
-    </div>
-
+    </div> -->
+    <!-- Enbacabezado de la página -->
     <header>
         <input type="checkbox" id="btn-menu">
         <label for="btn-menu" class="icon-menu"></label>
+
         <nav class="menu">
+
             <ul>
                 <li><a href="/src/pages/Contactos.html">Contacto</a></li>
-                <li class="subMenu"><a href="#">Ofertas<span class="icon-angle-circled-down"></span></a>
+
+                <li class="subMenu"><a>Ofertas<span class="icon-angle-circled-down"></span></a>
                     <ul>
-                        <li><a href="#">shoals</a></li>
-                        <li><a href="#">shoals</a></li>
-                        <li><a href="#">shoals</a></li>
-                        <li><a href="#">shoals</a></li>
+                        <li><a href="#nosotros">¿Quienes somos?</a></li>
+                        <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="#servicios">Nuestros servicios</a></li>
                     </ul>
                 </li>
+
                 <li class="subMenu"><a>Productos<span class="icon-angle-circled-down"></span></a>
                     <ul>
-                        <li class="subMenu"><a href="#">Tecnologia<span class="icon-angle-circled-down"></span></a>
+                        <li class="subMenu"><a>Tecnologia<span class="icon-angle-circled-down"></span></a>
                             <ul>
                                 <li><a href="#">Celulares</a></li>
                                 <li><a href="#">Parlantes</a></li>
                                 <li><a href="#">Accesorios</a></li>
                             </ul>
                         </li>
-                        <li class="subMenu"><a href="#">Ellos & Ellas<span class="icon-angle-circled-down"></span></a>
+
+                        <li class="subMenu"><a>Ellos & Ellas<span class="icon-angle-circled-down"></span></a>
                             <ul>
                                 <li><a href="/src/pages/Mujer.html">Mujer</a></li>
                                 <li><a href="/src/pages/Hombre.html">Hombre</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Joyeria</a></li>
-                        <li><a href="#">Dulceria</a></li>
+
+                        <li><a href="/src/pages/joyeria.html">Joyeria</a></li>
+                        <li><a href="/src/pages/dulceria.html">Dulceria</a></li>
                     </ul>
                 </li>
+
                 <li><a href="/src/pages/Principal.html">Inicio</a></li>
             </ul>
         </nav>
+
         <div class="wave" style="height: 60px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 170%; width: 100%;">
                 <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
@@ -66,81 +73,82 @@
     </header>
 
     <section>
-        <div id="slider">
-            <ul>
-                <li><a href="jfemenina.html"><img src="../images/JoyeriaF.jpg" alt="img1"></a></li>
-            </ul>
+        <div class="redes-sociales">
+            <a class="redes-buttom red-facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="redes-buttom red-whatsapp" href="https://wa.me/573208524244" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a class="redes-buttom red-instagram" href="#"><i class="fab fa-instagram"></i></a>
         </div>
-        <br> <br>
-        <div class="container-font">
-            <!-- Redirecionamiento a Maps en la página -->
-            <div class="info__separator">
-                <hr><br>
-                <a href="#ubication">
-                    <img src="../images/prueba_ubicacion.png" alt="ubc" class="ubicacion__img">
-                    <h1>¿Dónde estamos ubicados?</h1>
-                    <p>Nos puedes encontrar en "dirección".Si deseas más información sobre nuestra
-                        ubicación puedes contactar con nosotros al número telefonico, o bien puedes
-                        presionar sobre este mensaje para ver la ubicación.
-                    </p>
-                </a>
-                <br>
-                <hr>
+            <!-- Volver arriba -->
+    </section>
+
+    <section>
+        <!-- <div class="buttons-top">
+            <a class="btn-top" href=""><i class="fas fa-tags"></i></i></a>
+            <a class="btn-top" href=""><i class="fas fa-map-marked-alt"></i></a>
+            <a class="btn-top" href=""><i class="fas fa-mail-bulk"></i></a>
+        </div> -->
+        <div class="container-slider" id="top">
+            <div class="slider" id="slider">
+                <div class="slider__section">
+                    <img src="../images/principal-joyeria/JoyeriaF.jpg" alt="" class="slider__img">
+                </div>
+                <div class="slider__section">
+                    <img src="../images/principal-joyeria/separador2.jpg" alt="" class="slider__img">
+                </div>
+                <div class="slider__section">
+                    <img src="../images/principal-joyeria/icon.png" alt="" class="slider__img">
+                </div>
+                <div class="slider__section">
+                    <img src="../images/principal-joyeria/collar.jpg" alt="" class="slider__img">
+                </div>
             </div>
+            <div class="slider__btn slider__btn__rigth" id="btn-right">&#62;</div>
+            <div class="slider__btn slider__btn__left" id="btn-left">&#60;</div>
         </div>
     </section>
-    <br>
+    
     <section>
         <!-- Titulo de la caja que contiene el menu de imagenes -->
-        <div class="font" id="products">
+        <div class="cont-joyeria" id="products">
             <div class="title__products__father">
-                <h2 class="subtitle-products">Nuestros Productos</h2>
                 <h2 class="title-products">Joyería <br> Femenina</h2>
             </div>
             <br>
             <!-------------------------------Menu de imagenes de los collares------------------------------->
-            <div class="prod-collares">
+            <div class="prod-collares prod-animados">
                 <div class="prod__collares__text">
                     <h2>Collares</h2>
                 </div>
                 <!-- Imagen principal -->
-                <label><img src="../images/collar.jpg" alt="collares" id="collares"></label>
+                <label><img src="../images/principal-joyeria/collar.jpg" alt="collares" id="collares"></label>
             </div>
             <!-------------------------------Menu de imagenes de los anillos------------------------------->
-            <div class="prod-anillos">
+            <div class="prod-anillos prod-animados">
                 <div class="prod__anillos__text">
                     <h2>Anillos</h2>
                 </div>
                 <!-- Imagen principal -->
-                <label><img src="../images/anillo.jpg" alt="anillos" id="anillos"></label>
+                <label><img src="../images/principal-joyeria/anillo.jpg" alt="anillos" id="anillos"></label>
             </div>
             <!-------------------------------Menu de imagenes de las maninillas------------------------------->
-            <div class="prod-aretes">
+            <div class="prod-aretes prod-animados">
                 <div class="prod__aretes__text">
                     <h2>Aretes</h2>
                 </div>
                 <!-- Imagen principal -->
-                <label><img src="../images/aretes.jpg" alt="aretes" id="aretes"></label>
+                <label><img src="../images/principal-joyeria/aretes.jpg" alt="aretes" id="aretes"></label>
             </div>
-
-            <div class="button__return">
-                <a href="#products"> Ver todos los productos </a>
-            </div>
+            <a class="text__link-products" href="productosJoyeria.html">
+                <p> Ver todos los productos </p>
+            </a>
         </div>
-        <br>
         <!-- Seperador con efecto parallax -->
         <div class="separator__parallax">
             <p><cite>Si deseas más información ponte en contacto con nosotros.<br>
                     Num - Telefonico</cite></p>
         </div>
-        <br><br><br><br><br>
-        <div class="map" id="ubication">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1404.808468508488!2d-74.8970369307745!3d5.199911449221707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4804ecd5c8411d0f!2sComunicaciones%20Lysanti!5e0!3m2!1ses!2sco!4v1611114159238!5m2!1ses!2sco"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-        </div>
-        <br><br>
+      
+        <a class="return-up" href="#top"><i class="fas fa-chevron-up"></i></a>
     </section>
 
     <footer>
@@ -161,8 +169,8 @@
         <h2 class="titulo-final">&copy; ComunicacionesLySanti 2021</h2>
     </footer>
 
+    <script src="../js/joyeria.js"></script>
     <script src="../js/MenuFooter.js"></script>
-
 </body>
 
 </html>
