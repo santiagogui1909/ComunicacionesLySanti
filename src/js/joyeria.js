@@ -1,10 +1,10 @@
 //Carga de la pagina 
-window.onload = function(){
-    var contenedor = document.getElementById('contenedor_carga');
+// window.onload = function(){
+//     var contenedor = document.getElementById('contenedor_carga');
 
-    contenedor.style.visibility = 'hidden';
-    contenedor.style.opacity = '0';
-}
+//     contenedor.style.visibility = 'hidden';
+//     contenedor.style.opacity = '0';
+// }
 
 // Slider Automatico - Manual.
 const slider = document.querySelector("#slider");
