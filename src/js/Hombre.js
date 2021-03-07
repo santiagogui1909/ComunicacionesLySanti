@@ -268,7 +268,7 @@ function renderPerfumes() {
 
 /**funcion de las billeteras */
 
-function renderBilleteras() {
+function renderBilleteras() {                   
     for (let info of billeteras) {
         let miNodo = document.createElement('div');
         miNodo.classList.add('card-billetera');

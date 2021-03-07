@@ -191,6 +191,18 @@ body {
         font-size: 50px;
     }
 
+    .caption {
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        align-items: center;
+    
+        position: absolute;
+        top: 110px;
+        left: 60px;
+        z-index: 2;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -209,7 +221,8 @@ body {
     }
 
     .slides li img {
-        width: 500px;
+        width: 370px;
+        margin-left: 92px;
     }
 
     .flex-direction-nav a {
@@ -229,6 +242,9 @@ body {
 
 
 /*Tarjetas*/
+.enlaceWasapp{
+    text-decoration: none;
+}
 
 .titulo-Hombre {
     font-size: 30px;
@@ -346,7 +362,7 @@ body {
 .title-products::before {
     content: "";
     position: absolute;
-    width: 120px;
+    width: 90px;
     height: 3px;
     background-color: rgb(0, 0, 0);
     /* background-color: currentColor;  */
@@ -354,14 +370,55 @@ body {
 }
 
 .title-products::before {
-    left: -130px;
+    left: -70px;
     top: 80px;
 }
 
 .title-products::after {
-    right: -130px;
+    right: -70px;
     top: 80px;
 }
+
+/*tamaño pantalla movil*/
+
+@media screen and (max-width: 770px) {
+    
+    .card-reloj {
+        width: 30%;
+        text-align: center;
+        flex-grow: 1;
+        margin: 50px;
+        max-width: 180px;
+        cursor: pointer;
+    }
+    
+    .card-perfume {
+        width: 30%;
+        text-align: center;
+        flex-grow: 1;
+        margin: 50px;
+        max-width: 180px;
+        cursor: pointer;
+    }
+    
+    .img-fluid-perfume{
+        width: 80%;
+        height: 370px;
+        padding: 10px 5px;
+    }
+    
+    .card-billetera {
+        width: 35%;
+        text-align: center;
+        flex-grow: 1;
+        margin: 50px;
+        max-width: 180px;
+        cursor: pointer;
+    }
+
+}
+
+
 
 /*targetas informacion*/
 
@@ -369,9 +426,8 @@ body {
     display: inline-block;
     display: flex;
     position: relative;
-    background: rgba(118, 0, 252, 0.9);
+    background: rgba(46, 44, 48, 0.9);
     text-align: center;
-
 }
 
 .animado {
@@ -409,7 +465,48 @@ body {
     color: #ffffff;
 }
 
-/**otros productos*/
+@media screen and (max-width: 770px) {
+
+    .preferencias-contenedor {
+        display: inline-block;
+        display: flex;
+        position: relative;
+        background: rgba(46, 44, 48, 0.9);
+        text-align: center;
+    
+    }
+    
+    .contenido {
+        width: 100%;
+    }
+    
+    .preferencias-contenedor img {
+        position: absolute;
+        max-width: 150px;
+        width: 15%;
+        top: 20px;
+        left: 73%;
+        padding: 3px 3px;
+        border: 10px solid rgb(0, 0, 0);
+        background: rgb(0, 0, 0);
+    }
+
+    .preferencias-contenedor .contenido h1 {
+        font-family: 'open sans';
+        font-size: 100px;
+        color: #f8f8f8;
+    }
+    
+    .preferencias-contenedor .contenido p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        color: #ffffff;
+    }
+    
+
+}
+
+/**otros productos hombre*/
 
 .targetas-otros {
     display: flex;
@@ -451,11 +548,13 @@ body {
     border: 3px solid rgba(0, 0, 0, 0.741);
 }
 
+/*Otros productos mujer*/
+
 .cards {
     display: flex;
     justify-content: space-evenly;
     padding: 5px;
-    margin: 20px;
+    margin: 15px;
     flex-wrap: wrap;
 }
 
@@ -476,7 +575,7 @@ body {
 }
 
 .cards .card img {
-    width: 200px;
+    width: 150px;
     height: 130px;
     margin: 0px 20px;
     object-fit: cover;
@@ -484,14 +583,16 @@ body {
 }
 
 .contenido-texto-card h2{
-    font-size: 20px;
+    font-size: 15px;
+    padding: 10px;
     color: rgb(255, 255, 255);
 }
 
 .cards .card>.contenido-texto-card p {
-    font-weight: 100px;
-    padding-top: 10px;
-    color: rgb(31, 30, 30);
+    font-weight: 150px;
+    font-size: 15px;
+    padding: 15px;
+    color: rgb(0, 0, 0);
 }
 
 

@@ -5,13 +5,13 @@
     font-family: 'open sans';
 }
 
-#btn-menu{
+#btn-menu {
     display: none;
 }
 
 header label {
     cursor: pointer;
-    display:none;
+    display: none;
 }
 
 /*estilos generales menu*/
@@ -26,11 +26,11 @@ nav li {
     position: relative;
 }
 
-nav li ul{
+nav li ul {
     position: absolute;
 }
 
-nav a{
+nav a {
     color: #ddd;
     display: block;
     /* font-size: 16px; */
@@ -39,38 +39,38 @@ nav a{
     transition: all .4s;
 }
 
-nav a:hover{
-    background:rgba(0, 0, 0, 0.986);
+nav a:hover {
+    background: rgba(0, 0, 0, 0.986);
 }
 
-nav ul ul{
+nav ul ul {
     display: none;
 }
 
 /*estilos primer nivel*/
 
-nav > ul {
+nav>ul {
     display: table;
     width: 100%;
 }
 
-nav > ul > li {
+nav>ul>li {
     float: right;
 }
 
 /*estilos segundo nivel*/
 
 nav li li {
-    background:rgba(0, 0, 0, 0.89);
+    background: rgba(0, 0, 0, 0.89);
     width: 148px;
 }
 
 nav li li:hover {
-    background:rgba(0, 0, 0, 0.966);
+    background: rgba(0, 0, 0, 0.966);
     width: 148px;
 }
 
-nav > ul > li > ul{
+nav>ul>li>ul {
     top: 100%;
 }
 
@@ -78,16 +78,17 @@ nav > ul > li > ul{
 
 nav ul ul ul {
     left: 100%;
-    top:0;
+    top: 0;
 }
 
-.menu a span{
+.menu a span {
     margin-left: 10px;
     transition: all 0.8s;
 }
+
 /*---------------------------------------*/
 
-.menu ul li:hover ul{
+.menu ul li:hover ul {
     position: absolute;
 }
 
@@ -104,7 +105,7 @@ header nav ul li a:hover {
         bottom: 90%;
     }
 
-    .menu{
+    .menu {
         font-size: 14px;
         transform: translatey(-200%);
         transition: all 0.5s;
@@ -115,7 +116,7 @@ header nav ul li a:hover {
         position: static;
     }
 
-    #btn-menu:checked ~ .menu{
+    #btn-menu:checked~.menu {
         transform: translatey(0%);
     }
 }
@@ -123,25 +124,25 @@ header nav ul li a:hover {
 
 .logo {
     width: 165px;
-    padding: 15px; 
+    padding: 15px;
     display: block;
     float: left;
     left: 25px;
-    margin-left:4%;
-    transition:all 0.1s;
+    margin-left: 4%;
+    transition: all 0.1s;
 }
 
-.animacionImagen{
+.animacionImagen {
     opacity: 0;
     transition: all 0.8s;
 }
 
 /* --- Clase que agregaremos cuando el usuario haga scroll --- */
 .menu-fixed {
-	position:fixed;
-	z-index:1000;
-	top:0;
-	width:100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
     background-color: rgb(0, 0, 0);
     transition: all 0.8s;
 }
@@ -194,36 +195,37 @@ header .textos-header {
 
 /*targetas informacion*/
 
-.preferencias-contenedor{
+.preferencias-contenedor {
     margin: 55px 0px;
-	text-align: center;      /*targetas derecha*/
-	width: 100%;
+    text-align: center;
+    /*targetas derecha*/
+    width: 100%;
 }
 
 .preferencias-contenedor img {
     top: 15px;
-	width: 40%;
-	height: 200px;
+    width: 40%;
+    height: 200px;
     position: relative;
     border-radius: 150px;
 }
 
-.preferencias-contenedor h1{
+.preferencias-contenedor h1 {
     font-family: 'open sans';
-	font-size: 30px;
-	color: #fafafa;
-	margin: 5px;
+    font-size: 30px;
+    color: #fafafa;
+    margin: 5px;
 }
 
-.preferencias-contenedor span{
-	color: #ffee00;
-	margin: 5px;
+.preferencias-contenedor span {
+    color: #ffee00;
+    margin: 5px;
 }
 
 .preferencias-contenedor p {
-	font-family: 'Farsan', cursive;
-	text-align: center;
-	font-size: 16px;
+    font-family: 'Farsan', cursive;
+    text-align: center;
+    font-size: 16px;
     color: #f8f8f8;
 }
 
@@ -253,7 +255,7 @@ header .textos-header {
 
 /* Estilos de los iconos de las redes sociales */
 
-.redes-sociales{
+.redes-sociales {
     position: fixed;
     display: flex;
     top: 35%;
@@ -265,157 +267,159 @@ header .textos-header {
     opacity: 0;
 }
 
-.redes-buttom{
+.redes-buttom {
     display: block;
-	text-align:center;
+    text-align: center;
     padding: .7rem;
     transition: .5s;
     /* border-bottom-right-radius: 12px; */
 }
 
-.redes-buttom:nth-child(1){
+.redes-buttom:nth-child(1) {
     border-top-right-radius: 12px;
 }
 
-.redes-buttom:nth-child(3){
+.redes-buttom:nth-child(3) {
     border-bottom-right-radius: 12px;
 }
 
-.red-facebook{
-	box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+.red-facebook {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
     background-color: #1877f2;
     color: #fff;
     padding-left: 17.5px;
 }
 
-.red-whatsapp{
-    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+.red-whatsapp {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
     background-color: #25d366;
-    color: #fff; 
-}
-
-.red-instagram{
-    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     color: #fff;
 }
 
-.redes-buttom:hover{
+.red-instagram {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #fff;
+}
+
+.redes-buttom:hover {
     padding-left: 3rem;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
-/* Linea de separación vertical */
 
 /*Estilos de texto que redirigen a los productos*/
 
-.container-info{
-	margin-top: 0px;
-} 
-
-.text__link-products p{
-	text-align: right;
-	margin-right: 100px;
-	margin-top: 50px;
-	color: #000;
-	font-family: 'Be Vietnam', sans-serif;
+.container-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    background: #f2f2f2;
+    margin: 2px;
 }
 
-.text__link-products p:before{
-	content: "";
-	position: absolute;
-	width: 14%;
-	height: 3px;
-	top: 131em;
-	background-color: #fff;
-	z-index: 1;
-	transform: scaleX(0);
-	transform-origin: right;
-	transition: transform 0.5s ease-in-out;
+.text__link-products p {
+    text-align: right;
+    margin-right: 100px;
+    margin-top: 50px;
+    color: #000;
+    font-family: 'Be Vietnam', sans-serif;
 }
 
-.text__link-products p:hover:before{
-	transform: scaleX(1);
-	transform-origin: left;
-}
-	
-.text-link p{
-	display: inline-block;
-	text-align: left;
-	margin-top: 50px;
-	color: #000;
-	font-family: 'Be Vietnam', sans-serif;
-}
-
-.text-link p:before{
-	content: "";
-	position: absolute;
-	width: 16%;
-	height: 3px;
-	top: 101%;
-	background-color: #642a73;
-	z-index: 1;
-	transform: scaleX(0);
-	transform-origin: right;
-	transition: transform 0.5s ease-in-out;
+.text__link-products p:before {
+    content: "";
+    position: absolute;
+    width: 14%;
+    height: 3px;
+    top: 131em;
+    background-color: #fff;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
 }
 
-.text-link p:hover:before{
-	transform: scaleX(8);
-	transform-origin: left;
+.text__link-products p:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
-p span{
-	color: #642a73;
-	background-color: rgba(0,0,0,0.2);
+.text-link p {
+    display: inline-block;
+    text-align: left;
+    margin-top: 50px;
+    color: #000;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+.text-link p:before {
+    content: "";
+    position: absolute;
+    width: 16%;
+    height: 3px;
+    top: 82%;
+    background-color: #642a73;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+}
+
+.text-link p:hover:before {
+    transform: scaleX(2.8);
+    transform-origin: left;
+}
+
+p span {
+    color: #642a73;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* ----- Info separator ----- */
 
 
 
-.ubicacion__img{
-	position: absolute;
-	width: 250px;
-	margin-left: 58%;
-	top: 0px;
+.ubicacion__img {
+    width: 250px;
+    margin-left: 35%;
 }
 
-hr{
-	width: 50%;
-	margin-left: 45%;
-	
+hr {
+    width: 50%;
+    margin-left: 45%;
 }
 
-.info-ComunicacionesLySanti{
-	position: absolute;
-	top: 100%;
-	left: 65px;
-	width: 70%;
+.info-ComunicacionesLySanti {
+    position: relative;
+    width: 80%;
     padding: 20px;
+    margin: 35px;
 }
 
 
-.info-ComunicacionesLySanti h3{
-	font-family: 'myFont';
-	text-align: left;
-	font-size: 50px;
-	text-transform: uppercase;
+.info-ComunicacionesLySanti h3 {
+    font-family: 'myFont';
+    text-align: left;
+    font-size: 50px;
+    text-transform: uppercase;
     top: 100%;
-	left: 65px;
+    left: 65px;
 
 }
 
-.info-ComunicacionesLySanti p{
-	position: absolute;
-	text-align: left;
-	font-size: 18px;
-	text-transform: uppercase;
+.info-ComunicacionesLySanti p {
+    text-align: left;
+    font-size: 18px;
+    text-transform: uppercase;
     top: 100%;
-	left: 20px;
+    left: 20px;
 }
 
-
+.info-ComunicacionesLySanti img {
+   width: 45%;
+   height:45%;
+   margin: 0px 13px;
+}
 
 /* .info-ComunicacionesLySanti:before{
 	content: "";
@@ -430,39 +434,107 @@ hr{
 	transform: rotate(90deg);
 } */
 
-.form-img, .form-img2{
-	width: 150px;
-	margin-top: 50px;
+.form-img,
+.form-img2 {
+    width: 100px;
+    margin-top: 50px;
+    border-radius: 10%;
 }
 
-.form-img{
-	clip-path: polygon(50% 0, 0 100%, 100% 100%);
+.info__separator {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    margin: 80px 0px;
 }
 
-.form-img2{
-	clip-path: polygon(50% 100%, 0 0, 100% 0);
+.info__separator h1 {
+    font-size: 30px;
+    margin-bottom: 1%;
+    color: #642a73;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.info__separator{
-	position: relative;
-	top: 150px;
-	left: 20%;
-	width: 80%;
-    padding: 230px 0px;
+.info__separator p {
+    font-size: 18px;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.info__separator h1{
-	margin-left: 45%;
-	font-size: 30px;
-	margin-bottom: 3%;
-	color: #642a73;
-	font-family: 'Open Sans', sans-serif;
-}
+@media only screen and (max-width: 750px) {
 
-.info__separator p{
-	margin-left: 45%;
-	color: #000;
-	font-family: 'Open Sans', sans-serif;
+    .container-info h3 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .container-info p{
+        font-size: 18px;
+    }
+
+    .info-ComunicacionesLySanti img {
+        width: 50%;
+        height:50%;
+        margin: 10px 13px;
+     }
+
+    .container-info{
+        text-align: center;
+    }
+
+    .text-link p:before {
+        content: "";
+        position: absolute;
+        width: 16%;
+        height: 3px;
+        top: 97%;
+        background-color: #642a73;
+        z-index: 1;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .text-link p:hover:before {
+        transform: scaleX(2.8);
+        transform-origin: left;
+    }
+    
+    p span {
+        color: #642a73;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .info-ComunicacionesLySanti img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .info__separator {
+        top: 280px;
+        left: -320px;
+        padding: 5px;
+        margin: 120% 0px;
+        text-align: center;
+    }
+
+    .info__separator h1{
+        margin: 15px;
+        text-align: center;
+        font-size: 28px;
+    }
+
+
+    .ubicacion__img {
+        width: 250px;
+        margin-left: 0%;
+    }
+
+    .info__separator p {
+        color: #000;
+        font-family: 'Open Sans', sans-serif;
+    }
+
 }
 
 /* About us */
@@ -591,7 +663,7 @@ hr{
 
 .cards .card {
     margin: 10px;
-    padding:20px;
+    padding: 20px;
     background: #4d0686;
     display: flex;
     width: 46%;
@@ -718,7 +790,7 @@ footer {
 /*boton flotante volver*/
 
 @media only screen and (max-width: 150px) {
-    .return-up{
+    .return-up {
         font-size: 25px;
         padding: 12px 20px;
         bottom: 20px;
@@ -726,27 +798,27 @@ footer {
     }
 }
 
-.return-up{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:5px;
-	padding-top: 7px;
-	background-color:#b500e2;
-	color:#fff;
-	border-radius:50px;
-	text-align:center;
-	font-size:30px;
-	box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-	z-index:100;
+.return-up {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 5px;
+    padding-top: 7px;
+    background-color: #b500e2;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
     opacity: 0;
 }
 
-.return-up:hover{
-	text-decoration: none;
-	color: #fff;
-	background-color: #aa2222;
+.return-up:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #aa2222;
 }
 
 .volver-fixed {
@@ -756,12 +828,14 @@ footer {
 
 body::-webkit-scrollbar {
     width: 15px;
-  }
-  body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
     background-color: transparent;
     border-radius: 20px;
-  }
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.781);
     border-radius: 0px;
-  }
+}
