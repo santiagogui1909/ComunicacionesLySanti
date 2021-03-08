@@ -441,7 +441,7 @@ header .textos-header {
 /*Estilos del texto dentro de cada imagen*/
 .prod__collares__text h2{
 	position: relative;
-	top: 180px;
+	top: 0px;
 	font-family: 'myFont';
 	border: 2px solid white;
     background: black;
@@ -461,7 +461,7 @@ header .textos-header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 91.5%;
     background: rgba(0,0,0,0.2);
     display: flex;
     justify-content: center;
@@ -491,7 +491,7 @@ header .textos-header {
 /*Estilos del texto dentro de cada imagen*/
 .prod__anillos__text h2{
 	position: relative;
-	top: 180px;
+	top: 0px;
 	font-family: 'myFont';
 	border: 2px solid white;
     background: black;
@@ -574,7 +574,7 @@ header .textos-header {
 
 
 .img-fluid {
-    width: 50	0px;
+    width: 500px;
     height: 300px;
     object-fit: cover;
     border: 4px solid;
