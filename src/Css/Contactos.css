@@ -173,6 +173,35 @@ form.form_contact input[type="submit"]:hover{
     background: #f50b0b;
 }
 
+@media (max-width: 764px) {
+    .FondoFormulario{
+        width: 100%;
+        background-image: url("https://w.wallhaven.cc/full/j3/wallhaven-j3339m.jpg");
+        padding: 12px;
+    }
+
+    .form_wrap{
+        width: 300px;
+        height: 460px;
+        margin: 50px auto;
+        display: flex;
+    
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .contenidoContacto {
+        padding: 0px;
+        margin: 10px;
+        font-size: 18px;
+        margin-bottom: 6px;
+        color: rgba(66, 66, 66, 0.774);
+    }
+
+}
+
 /* Ventana de errores*/
 .modal_wrap {
     width: 100%;
