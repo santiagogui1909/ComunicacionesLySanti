@@ -151,3 +151,62 @@ function renderAnillos(){
 }
 
 renderAnillos();
+
+
+$(document).ready(function () {        
+
+
+    var BtnCollar = $("#btnCollar");
+
+    var BtnArete = $("#btnArete");
+
+    var BtnAnilloManilla = $("#btnAnilloManilla");
+
+    var collares = $("#contCollares");
+
+    var aretes = $("#contAretes");
+
+    var anillos = $("#contAnillos");
+
+
+    collares.hide();
+    aretes.hide();
+    anillos.hide();
+
+
+    BtnCollar.click(function () {
+        collares.show();
+        aretes.hide();
+        anillos.hide();
+        BtnOcultar.show();
+    });
+
+    BtnArete.click(function () {
+        collares.hide();
+        aretes.show();
+        anillos.hide();
+        BtnOcultar.show();
+    });
+
+    BtnAnilloManilla.click(function () {
+        collares.hide();
+        aretes.hide();
+        anillos.show();
+        BtnOcultar.show();
+    });
+
+
+    var BtnOcultar = $("#btnOcultar");
+
+    var ocultar = $(".hidee");
+
+    BtnOcultar.hide();
+
+    BtnOcultar.click(function(){
+        collares.hide();
+        aretes.hide();
+        anillos.hide();
+        BtnOcultar.hide();
+    });
+
+});
