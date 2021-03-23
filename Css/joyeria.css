@@ -24,6 +24,11 @@ body{
 	font-family: 'Open Sans', sans-serif;
 }
 
+/* Animación de la navegación interna */
+html{
+	scroll-behavior: smooth;
+}
+
 /* ---- Estilos de la pantalla de carga */
 #contenedor_carga{
 	background-color: rgba(250, 240, 245, 0.9);
