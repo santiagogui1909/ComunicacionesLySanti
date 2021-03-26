@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+@font-face{
+	font-family: 'myFont';
+	src: url(../font/font_personalized/ExodusDemo-Striped.otf);
+}
+
+body{
+	background-color: #f3f7fd;
+    margin: 0;
+}
+
+*, *:active, *:before{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Animación de la navegación interna */
+html{
+	scroll-behavior: smooth;
+}
+
+
+/* Estilos de los iconos de las redes sociales */
+
+.redes-sociales{
+    position: fixed;
+    display: flex;
+    top: 35%;
+    left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 30px;
+    z-index: 200;
+}
+
+.redes-buttom{
+    display: block;
+	text-align:center;
+    padding: .7rem;
+    transition: .5s;
+    /* border-bottom-right-radius: 12px; */
+}
+
+.redes-buttom:nth-child(1){
+    border-top-right-radius: 12px;
+}
+
+.redes-buttom:nth-child(3){
+    border-bottom-right-radius: 12px;
+}
+
+.red-facebook{
+	box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+    background-color: #1877f2;
+    color: #fff;
+    padding-left: 17.5px;
+}
+
+.red-whatsapp{
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+    background-color: #25d366;
+    color: #fff; 
+}
+
+.red-instagram{
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    color: #fff;
+}
+
+.redes-buttom:hover{
+    padding-left: 3rem;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Estilos del contenedor principal de la página */
+
+.container{
+    position: relative;
+    background-color: rgb(232, 227, 211);
+    width: 98.9vw;
+    height: 100vh;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.container-separate{
+    position: relative;
+    left: 47%;
+    top: 20px;
+    overflow: hidden;
+}
+
+/* Estilos de los textos del contenedor principal */
+#dulceria-info{
+    position: relative;
+    font-size: 80px;
+    padding: 0 100px 100px 100px;
+}
+
+#products-info{
+    font-size: 30px;
+    padding-left: 100px;
+}
+
+#image{
+    position: absolute;
+    width: 450px;
+    height: 350px;
+    left: 50%;
+    top: 90px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+#image img{
+    width: 200%;
+    height: 100%;
+    transition: 2s;
+}
+
+#image img:hover{
+    transform: translateX(-50%);
+    filter: brightness(80%);
+}
+
+#frase1-section{
+    position: relative;
+    font-size: 25px;
+    left: 150px;
+}
+
+#separate-info{
+    font-size: 30px;
+    position: relative;
+    left: 20px;
+}
+
+#separate-contacto{
+    display: inline-block;
+    font-size: 16px;
+    color: #000;
+    padding-top: 10px;
+    padding-left: 22px;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+#separate-contacto:before{
+	content: "";
+	position: absolute;
+	width: 8%;
+    top: 103px;
+	height: 3px;
+	background-color: #642a73;
+	z-index: 500;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.5s ease-in-out;
+}
+
+#separate-contacto:hover:before{
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+/* Estilos de la barra lateral al costado derecho */
+
+.section-lateral{
+    float: right;
+    width: 30vw;
+    height: 472.7vh;
+    z-index: -2;
+    /* background-color: #aa2222; */
+}
+
+#frase2-section{
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: -30px;
+}
+
+.section-lateral h2{
+    position: absolute;
+    color: #000;
+    left: 90%;
+    top: 40em;
+    right: 10px;
+    font-size: 50px;
+    font-family: 'myFont';
+    white-space: pre;
+    transform: rotate(90deg);
+}
+
+.section-lateral h3{
+    color: #000;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.section-lateral h3:after, .section-lateral h3:before{
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 3px;
+	background-color: red;
+	/* background-color: currentColor;  */
+ }  
+
+.section-lateral h3:before{
+    visibility: hidden;
+}
+
+.section-lateral h3:after{
+    visibility: hidden;
+}
+
+.section-lateral h3:hover:after{
+    visibility: visible;
+    left: -35px;
+    top: 50%;
+    transform: rotate(-140deg);
+}
+
+.section-lateral h3:hover:before{
+    visibility: visible;
+    right: 370px;
+	top: 50%;
+    transform: rotate(140deg);
+}
+
+.section-lateral h3:hover{
+    filter: blur(1.3px);
+}  
+
+.section-lateral h4{
+    position: relative;
+    top: 65px;
+}
+
+/* lista */
+.list-section ul{
+    list-style: none;
+    margin-top: 30px;
+}
+
+.list-section .item-1{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.item-1 p:before{
+	content: "";
+	position: absolute;
+	width: 21%;
+    top: 137%;
+	height: 3px;
+	background-color: #642a73;
+	z-index: 1;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.5s ease-in-out;
+}
+
+.item-1 p:hover:before{
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+
+.list-section ul li{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.fa-circle{
+    color: #642a73;
+    font-size: 20px;
+}
+
+/* lista 2 */
+
+.list2-section ul{
+    list-style: none;
+    margin-top: 30px;
+}
+
+.list2-section .item-2{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.item-2 p:before{
+	content: "";
+	position: absolute;
+	width: 17%;
+    top: 189%;
+	height: 3px;
+	background-color: #642a73;
+	z-index: 1;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.5s ease-in-out;
+}
+
+.item-2 p:hover:before{
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+
+.list2-section ul li{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* .divider{
+    width: 350px;
+    height: 150px;
+} */
+
+.fondo__images1 img{
+    position: absolute;
+    top: 250em;
+    bottom: 0%;
+    left: 70% ;
+    width: 30px;
+    opacity: .3;
+
+    animation: animationImg 8s linear infinite;
+    animation-delay: 3s;
+}
+
+.fondo__images2 img{
+    position: absolute;
+    top: 245em;
+    bottom: 0%;
+    left: 75% ;
+    width: 60px;
+    opacity: .3;
+
+    animation: animationImg 8s linear infinite;
+    animation-delay: 5s;
+}
+
+.fondo__images3 img{
+    position: absolute;
+    top: 253em;
+    bottom: 0%;
+    left: 80% ;
+    width: 40px;
+    opacity: .3;
+
+    animation: animationImg 7s linear infinite;
+    animation-delay: 7s;
+
+}
+
+.fondo__images4 img{
+    position: absolute;
+    top: 248em;
+    bottom: 0%;
+    left: 85% ;
+    width: 40px;
+    opacity: .3;
+
+    animation: animationImg 9s linear infinite;
+    animation-delay: 3s;
+}
+
+.fondo__images5 img{
+    position: absolute;
+    top: 251em;
+    bottom: 0%;
+    left: 90% ;
+    width: 45px;
+    opacity: .3;
+
+    animation: animationImg 12s linear infinite;
+    animation-delay: 1s;
+}
+
+.fondo__images6 img{
+    position: absolute;
+    top: 245em;
+    bottom: 0%;
+    left: 95% ;
+    width: 42px;
+    opacity: .3;
+
+    animation: animationImg 9s linear infinite;
+    animation-delay: 5s;    
+}
+
+.fondo__images7 img{
+    position: absolute;
+    top: 253em;
+    bottom: 0%;
+    left: 83% ;
+    width: 35px;
+    opacity: .3;
+
+    animation: animationImg 7s linear infinite;
+    animation-delay: 5s;
+}
+
+.fondo__images8 img{
+    position: absolute;
+    top: 253em;
+    bottom: 0%;
+    left: 96% ;
+    width: 37px;
+    opacity: .3;
+
+    animation: animationImg 8s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animationImg{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    25%{
+        opacity: .4;
+    }
+    45%{
+        opacity: .8;
+    }
+    50%{
+        opacity: .10;
+    }
+    75%{
+        opacity: .8;
+    }
+    95%{
+        opacity: .4;
+    }
+    100%{
+        top: 100vh;
+        opacity: 0;
+    }
+}
+
+
+
+
+/* Google map */
+/* .map iframe{
+    position: absolute;
+	width: 350px;
+	height: 200px;
+    top: 240em;
+} */
+
+/* Contenedor de las imagenes */
+.targets{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    padding-left: 70px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+/* Estilos de las tarjetas */
+.img-fluid{
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border: 4px solid;
+    border-image-source: linear-gradient(45deg, #642a73, #aa2222);
+    border-image-slice: 1;   
+
+    transition: .6s;
+}
+
+.img-fluid:hover{
+    box-shadow: 10px -10px 12px #222;
+    transform: scale(1.03) rotate(0deg);
+    cursor: pointer;
+}
+
+
+/*  ------------------RESPONSIVE TABLET------------------ */
+
+@media screen and (max-width: 800px){
+
+    #dulceria-info{
+        display: inline-block;
+        position: relative;
+        font-size: 60px;
+        padding: 0 0 0 60px;
+    }
+    
+    #products-info{
+        font-size: 20px;
+        padding-left: 60px;
+    }
+    
+    #image{
+        position: absolute;
+        width: 350px;
+        height: 280px;
+        left: 48%;
+        top: 80px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+    }
+    
+    
+    #frase1-section{
+        position: relative;
+        font-size: 22px;
+        left: 10px;
+        top: 90px;
+    }
+
+    #separate-info{
+        font-size: 22px;
+        position: relative;
+        left: 10px;
+        padding-top: 100px;
+    }
+
+    #separate-contacto{
+        display: inline-block;
+        font-size: 16px;
+        color: #000;
+        padding-top: 10px;
+        padding-left: 100px;
+        font-family: 'Be Vietnam', sans-serif;
+    }
+
+    #separate-contacto:before{
+        content: "";
+        position: absolute;
+        width: 8%;
+        top: 103px;
+        height: 3px;
+        background-color: #642a73;
+        z-index: 500;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s ease-in-out;
+        visibility: hidden;
+    }
+
+    #separate-contacto:hover:before{
+        transform: scaleX(1);
+        transform-origin: left;
+        visibility: hidden;
+
+    }
+
+    .targets{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        padding-left: 45px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .section-lateral{
+        float: right;
+        width: 30vw;
+        height: 472.7vh;
+        z-index: -2;
+        /* background-color: #aa2222; */
+        display: none;
+    }   
+}
+
+/*  ------------------RESPONSIVE CELULAR------------------ */
+
+@media screen and (max-width: 480px){
+
+    #dulceria-info{
+        display: inline-block;
+        position: relative;
+        font-size: 60px;
+        padding: 0 0 0 60px;
+        top: -60px;
+    }
+    
+    #products-info{
+        position: relative;
+        font-size: 20px;
+        padding-left: 60px;
+        top: -60px;
+    }
+    
+    #image{
+        position: relative;
+        width: 350px;
+        height: 270px;
+        left: 75px;
+        top: -50px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+    }
+    
+    #frase1-section{
+        position: relative;
+        font-size: 22px;
+        left: 10px;
+        top: 10px;
+        display: none;
+    }
+
+    #separate-info{
+        font-size: 15px;
+        position: absolute;
+        padding-left: -100px;
+        padding-top: 10px;
+        display: none;
+    }
+
+    #separate-contacto{
+        display: inline-block;
+        position: relative;
+        font-size: 20px;
+        color: #000;
+        padding-top: 0;
+        padding-left: 110px;
+        font-family: 'Be Vietnam', sans-serif;
+    }
+
+    #separate-contacto:before{
+        content: "";
+        position: absolute;
+        width: 8%;
+        top: 103px;
+        height: 3px;
+        background-color: #642a73;
+        z-index: 500;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s ease-in-out;
+        visibility: hidden;
+    }
+
+    #separate-contacto:hover:before{
+        transform: scaleX(1);
+        transform-origin: left;
+        visibility: hidden;
+
+    }
+
+    .targets{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        padding-left: 45px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .section-lateral{
+        float: right;
+        width: 30vw;
+        height: 472.7vh;
+        z-index: -2;
+        /* background-color: #aa2222; */
+        display: none;
+    } 
+    
+    .content-foo p {
+        color: #ccc;
+        font-size: 13px ;
+    
+    }
+
+}
+
