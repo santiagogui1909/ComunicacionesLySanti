@@ -10,7 +10,7 @@ $mensaje = $_POST['mensaje'];
 
 //datos de el correo del
 
-$destinario = "correodemama@gmail.com";
+$destinario = "santiagogui1909@gmail.com";
 $asunto = "Correo desde nuestra web";
 
 $Carta = "De: $nombre \n";
