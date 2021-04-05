@@ -170,7 +170,6 @@ header {
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #00000071, #EB5757), url(https://i.ibb.co/hMzb1wv/Portada.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    ;
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #00000071, #eb575796), url(https://i.ibb.co/hMzb1wv/Portada.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -406,7 +405,7 @@ hr {
     position: relative;
     width: 80%;
     padding: 20px;
-    margin: 35px;
+    margin: 40px;
 }
 
 
