@@ -22,48 +22,46 @@
     <!--------------------------------------menu------------------------------------------------------->
 
     <header>
-        <input type="checkbox" id="btn-menu">
-        <label for="btn-menu" class="icon-menu"></label>
+        <div class="menu-bar">
+            <a class="bt-menu"><span class="icon-menu"></span>Menu</a>
+        </div>
 
         <nav class="menu">
-
             <ul>
-                <li><a href="Contactos.html">Contacto</a></li>
+                <li><a href="index.html"><span class="icon-home3"></span>Inicio</a></li>
 
-                <li class="subMenu"><a>Ofertas<span class="icon-angle-circled-down"></span></a>
-                    <ul>
+                <li class="subMenu">
+                    <a><span class="icon-shopping-bag"></span>Tecnologia<span></span></a>
+                    <ul class="children">
+                        <li><a href="">Telefonos</a></li>
+                        <li><a href="">Bafles</a></li>
+                        <li><a href="">Accesorios Tecnologicos</a></li>
+                    </ul>
+                </li>
+
+                <li class="subMenu">
+                    <a><span class="icon-shopping-bag"></span>Accesorios Para Ti<span></span></a>
+                    <ul class="children">
+                        <li><a href="Mujer.html">Mujer</a></li>
+                        <li><a href="Hombre.html">Hombre</a></li>
+                        <li><a href="joyeria.html">Joyeria</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="dulceria.html"><span class="icon-mail2"></span>Dulceria</a></li>
+
+                <li class="subMenu">
+                    <a><span class="icon-shopping-bag"></span>Ofertas<span></span></a>
+                    <ul class="children">
                         <li><a href="#nosotros" class="desplazar">¿Quienes somos?</a></li>
                         <li><a href="#portafolio" class="desplazar">Portafolio</a></li>
                         <li><a href="#servicios" class="desplazar">Nuestros servicios</a></li>
                     </ul>
                 </li>
 
-                <li class="subMenu"><a>Productos<span class="icon-angle-circled-down"></span></a>
-                    <ul>
-                        <li class="subMenu"><a>Tecnologia<span class="icon-angle-circled-down"></span></a>
-                            <ul>
-                                <li><a href="#">Celulares</a></li>
-                                <li><a href="#">Parlantes</a></li>
-                                <li><a href="#">Accesorios</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="subMenu"><a>Ellos & Ellas<span class="icon-angle-circled-down"></span></a>
-                            <ul>
-                                <li><a href="Mujer.html">Mujer</a></li>
-                                <li><a href="Hombre.html">Hombre</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a href="joyeria.html">Joyeria</a></li>
-                        <li><a href="dulceria.html">Dulceria</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Contactos.html"><span class="icon-mail2"></span>Contactos</a></li>
             </ul>
         </nav>
-
         <div class="wave" style="height: 100px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 170%; width: 100%;">
                 <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
@@ -83,30 +81,30 @@
         </div>
     </div> -->
 
- 
-        <div class="container-info">
-            <div class="info-ComunicacionesLySanti">
-                <h3>Comunicaciones <br> Lisanty</h3>
-                <img src="https://i.ibb.co/mbHQfzH/Foto-Principal.jpg" alt="img1" class="form-img2">
-                <img src="https://i.ibb.co/RymbfDP/Foto-Vendedora.jpg" alt="img1" class="form-img">
-                <a class="text-link" href="#servicios">
-                    <p>Nuestros Productos</p>
-                </a>
-            </div>
-            <!-- Redirecionamiento a Maps en la página -->
-            <div class="info__separator">
-                <a href="Contactos.html">
-                    <img src="https://i.ibb.co/VJ7LCMJ/location.png" alt="ubc" class="ubicacion__img">
-                    <h1 class="titulo">¿Dónde estamos ubicados?</h1>
-                    <p>Nos puedes encontrar en <span>Cra. 4 #3-141 a 3-107, Mariquita, Tolima.</span>
-                        Si deseas más información sobre nuestra ubicación puedes contactar con
-                        nosotros al número telefonico <span>320 852 4244</span>. O bien puedes
-                        presionar sobre este mensaje para ver la ubicación.
-                    </p>
-                </a>
-            </div>
+
+    <div class="container-info">
+        <div class="info-ComunicacionesLySanti">
+            <h3>Comunicaciones <br> Lisanty</h3>
+            <img src="https://i.ibb.co/mbHQfzH/Foto-Principal.jpg" alt="img1" class="form-img2">
+            <img src="https://i.ibb.co/RymbfDP/Foto-Vendedora.jpg" alt="img1" class="form-img">
+            <a class="text-link" href="#servicios">
+                <p>Nuestros Productos</p>
+            </a>
         </div>
- 
+        <!-- Redirecionamiento a Maps en la página -->
+        <div class="info__separator">
+            <a href="Contactos.html">
+                <img src="https://i.ibb.co/VJ7LCMJ/location.png" alt="ubc" class="ubicacion__img">
+                <h1 class="titulo">¿Dónde estamos ubicados?</h1>
+                <p>Nos puedes encontrar en <span>Cra. 4 #3-141 a 3-107, Mariquita, Tolima.</span>
+                    Si deseas más información sobre nuestra ubicación puedes contactar con
+                    nosotros al número telefonico <span>320 852 4244</span>. O bien puedes
+                    presionar sobre este mensaje para ver la ubicación.
+                </p>
+            </a>
+        </div>
+    </div>
+
 
     <a class="return-up" href="#top"><i class="fas fa-chevron-up"></i></a>
 
@@ -295,13 +293,20 @@
     <!--------------------------------------footer--------------------------------------------------------->
     <footer>
         <div class="contenedor-footer">
-            <div class="content-foo">
-                <h4>Phone</h4>
-                <p>3005893148</p>
+            <div class="logo">
+                <img src="images/logo.png">
             </div>
             <div class="content-foo">
-                <h4>Email</h4>
-                <p>ComunicacionesLysanti@hotmail.com</p>
+                <div class="num">
+                    <h4>Phone</h4>
+                    <p>3005893148</p>
+                </div>
+
+                <div class="email">
+                    <h4>Email</h4>
+                    <p>ComunicacionesLysanti@hotmail.com</p>
+                </div>
+
             </div>
             <div class="content-foo">
                 <h4>Ubicacion</h4>

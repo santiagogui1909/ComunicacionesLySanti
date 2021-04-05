@@ -54,34 +54,50 @@ $(document).ready(function(){
 });
 
 
-/**menu hamburguesa */
-
-$(".subMenu").click(function (){
-    $(this).children("ul").slideToggle();
-});
-
-$("ul").click(function (valor){
-    valor.stopPropagation();
-
-});
 
 
-(function($) {
-	"use strict"
+$(document).ready(main);
 
-	// Mobile Nav toggle
-	$('.menu-toggle > a').on('click', function (e) {
-		e.preventDefault();
-		$('#responsive-nav').toggleClass('active');
-	})
+var contador = 1;
 
-	// Fix cart dropdown from closing
-	$('.cart-dropdown').on('click', function (e) {
-		e.stopPropagation();
-	});
+function main() {
+    $('.menu-bar').click(function(){  //Aparecer y desaparecer un menu
+        if(contador == 1){
+            $('nav').animate({
+                left:'0'
+            });
+            contador = 0;
+        }else{
+            contador = 1;
+            $('nav').animate({
+                left:'-100%'
+            });
+        }
+    });
+
+    //Aparecer y desaparecer submenus
+
+    $('.subMenu').click(function(){
+        $(this).children('.children').slideToggle();
+    });
+}
+
+// (function($) {
+// 	"use strict"
+
+// 	// Mobile Nav toggle
+// 	$('.menu-toggle > a').on('click', function (e) {
+// 		e.preventDefault();
+// 		$('#responsive-nav').toggleClass('active');
+// 	})
+
+// 	// Fix cart dropdown from closing
+// 	$('.cart-dropdown').on('click', function (e) {
+// 		e.stopPropagation();
+// 	});
 
 
-})(jQuery);
+// })(jQuery);
 
 /**slider function */
 
