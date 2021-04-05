@@ -425,7 +425,6 @@ header .textos-header {
     transition: all 300ms;
 }
 
-/*  ----- Estilos del texto con efecto en la imagenes de los collares ----- */
 #collares, #anillos, #aretes{
 	width: 355px;
 	height: 450px;
@@ -435,51 +434,14 @@ header .textos-header {
 	
 }
 
+/*  ----- Estilos del texto con efecto en la imagenes de los collares ----- */
+
 .prod-collares img{
     transition: all .5s;
 }
 
 .prod-collares:hover img{
-	transform: scale(1.1) rotate(0deg);
-}
-
-/*Estilos del texto dentro de cada imagen*/
-.prod__collares__text h2{
-	position: relative;
-	top: 0px;
-	font-family: 'myFont';
-	border: 2px solid white;
-    background: black;
-	padding: 6px;
-}
-
-.prod__collares__text{
-	position: relative;
-	top: 180px;
-	font-family: 'myFont';
-    background: black;
-	padding: 6px;
-}
-
-.prod__collares__text{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 87%;
-    background: rgba(0,0,0,0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:#fff;
-	transform: scale(0);
-	transition: .5s;
-	z-index: 100;
-}
-
-/*Animacion del texto de cada imagen*/
-.prod-collares:hover .prod__collares__text{
-	transform: scale(1);
+	transform: scale(1.1) rotate(1deg);
 }
 
 /* ----- Estilos del texto con efecto en la imagenes de los anillos -----  */
@@ -489,40 +451,7 @@ header .textos-header {
 }
 
 .prod-anillos:hover img{
-	transform: scale(1.1) rotate(0deg);
-}
-
-
-/*Estilos del texto dentro de cada imagen*/
-.prod__anillos__text h2{
-	position: relative;
-	top: 0px;
-	font-family: 'myFont';
-	border: 2px solid white;
-    background: black;
-	padding: 6px;
-}
-
-.prod__anillos__text{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 87%;
-    background: rgba(0,0,0,0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:#fff;
-	transform: scale(0);
-	transition: .5s;
-	z-index: 100;
-}
-
-/*Animacion del texto de cada imagen*/
-.prod-anillos:hover .prod__anillos__text{
-	transform: scale(1);
-		
+	transform: scale(1.1) rotate(1deg);
 }
 
 /*  ----- Estilos del texto con efecto en la imagenes de las aretes ----- */
@@ -532,39 +461,7 @@ header .textos-header {
 }
 
 .prod-aretes:hover img{
-	transform: scale(1.1) rotate(0deg);
-}
-
-.prod__aretes__text h2{
-	position: relative;
-	top: 0;
-	font-family: 'myFont';
-	border: 2px solid white;
-    background: black;
-	padding: 6px;
-}
-
-
-/*Estilos del texto dentro de cada imagen*/
-.prod__aretes__text{
-	position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 87%;
-    background: rgba(0,0,0,0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:#fff;
-	transform: scale(0);
-	transition: .5s;
-	z-index: 100;
-}
-
-/*Animacion del texto de cada imagen*/
-.prod-aretes:hover .prod__aretes__text{
-	transform: scale(1);
+	transform: scale(1.1) rotate(1deg);
 }
 
 .targetas{
@@ -600,7 +497,7 @@ header .textos-header {
     position: relative;
     font-family: 'myFont';
     font-size: 40px;
-    color: #6f048a;
+    color: #000;
     padding: 30px;
 }
 
@@ -624,22 +521,44 @@ header .textos-header {
     top: 55px;
 }
 
-.btn-products{
-	/* text-decoration: none; */
-	width: 200px;
+.botonesProd{
 	height: 50px;
-	/* background-color: red; */
+    align-items: center;
+    z-index: 2;
+}
+
+.botonesProd a{
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+    color: #d3d3d3;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.836);
+    border-radius: 5px;
+    background-color: #000;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.botonesProd a:hover{
+	background-color: #642a73;
 }
 
 #btnOcultar{
 	position: relative;
-	top: 100px;
-	left: 42%;
-	width: 150px;
-	height: 40px;
+	border-radius: 100%;
+	border-color: #222;
+	top: 120px;
+	left: 90%;
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	background-color: #aa2222;
+	color: #fff;
+	cursor: pointer;
 }
 
-
+.cont-father{
+	background-color: #f2f2f2;
+}
 
 /* Estilos del separador con efecto parallax*/
 .separator__parallax{
@@ -932,7 +851,6 @@ footer {
 		margin-left: 20px;
 		margin-right: 20px;
 		margin-bottom: 25px;
-		
 	}
 		
 	/*  ----- Estilos del texto con efecto en la imagenes de los collares ----- */

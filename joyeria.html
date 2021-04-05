@@ -108,65 +108,62 @@
             <div class="title__products__father">
                 <h2 class="title-products">Joyería <br> Femenina</h2>
             </div>
-            <br>
             <!-------------------------------Menu de imagenes de los collares------------------------------->
             <div class="prod-collares prod-animados">
-                <div class="prod__collares__text">
-                    <h2>Collares</h2>
-                </div>
                 <!-- Imagen principal -->
-                <label><img src="images/principal-joyeria/collar.jpg" alt="collares" id="collares"></label>
-                <br><br>
-                <a id="btnCollar" href="#contCollares"><button class="btn-products">VER TODOS LOS COLLARES</button></a>
-            </div>
+                <label><img src="images/principal-joyeria/collar.jpg" alt="collares" id="collares"></label><br><br>
+               
+                <section class="botonesProd">
+                    <a id="btnCollar" href="#contCollares"> VER TODOS LOS COLLARES </a>
+                </section>
+            </div> 
             <!-------------------------------Menu de imagenes de los anillos------------------------------->
             <div class="prod-aretes prod-animados">
-                <div class="prod__aretes__text">
-                    <h2>Aretes</h2>
-                </div>
                 <!-- Imagen principal -->
-                <label><img src="images/principal-joyeria/aretes.jpg" alt="aretes" id="aretes"></label>
-                <br><br>
-                <a id="btnArete" href="#contAretes"><button class="btn-products">VER TODOS LOS ARETES</button></a>
+                <label><img src="images/principal-joyeria/aretes.jpg" alt="aretes" id="aretes"></label><br><br>
+               
+                <section class="botonesProd">
+                    <a id="btnArete" href="#contAretes">VER TODOS LOS ARETES</a><br>
+                 </section>
             </div>
-
             <!-------------------------------Menu de imagenes de las maninillas------------------------------->
             <div class="prod-anillos prod-animados">
-                <div class="prod__anillos__text">
-                    <h2>Anillos Y <br> Manillas</h2>
-                </div>
                 <!-- Imagen principal -->
-                <label><img src="images/principal-joyeria/anillo.jpg" alt="anillos" id="anillos"></label>
-                <br><br>
-                <a id="btnAnilloManilla" href="#contAnillos"><button class="btn-products">VER TODOS LOS ANILLOS Y MANILLAS</button></a>
+                <label><img src="images/principal-joyeria/anillo.jpg" alt="anillos" id="anillos"></label><br><br>
+                
+                <section class="botonesProd">
+                    <a id="btnAnilloManilla" href="#contAnillos">VER TODOS LOS ANILLOS Y MANILLAS</a>
+                </section>
             </div>
-            <button id="btnOcultar" class="hidee">Ocultar Productos</button>
         </div>
 
-        <!-------------------Collares-------------------->
-        <div class="container-Collares" id="contCollares">
-            <div class="title__products__father">
-                <h1 class="title-products">Nuestros Collares</h1>
+        <div class="cont-father">
+            <button id="btnOcultar" class="hidee"><i class="fas fa-times"></i></button>        
+            <!-------------------Collares-------------------->
+            <div class="container-Collares" id="contCollares">
+                <div class="title__products__father">
+                    <h1 class="title-products">Nuestros Collares</h1>
+                </div>
+                <main id="productos-collares" class="targetas"></main>
             </div>
-            <main id="productos-collares" class="targetas"></main>
-        </div>
-        <!----------------------------------------------> 
+            <!----------------------------------------------> 
 
-        <!-------------------Aretes-------------------->
-        <div class="container-Aretes" id="contAretes">
-            <div class="title__products__father">
-                <h1 class="title-products">Nuestros Aretes</h1>
+            <!-------------------Aretes-------------------->
+            <div class="container-Aretes" id="contAretes">
+                <div class="title__products__father">
+                    <h1 class="title-products">Nuestros Aretes</h1>
+                </div>
+                <main id="productos-aretes" class="targetas"></main>
             </div>
-            <main id="productos-aretes" class="targetas"></main>
-        </div>
-        <!---------------------------------------------->
+            <!---------------------------------------------->
 
-        <!-------------------Anillos y manillas-------------------->
-        <div class="container-Anillos" id="contAnillos">
-            <div class="title__products__father">
-                <h1 class="title-products">Nuestros Anillos <br> Y Manillas</h1>
+            <!-------------------Anillos y manillas-------------------->
+            <div class="container-Anillos" id="contAnillos">
+                <div class="title__products__father">
+                    <h1 class="title-products">Nuestros Anillos Y Manillas</h1>
+                </div>  
+                <main id="productos-anillos" class="targetas"></main>
             </div>
-            <main id="productos-anillos" class="targetas"></main>
         </div>
         <!---------------------------------------------->
         <!-- Seperador con efecto parallax -->
