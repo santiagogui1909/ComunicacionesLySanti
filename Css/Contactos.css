@@ -29,9 +29,9 @@ body {
 .contenidoContacto {
     padding: 0px 80px;
     margin: 10px;
-    max-width: 180%;
+    max-width: 160%;
     flex-grow: 1;
-    font-size: 22px;
+    font-size: 10px;
     padding-bottom: 5px;
     margin-bottom: 10px;
     color: rgba(66, 66, 66, 0.774);
@@ -44,6 +44,10 @@ body {
     padding-bottom: 5px;
     margin-bottom: 10px;
     max-width: 180%;
+}
+
+.contenidoContacto p {
+    font-size: 14px;
 }
 
 .informacion span {
