@@ -196,7 +196,7 @@ $(document).ready(function () {
     });
 
 
-    var BtnOcultar = $("#btnOcultar");
+    var BtnOcultar = $(".botonHide");
 
     var ocultar = $(".hidee");
 
