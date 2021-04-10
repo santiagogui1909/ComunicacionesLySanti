@@ -114,6 +114,7 @@ header nav ul li .children li a{
 
     header nav ul li a{
         display: block;
+        text-align: left;
     }
 
     header nav ul li:hover .children{
@@ -168,10 +169,10 @@ header {
     height: 600px;
     background: #eb575793;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #00000071, #EB5757), url(https://i.ibb.co/hMzb1wv/Portada.jpg);
+    background: -webkit-linear-gradient(to right, #00000071, #EB5757), url(https://i.ibb.co/55K4TQ9/Fondo-Pag-web-Recuperado.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #00000071, #eb575796), url(https://i.ibb.co/hMzb1wv/Portada.jpg);
+    background: linear-gradient(to right, #00000071, #e8777796), url(https://i.ibb.co/55K4TQ9/Fondo-Pag-web-Recuperado.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -886,13 +887,13 @@ footer {
 
 .content-foo {
     text-align: center;
-    max-width: 300px;
+    max-width: 400px;
     padding: 25px;
-    margin: 0px 60px;
+    margin: 0px 80px;
 }
 
 .content-foo .email{
-    padding: 10px;
+    padding: 15px;
 }
 
 .logo{
@@ -911,13 +912,14 @@ footer {
 .content-foo h4 {
     color: #fff;
     border-bottom: 3px solid #af20d3;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
     
 }
 
 .content-foo p {
     color: #ccc;
+    font-size: 15px;
 }
 
 .content-foo a {
@@ -930,7 +932,6 @@ footer {
     font-size: 24px;
     margin: 20px 0 0 0;
     color: #9e9797;
-
 }
 
 /*boton flotante volver*/
