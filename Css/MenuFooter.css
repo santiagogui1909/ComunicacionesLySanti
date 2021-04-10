@@ -10,7 +10,6 @@
     box-sizing: border-box;
 }
 
-
 /*estilos generales menu*/
 
 .menu-bar{
@@ -112,6 +111,7 @@ header nav ul li .children li a{
     header nav ul li{
         display: block;
         border-bottom: 1px solid rgba(255,255,255,.5);
+        text-align: left;
     }
 
     header nav ul li a{
@@ -356,13 +356,13 @@ footer {
 
 .content-foo {
     text-align: center;
-    max-width: 300px;
+    max-width: 400px;
     padding: 25px;
-    margin: 0px 60px;
+    margin: 0px 80px;
 }
 
 .content-foo .email{
-    padding: 10px;
+    padding: 15px;
 }
 
 .logo{
@@ -381,13 +381,14 @@ footer {
 .content-foo h4 {
     color: #fff;
     border-bottom: 3px solid #af20d3;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
     
 }
 
 .content-foo p {
     color: #ccc;
+    font-size: 15px;
 }
 
 .content-foo a {
