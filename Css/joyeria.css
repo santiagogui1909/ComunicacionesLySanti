@@ -29,42 +29,6 @@ html{
 	scroll-behavior: smooth;
 }
 
-/* ---- Estilos de la pantalla de carga */
-#contenedor_carga{
-	background-color: rgba(250, 240, 245, 0.9);
-	height: 100%;
-	width: 100%;
-	position: fixed;
-	-webkit-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-	z-index: 10000;
-}
-
-#carga{
-	border: 15px solid #ccc;
-	border-top-color: #aa2222;
-	border-top-style: groove;
-	height: 100px;
-	width: 100px;
-	border-radius: 100%;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto; 
-	-webkit-animation: girar 1.5s linear infinite;
-	-o-animation: girar 1.5s linear infinite;
-	animation: girar 1.5s linear infinite;
-}
-
-@keyframes girar{
-	from{ transform: rotate(0deg);}
-	to{ transform: rotate(360deg);}
-}
-
 /* Animación de la navegación interna */
 html{
 	scroll-behavior: smooth;
@@ -318,11 +282,13 @@ header .textos-header {
 
 .container-slider{
 	position: relative;
-	width: 80%;
+	width: 65%;
 	overflow: hidden;
 	margin: auto;
 	margin-top: 40px;
-	border: 3px solid #642a73;
+	border: 5px solid #ffff;
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px 5px #888888;
 	margin-bottom: 60px;
 }
 
@@ -431,6 +397,7 @@ header .textos-header {
 	object-fit: cover;
 	cursor: pointer;
 	display:block;
+	border: 5px solid #000;
 	
 }
 
@@ -441,7 +408,7 @@ header .textos-header {
 }
 
 .prod-collares:hover img{
-	transform: scale(1.1) rotate(1deg);
+	transform: scale(1.06) rotate(1deg);
 }
 
 /* ----- Estilos del texto con efecto en la imagenes de los anillos -----  */
@@ -451,7 +418,7 @@ header .textos-header {
 }
 
 .prod-anillos:hover img{
-	transform: scale(1.1) rotate(1deg);
+	transform: scale(1.06) rotate(1deg);
 }
 
 /*  ----- Estilos del texto con efecto en la imagenes de las aretes ----- */
@@ -461,7 +428,7 @@ header .textos-header {
 }
 
 .prod-aretes:hover img{
-	transform: scale(1.1) rotate(1deg);
+	transform: scale(1.06) rotate(1deg);
 }
 
 .targetas{
@@ -484,6 +451,12 @@ header .textos-header {
     border-image-slice: 1;   
 
     transition: .6s;
+}
+
+.img-fluid:hover{
+    box-shadow: 10px -10px 12px #888888;
+    transform: scale(1.03) rotate(0deg);
+    cursor: pointer;
 }
 
 /*Estilos para el texto del menu de imagenes*/
@@ -547,11 +520,12 @@ header .textos-header {
 	position: relative;
 	border-radius: 50px;
 	cursor: pointer;
-	background-color: #aa2222;
+	background-color: #642a73;
 	width: 50px;
 	height: 50px;
 	top: 120px;
 	left: 90%;
+	transition: all .8s;
 }
 
 .botonHide a{
@@ -561,6 +535,12 @@ header .textos-header {
 	top: 13%;
 	font-size: 35px;
 	color: #fff;
+}
+
+.botonHide:hover{
+	box-shadow: 5px 0px 10px #888888;
+	transform: scale(1.03) rotate(90deg);
+	background-color: #aa2222;
 }
 
 
