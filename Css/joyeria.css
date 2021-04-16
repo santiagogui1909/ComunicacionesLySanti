@@ -300,14 +300,36 @@ header .textos-header {
 }
 
 .slider__section{
+	display:inline-block;
+	position:relative;
 	width: 100%; 
+}
+
+.slider__section a{
+	font-size: 18px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+    color: #d3d3d3;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.836);
+	position: absolute;
+	bottom:5em;
+	right:18em;
+	background-color:#642a73;
+	border-radius: 1.3em;
+	color:white;
+	text-transform:uppercase;
+	padding:1em 1.5em;
+
+}
+
+.slider__section a:hover{
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .slider img{
 	display: block;
 	width: 100%; 
 	height: 100%;
-	object-fit: cover;
 }
 
 .slider__btn{
@@ -315,7 +337,7 @@ header .textos-header {
 	width: 40px;
 	height: 40px;
 	top: 50%;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: #642a73;
 	transform: translateY(-50%);
 	font-size: 30px;
 	font-weight: bold;
@@ -335,7 +357,7 @@ header .textos-header {
 
 /*Decoraciones del slider*/
 .slider__btn:hover{
-	background-color: #222;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*  ----- Estilos del menú de imagenes  ----- */
@@ -641,6 +663,20 @@ footer {
 
 }
 
+@media screen and (max-width: 1050px) and (min-width: 801px){
+	
+	.slider__section a{
+		font-size: 13px;
+		bottom:7em;
+		right:19em;
+	}
+	
+	.slider__section a:hover{
+		background-color: none;
+	}
+}
+
+
  @media screen and (max-width: 1300px) and (min-width: 801px){
 
 	.text-link p{
@@ -726,8 +762,6 @@ footer {
 		color: #000;
 		font-family: 'Open Sans', sans-serif;
 	}
-
-		
 } 
 
 /*  ------------------RESPONSIVE TABLET------------------ */
@@ -1033,10 +1067,33 @@ footer {
 		border-top-right-radius: 0px;
 		border-bottom-right-radius: 0px;
 	}
+
+	.slider__section a{
+		font-size: 13px;
+		bottom:6em;
+		right:18em;
+	}
+	
+	.slider__section a:hover{
+		background-color: none;
+	}
 }
 
 
 /*  ------------------RESPONSIVE CELULAR------------------ */
+
+@media screen and (max-width: 650px){
+	.slider__section a{
+		font-size: 12px;
+		bottom:5em;
+		right:12em;
+	}
+	
+	.slider__section a:hover{
+		background-color: none;
+	}
+
+}
 
 @media screen and (max-width: 480px){
 
@@ -1281,6 +1338,15 @@ footer {
         font-size: 13px ;
     
     }
+
+	.slider__section a{
+		font-size: 12px;
+		bottom:5em;
+		right:11em;
+	}
 	
+	.slider__section a:hover{
+		background-color: none;
+	}
 }
 

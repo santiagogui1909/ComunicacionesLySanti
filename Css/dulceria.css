@@ -312,7 +312,7 @@ header .textos-header {
     top: 90px;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 1px 10px 15px #888888; */
 }
 
 #image img{
@@ -704,7 +704,7 @@ footer {
         top: 80px;
         overflow: hidden;
         cursor: pointer;
-        box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+        /* box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5); */
     }
     
     
@@ -933,7 +933,7 @@ footer {
         top: 80px;
         overflow: hidden;
         cursor: pointer;
-        box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+        /* box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5); */
     }
     
     
@@ -1045,7 +1045,7 @@ footer {
         top: -190px;
         overflow: hidden;
         cursor: pointer;
-        box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+        /* box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5); */
     }
     
     #frase1-section{
@@ -1156,7 +1156,7 @@ footer {
         top: -50px;
         overflow: hidden;
         cursor: pointer;
-        box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+        /* box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5); */
     }
     
     #frase1-section{
