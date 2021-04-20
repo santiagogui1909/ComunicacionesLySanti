@@ -367,7 +367,7 @@ header .textos-header {
     width: 30vw;
     height: 472.7vh;
     z-index: -2;
-    background-image: url(../images/fondo.jpg);
+    background-image: url(../images/dulceria/fondo.jpg);
 }
 
 .sub-section-lateral{
@@ -379,9 +379,8 @@ header .textos-header {
 /* lista */
 .list-section ul{
     text-align: left;
-    color: #fffa;
+    color: #fff;
     list-style: none;
-    /* margin-top: 30px; */
     margin-left: 35px;
 }
 
