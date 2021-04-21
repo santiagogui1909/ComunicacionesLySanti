@@ -394,6 +394,20 @@ a:link, a:visited{
 }
 
 
+@media screen and (max-width: 1050px) and (min-width: 801px){
+	
+	.slider__section a{
+		font-size: 13px;
+		bottom:7em;
+		right:19em;
+	}
+	
+	.slider__section a:hover{
+		background-color: none;
+	}
+}
+
+
  @media screen and (max-width: 1300px) and (min-width: 801px){
 
 	.text-link p{
