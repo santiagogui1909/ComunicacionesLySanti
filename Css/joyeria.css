@@ -12,13 +12,13 @@ body{
 	background-color: #f3f7fd;
 }
 
-*, *:active, *:before{
+/* *, *:active, *:before{
     margin: 0;
     padding: 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-}
+} */
 
 *{
 	font-family: 'Open Sans', sans-serif;
@@ -38,244 +38,6 @@ html{
 
 a:link, a:visited{
     text-decoration:none;
-}
-
-/**menu*/
-
-#btn-menu {
-    display: none;
-}
-
-header label {
-    cursor: pointer;
-    display: none;
-}
-
-/*estilos generales menu*/
-
-nav ul {
-    list-style: none;
-    padding: 0px;
-    justify-content: flex-end;
-    z-index: 150;
-}
-
-nav li {
-    position: relative;
-}
-
-nav li ul {
-    position: absolute;
-}
-
-nav a {
-    color: #ddd;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    transition: all .4s;
-}
-
-nav a:hover {
-    background: rgba(0, 0, 0, 0.986);
-}
-
-nav ul ul {
-    display: none;
-}
-
-/*estilos primer nivel*/
-
-nav>ul {
-    display: table;
-    width: 100%;
-}
-
-nav>ul>li {
-    float: right;
-}
-
-/*estilos segundo nivel*/
-
-nav li li {
-    background: rgba(0, 0, 0, 0.89);
-    width: 148px;
-}
-
-nav li li:hover {
-    background: rgba(0, 0, 0, 0.966);
-    width: 148px;
-}
-
-nav>ul>li>ul {
-    top: 100%;
-}
-
-/*estilos tercer nivel*/
-
-nav ul ul ul {
-    left: 100%;
-    top: 0;
-}
-
-.menu a span {
-    margin-left: 10px;
-    transition: all 0.8s;
-}
-
-.menu ul li:hover ul {
-    position: absolute;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-    color: rgba(245, 3, 3, 0.986);
-}
-
-/*pantalla pequeña*/
-@media (max-width: 764px) {
-    header label {
-        display: table;
-        position: fixed;
-        bottom: 90%;
-    }
-
-    .menu {
-        font-size: 14px;
-        transform: translatey(-200%);
-        transition: all 0.5s;
-    }
-
-    nav ul li ul li ul:hover ul {
-        display: none;
-        position: static;
-    }
-
-    #btn-menu:checked~.menu {
-        transform: translatey(0%);
-    }
-}
-
-.logo {
-    width: 165px;
-    padding: 5px;
-    display: block;
-    float: left;
-    margin-left: 4%;
-}
-
-.animacionImagen {
-    opacity: 0;
-    transition: all 0.8s;
-}
-
-/* --- Clase que agregaremos cuando el usuario haga scroll --- */
-.menu-fixed {
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    transition: all 0.8s;
-}
-
-/**imagen*/
-
-header {
-    width: 100%;
-    height: 130px;
-    background: #eb575793;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #00000071, #EB5757), url(/src/images/Principal/Portada.jpg);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    ;
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #00000071, #eb575796), url(/src/images/Principal/Portada.jpg);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-}
-
-header .textos-header {
-    display: flex;
-    height: 430px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.textos-header h1 {
-    font-size: 50px;
-    color: #fff;
-}
-
-.textos-header h2 {
-    font-size: 30px;
-    font-weight: 300;
-    color: #fff;
-}
-
-.wave {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-}
-
-/* Estilos de los iconos de las redes sociales */
-
-.redes-sociales{
-    position: fixed;
-    display: flex;
-    top: 35%;
-    left: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 30px;
-    z-index: 200;
-}
-
-.redes-buttom{
-    display: block;
-	text-align:center;
-    padding: .7rem;
-    transition: .5s;
-    /* border-bottom-right-radius: 12px; */
-}
-
-.redes-buttom:nth-child(1){
-    border-top-right-radius: 12px;
-}
-
-.redes-buttom:nth-child(3){
-    border-bottom-right-radius: 12px;
-}
-
-.red-facebook{
-	box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-    background-color: #1877f2;
-    color: #fff;
-    padding-left: 17.5px;
-}
-
-.red-whatsapp{
-    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-    background-color: #25d366;
-    color: #fff; 
-}
-
-.red-instagram{
-    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    color: #fff;
-}
-
-.redes-buttom:hover{
-    padding-left: 3rem;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
 }
 
 /* ----- Slider ----- */
@@ -300,14 +62,36 @@ header .textos-header {
 }
 
 .slider__section{
+	display:inline-block;
+	position:relative;
 	width: 100%; 
+}
+
+.slider__section a{
+	font-size: 18px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+    color: #d3d3d3;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.836);
+	position: absolute;
+	bottom:5em;
+	right:18em;
+	background-color:#642a73;
+	border-radius: 1.3em;
+	color:white;
+	text-transform:uppercase;
+	padding:1em 1.5em;
+
+}
+
+.slider__section a:hover{
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .slider img{
 	display: block;
 	width: 100%; 
 	height: 100%;
-	object-fit: cover;
 }
 
 .slider__btn{
@@ -315,7 +99,7 @@ header .textos-header {
 	width: 40px;
 	height: 40px;
 	top: 50%;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: #642a73;
 	transform: translateY(-50%);
 	font-size: 30px;
 	font-weight: bold;
@@ -335,7 +119,7 @@ header .textos-header {
 
 /*Decoraciones del slider*/
 .slider__btn:hover{
-	background-color: #222;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*  ----- Estilos del menú de imagenes  ----- */
@@ -366,7 +150,6 @@ header .textos-header {
 	width: 120px;
 	height: 3px;
 	background-color: #000;
-	/* background-color: currentColor;  */
 	top: 0.6em;
 } 
 
@@ -493,7 +276,6 @@ header .textos-header {
     right: -130px;
     top: 55px;
 }
-
 .botonesProd{
 	height: 50px;
     align-items: center;
@@ -598,48 +380,19 @@ header .textos-header {
 	background-color: #aa2222;
 }
 
-/* Footer */
-footer {
-    background: #414141;
-    padding: 60px 0 30px 0;
-    margin: auto;
-    overflow: hidden;
-
+@media screen and (max-width: 1050px) and (min-width: 801px){
+	
+	.slider__section a{
+		font-size: 13px;
+		bottom:7em;
+		right:19em;
+	}
+	
+	.slider__section a:hover{
+		background-color: none;
+	}
 }
 
-.contenedor-footer {
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
-
-}
-
-.content-foo {
-    text-align: center;
-}
-
-.content-foo h4 {
-    color: #fff;
-    border-bottom: 3px solid #af20d3;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-}
-
-.content-foo p {
-    color: #ccc;
-
-}
-
-.titulo-final {
-    text-align: center;
-    font-size: 24px;
-    margin: 20px 0 0 0;
-    color: #9e9797;
-
-}
 
  @media screen and (max-width: 1300px) and (min-width: 801px){
 
@@ -726,8 +479,6 @@ footer {
 		color: #000;
 		font-family: 'Open Sans', sans-serif;
 	}
-
-		
 } 
 
 /*  ------------------RESPONSIVE TABLET------------------ */
@@ -816,111 +567,6 @@ footer {
 		cursor: pointer;
 		display:block;
 	}
-	
-	.text__link-products p{
-		text-align: right;
-		margin-top: 10px;
-		text-decoration: underline;
-		font-size: 20px;
-		color: #000;
-		/* background-color: red; */
-	}
-	
-	.text__link-products p:before{
-		content: "";
-		visibility: hidden;
-	}
-	
-	.text__link-products p:hover:before{
-		visibility: hidden;
-	}
-	
-	/*Estilos del texto dentro de cada imagen*/
-	.prod__collares__text h2{
-		position: relative;
-		top: 180px;
-		font-family: 'myFont';
-		border: 2px solid white;
-		background: black;
-		padding: 6px;
-	}
-	
-	.prod__collares__text h2{
-		position: relative;
-		top: 0;
-		font-family: 'myFont';
-		background: black;
-		padding: 6px;
-	}
-	
-	.prod__collares__text{
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(0,0,0,0.2);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color:#fff;
-		transform: scale(0);
-		transition: .5s;
-		z-index: 100;
-	}
-	
-	/*Estilos del texto dentro de cada imagen*/
-	.prod__anillos__text h2{
-		position: relative;
-		top: 0;
-		font-family: 'myFont';
-		border: 2px solid white;
-		background: black;
-		padding: 6px;
-	}
-	
-	.prod__anillos__text{
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(0,0,0,0.2);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color:#fff;
-		transform: scale(0);
-		transition: .5s;
-		z-index: 100;
-	}
-	
-	.prod__aretes__text h2{
-		position: relative;
-		top: 0;
-		font-family: 'myFont';
-		border: 2px solid white;
-		background: black;
-		padding: 6px;
-	}
-		
-	/*Estilos del texto dentro de cada imagen*/
-	.prod__aretes__text{
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(0,0,0,0.2);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color:#fff;
-		transform: scale(0);
-		transition: .5s;
-		z-index: 100;
-	}
-
 	.botonHide{
 		position: relative;
 		border-radius: 50px;
@@ -1033,10 +679,33 @@ footer {
 		border-top-right-radius: 0px;
 		border-bottom-right-radius: 0px;
 	}
+
+	.slider__section a{
+		font-size: 13px;
+		bottom:6em;
+		right:18em;
+	}
+	
+	.slider__section a:hover{
+		background-color: none;
+	}
 }
 
 
 /*  ------------------RESPONSIVE CELULAR------------------ */
+
+@media screen and (max-width: 650px){
+	.slider__section a{
+		font-size: 12px;
+		bottom:5em;
+		right:12em;
+	}
+	
+	.slider__section a:hover{
+		background-color: none;
+	}
+
+}
 
 @media screen and (max-width: 480px){
 
@@ -1092,33 +761,6 @@ footer {
 		text-transform: uppercase;
 	}
 		
-	.info__separator{
-		position: relative;
-		text-align: center;
-		left: 0;
-		width: 70%;
-	}
-	
-	.info__separator h1{
-		position: relative;
-		top: -30px;
-		left: 70px;
-		margin: 0;
-		/* text-align: center; */
-		font-size: 30px;
-		color: #642a73;
-		font-family: 'Open Sans', sans-serif;
-	}
-	
-	.info__separator p{
-		position: relative;
-		top: -30px;
-		left: 70px;
-		/* text-align: center; */
-		color: #000;
-		font-family: 'Open Sans', sans-serif;
-	}
-
 	.cont-joyeria{
 		text-align: center;
 		background:#aa2222;
@@ -1172,17 +814,7 @@ footer {
 		cursor: pointer;
 		display:block;
 	}
-	
-	.text__link-products p{
-		text-align: right;
-		margin-top: 10px;
-		margin-right: 65px;
-		text-decoration: none;
-		font-size: 17px;
-		color: #000;
-		/* background-color: red; */
-	}
-	
+		
 	.separator__parallax{
 		text-align: center;
 		color: #fff;
@@ -1281,6 +913,15 @@ footer {
         font-size: 13px ;
     
     }
+
+	.slider__section a{
+		font-size: 12px;
+		bottom:5em;
+		right:11em;
+	}
 	
+	.slider__section a:hover{
+		background-color: none;
+	}
 }
 

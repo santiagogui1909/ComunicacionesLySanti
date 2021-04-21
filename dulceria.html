@@ -3,66 +3,65 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Comunicaciones LySanti</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Css/dulceria.css">
-    <link rel="stylesheet" href="../Css/fontello.css">
+    <link rel="stylesheet" href="Css/dulceria.css">
+    <link rel="stylesheet" href="Css/MenuFooter.css">
+    <link rel="stylesheet" href="Css/fontello.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="shortcut icon" href="https://i.ibb.co/F8C6RcS/etiqueta.png" type="image/x-icon">
-    <script src="../js/scrollreveal.js"></script>
+        <link rel="shortcut icon" href="https://i.ibb.co/F8C6RcS/etiqueta.png" type="image/x-icon">
+        <script src="js/scrollreveal.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>Comunicaciones Lisanty</title>
 </head>
 
 <body>
 
     <header>
-        <input type="checkbox" id="btn-menu">
-        <label for="btn-menu" class="icon-menu-outline"></label>
+        <div class="menu-bar">
+            <a class="bt-menu"><span class="icon-menu"></span>Menu</a>
+        </div>
 
         <nav class="menu">
             <ul>
-                <li><a href="#">Contacto</a></li>
-                <li class="subMenu"><a href="#">Ofertas<span class="icon-down-circle"></span></a>
-                    <ul>
-                        <li><a href="#">ofertas</a></li>
-                        <li><a href="#">shoals</a></li>
-                        <li><a href="#">shoals</a></li>
-                        <li><a href="#">shoals</a></li>
+                <li><a href="index.html" class="icon-home"><span></span>Inicio</a></li>
+                <li>
+                    <a class="icon-mobile" href="Tecnologia.html"><span></span>Tecnologia</a>
+                    <!-- <ul class="children">
+                        <li><a href="">Telefonos</a></li>
+                        <li><a href="">Bafles</a></li>
+                        <li><a href="">Accesorios Tecnologicos</a></li>
+                    </ul> -->
+                </li>
+
+                <li class="subMenu">
+                    <a class="icon-angle-circled-down"><span class="icon-shopping-bag"></span>Accesorios Para Ti</a>
+                    <ul class="children">
+                        <li><a href="Mujer.html">Mujer</a></li>
+                        <li><a href="Hombre.html">Hombre</a></li>
+                        <li><a href="joyeria.html">Joyeria</a></li>
                     </ul>
                 </li>
 
-                <li class="subMenu"><a href="#">Productos<span class="icon-down-circle"></span></a>
-                    <ul>
-                        <li class="subMenu"><a href="#">Tecnologia<span class="icon-down-circle"></span></a>
-                            <ul>
-                                <li><a href="#">Celulares</a></li>
-                                <li><a href="#">Parlantes</a></li>
-                                <li><a href="#">Accesorios</a></li>
-                            </ul>
-                        </li>
+                <li><a class="icon-gift" href="dulceria.html"><span class="icon-mail2"></span>Dulceria</a></li>
 
-                        <li class="subMenu"><a href="#">Ellos & Ellas<span class="icon-down-circle"></span></a>
-                            <ul>
-                                <li><a href="../pages/Mujer.html">Mujer</a></li>
-                                <li><a href="../pages/Hombre.html">Hombre</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a href="../pages/joyeria.html">Joyeria</a></li>
-                        <li><a href="../pages/dulceria.html">Dulceria</a></li>
+                <li class="subMenu">
+                    <a class="icon-angle-circled-down"><span class="icon-shopping-bag"></span>Ofertas<span></span></a>
+                    <ul class="children">
+                        <li><a href="#nosotros" class="desplazar">¿Quienes somos?</a></li>
+                        <li><a href="#portafolio" class="desplazar">Portafolio</a></li>
+                        <li><a href="#servicios" class="desplazar">Nuestros servicios</a></li>
                     </ul>
                 </li>
 
-                <li><a href="../pages/Principal.html">Inicio</a></li>
+                <li><a class="icon-users" href="Contactos.html"><span class="icon-mail2"></span>Contactos</a></li>
             </ul>
         </nav>
-
-        <div class="wave" style="height: 60px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        <div class="wave" style="height: 100px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 170%; width: 100%;">
                 <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #e8e3d3;"></path>
+                    style="stroke: none; fill: #fff;"></path>
             </svg>
         </div>
     </header>
@@ -80,7 +79,7 @@
             <h2 id="products-info">Productos</h2>
             <h1 id="dulceria-info">Dulcería <br><span> Y Detalles</span></h1>
             <figure id="image">
-                <img src="../images/fondo.jpg" alt="a">
+                <img src="images/chocolates.png" alt="chocolate">
             </figure>
 
             <div class="container-separate">
@@ -91,83 +90,90 @@
                 </a>
             </div>
         </div>
-        <section>
-            <div class="btn-menu2">Productos y Servicios
-                <label for="btn-menu2" class="icon-menu-outline"></label>
-            </div>
-            <!-- Checkbox para desplegar section lateral en pantallas más pequeñas -->
-            <input type="checkbox" id="btn-menu2">
-            <div class="section-lateral">
-                <div class="sub-section-lateral">
-                    <div class="lists">
-                        <div class="list-section">
+    </section>
+
+    <section>
+        <div class="btn-menu2">Productos y Servicios
+            <label for="btn-menu2" class="icon-menu-outline"></label>
+        </div>
+        <!-- Checkbox para desplegar section lateral en pantallas más pequeñas -->
+        <input type="checkbox" id="btn-menu2">
+        <div class="section-lateral">
+            <div class="sub-section-lateral">
+                <div class="lists">
+                    <div class="list-section">
+                        <ul>
+                            <li class="item-1">
+                                <p>Detalles para cualquier ocasión</p>
+                            </li>
+                            <li><i class="fas fa-circle"></i> Cumpleaños</li>
+                            <li><i class="fas fa-circle"></i> Aniversario</li>
+                            <li><i class="fas fa-circle"></i> Amor & Amistad</li>
+                            <li><i class="fas fa-circle"></i> Día de la Madre y del Padre</li>
+                        </ul> <br>
+                        <div class="list2-section">
                             <ul>
-                                <li class="item-1">
-                                    <p>Detalles para cualquier ocasión</p>
+                                <li class="item-2">
+                                    <p>Contenido de los detalles</p>
                                 </li>
-                                <li><i class="fas fa-circle"></i> Cumpleaños</li>
-                                <li><i class="fas fa-circle"></i> Aniversario</li>
-                                <li><i class="fas fa-circle"></i> Amor & Amistad</li>
-                                <li><i class="fas fa-circle"></i> Día de la Madre y del Padre</li>
-                            </ul> <br>
-                            <!-- HAcer separador -->
-                            <div class="list2-section">
-                                <ul>
-                                    <li class="item-2">
-                                        <p>Contenido de los detalles</p>
-                                    </li>
-                                    <li><i class="fas fa-circle"></i>Cajas pequeñas, medianas y grandes, con frases y
-                                        rellenas de caramelos.</li> <br>
-                                    <li><i class="fas fa-circle"></i> Tarjetas de diversos tamaños, Aniversario,
-                                        Cumpleaños, Felicitaciones y mucho más.</li> <br><br>
-                                    <li><i class="fas fa-circle"></i> Vasos decorados con caja de dulces dentro</li>
-                                </ul>
-                            </div>
+                                <li><i class="fas fa-circle"></i>Cajas pequeñas, medianas y grandes, con frases y
+                                    rellenas de caramelos.</li> <br>
+                                <li><i class="fas fa-circle"></i> Tarjetas de diversos tamaños, Aniversario,
+                                    Cumpleaños, Felicitaciones y mucho más.</li> <br><br>
+                                <li><i class="fas fa-circle"></i> Vasos decorados con caja de dulces dentro</li>
+                            </ul>
                         </div>
-                        <label for="btn-menu2"> <i class="cancel-icon far fa-times-circle"></i></label>
                     </div>
-                    <div class="fondo">
-                        <div class="fondo__images1"><img src="../images/vector-corazon.png" alt=""></div>
-                        <div class="fondo__images2"><img src="../images/vector-corazon.png" alt=""></div>
-                        <div class="fondo__images3"><img src="../images/vector-corazon.png" alt=""></div>
-                        <div class="fondo__images4"><img src="../images/vector-corazon.png" alt=""></div>
-                        <div class="fondo__images5"><img src="../images/vector-corazon.png" alt=""></div>
-                        <div class="fondo__images6"><img src="../images/vector-corazon.png" alt=""></div>
-                        <div class="fondo__images7"><img src="../images/vector-corazon.png" alt=""></div>
-                        <div class="fondo__images8"><img src="../images/vector-corazon.png" alt=""></div>
-                    </div>
+                    <label for="btn-menu2"> <i class="cancel-icon far fa-times-circle"></i></label>
+                </div>
+                <div class="fondo">
+                    <div class="fondo__images1"><img src="images/dulceria/vector-corazon.png" alt=""></div>
+                    <div class="fondo__images2"><img src="images/dulceria/vector-corazon.png" alt=""></div>
+                    <div class="fondo__images3"><img src="images/dulceria/vector-corazon.png" alt=""></div>
+                    <div class="fondo__images4"><img src="images/dulceria/vector-corazon.png" alt=""></div>
+                    <div class="fondo__images5"><img src="images/dulceria/vector-corazon.png" alt=""></div>
+                    <div class="fondo__images6"><img src="images/dulceria/vector-corazon.png" alt=""></div>
+                    <div class="fondo__images7"><img src="images/dulceria/vector-corazon.png" alt=""></div>
+                    <div class="fondo__images8"><img src="images/dulceria/vector-corazon.png" alt=""></div>
                 </div>
             </div>
-            <br><br>
-            <main id="products-dulceria" class="targets"></main>
-        </section>
+        </div>
+        <br><br>
+        <main id="products-dulceria" class="targets"></main>
+    </section>
 
+    <section>
+        <a class="return-up" href="#top"><i class="fas fa-chevron-up"></i></a>
+    </section>
 
-        <section>
-            <a class="return-up" href="#top"><i class="fas fa-chevron-up"></i></a>
-        </section>
-
-        <footer>
-            <div class="contenedor-footer">
-                <div class="content-foo">
+    <footer>
+        <div class="contenedor-footer">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="content-foo">
+                <div class="num">
                     <h4>Phone</h4>
-                    <p>3005893148</p>
+                    <p class="icon-phone">3005893148</p>
                 </div>
-                <div class="content-foo">
+
+                <div class="email">
                     <h4>Email</h4>
-                    <p>ComunicacionesLySanti@hotmail.com</p>
+                    <p class="icon-gmail">ComunicacionesLysanti@hotmail.com</p>
                 </div>
-                <div class="content-foo">
-                    <h4>Location</h4>
-                    <p>Ibague-Tolima</p>
-                </div>
+
             </div>
+            <div class="content-foo">
+                <h4>Ubicacion</h4>
+                <a href="Contactos.html" class="icon-location">Ibague-Tolima</a>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; ComunicacionesLisanty 2021</h2>
+    </footer>
 
-            <h2 class="titulo-final">&copy; ComunicacionesLySanti</h2>
 
-        </footer>
-        <script src="../js/dulceria.js"></script>
-        <script src="../js/MenuFooter.js"></script>
+    <script src="js/dulceria.js"></script>
+    <script src="js/MenuFooter.js"></script>
 </body>
 
 </html>

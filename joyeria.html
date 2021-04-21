@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
     <meta charset="UTF-8">
     <title>Comunicaciones LySanti</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Css/joyeria.css">
-    <link rel="stylesheet" href="Css/fontello.css">
+    <link rel="stylesheet" href="Css/MenuFooter.css">
+    <!-- <link rel="stylesheet" href="Css/fontello.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="shortcut icon" href="https://i.ibb.co/F8C6RcS/etiqueta.png" type="image/x-icon">
+    <link rel="icon" href="https://i.ibb.co/F8C6RcS/etiqueta.png">
     <script src="js/scrollreveal.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
@@ -21,52 +22,49 @@
     </div> -->
     <!-- Enbacabezado de la página -->
     <header>
-        <input type="checkbox" id="btn-menu">
-        <label for="btn-menu" class="icon-menu"></label>
+        <div class="menu-bar">
+            <a class="bt-menu"><span class="icon-menu"></span>Menu</a>
+        </div>
 
         <nav class="menu">
-
             <ul>
-                <li><a href="Contactos.html">Contacto</a></li>
-
-                <li class="subMenu"><a>Ofertas<span class="icon-down-circle"></span></a>
-                    <ul>
-                        <li><a href="#nosotros">¿Quienes somos?</a></li>
-                        <li><a href="#portafolio">Portafolio</a></li>
-                        <li><a href="#servicios">Nuestros servicios</a></li>
-                    </ul>
+                <li><a href="index.html" class="icon-home"><span></span>Inicio</a></li>
+                <li>
+                    <a class="icon-mobile" href="Tecnologia.html"><span></span>Tecnologia</a>
+                    <!-- <ul class="children">
+                        <li><a href="">Telefonos</a></li>
+                        <li><a href="">Bafles</a></li>
+                        <li><a href="">Accesorios Tecnologicos</a></li>
+                    </ul> -->
                 </li>
 
-                <li class="subMenu"><a>Productos<span class="icon-down-circle"></span></a>
-                    <ul>
-                        <li class="subMenu"><a>Tecnologia<span class="icon-down-circle"></span></a>
-                            <ul>
-                                <li><a href="#">Celulares</a></li>
-                                <li><a href="#">Parlantes</a></li>
-                                <li><a href="#">Accesorios</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="subMenu"><a>Ellos & Ellas<span class="icon-angle-circled-down"></span></a>
-                            <ul>
-                                <li><a href="Mujer.html">Mujer</a></li>
-                                <li><a href="Hombre.html">Hombre</a></li>
-                            </ul>
-                        </li>
-
+                <li class="subMenu">
+                    <a class="icon-angle-circled-down"><span class="icon-shopping-bag"></span>Accesorios Para Ti</a>
+                    <ul class="children">
+                        <li><a href="Mujer.html">Mujer</a></li>
+                        <li><a href="Hombre.html">Hombre</a></li>
                         <li><a href="joyeria.html">Joyeria</a></li>
-                        <li><a href="dulceria.html">Dulceria</a></li>
                     </ul>
                 </li>
 
-                <li><a href="Principal.html">Inicio</a></li>
+                <li><a class="icon-gift" href="dulceria.html"><span class="icon-mail2"></span>Dulceria</a></li>
+
+                <li class="subMenu">
+                    <a class="icon-angle-circled-down"><span class="icon-shopping-bag"></span>Ofertas<span></span></a>
+                    <ul class="children">
+                        <li><a href="#portafolio" class="desplazar">Portafolio</a></li>
+                        <li><a href="#nosotros" class="desplazar">¿Quienes somos?</a></li>
+                        <li><a href="#servicios" class="desplazar">Nuestros servicios</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="icon-users" href="Contactos.html"><span class="icon-mail2"></span>Contactos</a></li>
             </ul>
         </nav>
-
-        <div class="wave" style="height: 60px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        <div class="wave" style="height: 100px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 170%; width: 100%;">
                 <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #F3F7FD;"></path>
+                    style="stroke: none; fill: #fff;"></path>
             </svg>
         </div>
     </header>
@@ -74,13 +72,11 @@
     <section>
         <div class="redes-sociales">
             <a class="redes-buttom red-facebook" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="redes-buttom red-whatsapp" href="https://wa.me/573208524244" target="_blank"><i
-                    class="fab fa-whatsapp"></i></a>
+            <a class="redes-buttom red-whatsapp" href="https://wa.me/573208524244" target="_blank"><i class="fab fa-whatsapp"></i></a>
             <a class="redes-buttom red-instagram" href="#"><i class="fab fa-instagram"></i></a>
         </div>
-        <!-- Volver arriba -->
+            <!-- Volver arriba -->
     </section>
-
     <section>
         <div class="container-slider" id="top">
             <div class="slider" id="slider">
@@ -88,13 +84,16 @@
                     <img src="images/principal-joyeria/slider-portada.jpg" alt="" class="slider__img">
                 </div>
                 <div class="slider__section">
-                    <img src="images/principal-joyeria/separador2.jpg" alt="" class="slider__img">
+                    <img src="images/principal-joyeria/slider-collar.jpg" alt="" class="slider__img">
+                        <a id="btn-Collar" class="despMenu" href="#collares">Collares</a>
                 </div>
                 <div class="slider__section">
-                    <img src="images/principal-joyeria/icon.png" alt="" class="slider__img">
+                    <img src="images/principal-joyeria/slider-arete.jpg" alt="" class="slider__img">
+                        <a id="btn-Arete" class="despMenu" href="#aretes">Aretes</a>
                 </div>
                 <div class="slider__section">
-                    <img src="images/principal-joyeria/collar.jpg" alt="" class="slider__img">
+                    <img src="images/principal-joyeria/slider-anillo-manilla.jpg" alt="" class="slider__img">
+                        <a id="btn-Anillo" class="despMenu" href="#anillos">Anillos &<br>Manillas</a>
                 </div>
             </div>
             <div class="slider__btn slider__btn__rigth" id="btn-right">&#62;</div>
@@ -112,7 +111,6 @@
             <div class="prod-collares prod-animados">
                 <!-- Imagen principal -->
                 <label><img src="images/principal-joyeria/collar.jpg" alt="collares" id="collares"></label><br><br>
-               
                 <section class="botonesProd">
                     <a id="btnCollar" href="#contCollares"> VER TODOS LOS COLLARES </a>
                 </section>
@@ -125,8 +123,8 @@
                 <section class="botonesProd">
                     <a id="btnArete" href="#contAretes">VER TODOS LOS ARETES</a><br>
                  </section>
-            </div>
             <!-------------------------------Menu de imagenes de las maninillas------------------------------->
+            </div>
             <div class="prod-anillos prod-animados">
                 <!-- Imagen principal -->
                 <label><img src="images/principal-joyeria/anillo.jpg" alt="anillos" id="anillos"></label><br><br>
@@ -134,8 +132,8 @@
                 <section class="botonesProd">
                     <a id="btnAnilloManilla" href="#contAnillos">VER TODOS LOS ANILLOS Y MANILLAS</a>
                 </section>
-            </div>
         </div>
+            </div>
 
         <div class="cont-father">
            <section class="botonHide">
@@ -159,10 +157,10 @@
             </div>
             <!---------------------------------------------->
 
-            <!-------------------Anillos y manillas-------------------->
             <div class="container-Anillos" id="contAnillos">
-                <div class="title__products__father">
+            <!-------------------Anillos y manillas-------------------->
                     <h1 class="title-products">Anillos<br> Y Manillas</h1>
+                <div class="title__products__father">
                 </div>  
                 <main id="productos-anillos" class="targetas"></main>
             </div>
@@ -179,20 +177,27 @@
 
     <footer>
         <div class="contenedor-footer">
+            <div class="logo">
+                <img src="images/logo.png">
             <div class="content-foo">
-                <h4>Phone</h4>
-                <p>3005893148</p>
             </div>
-            <div class="content-foo">
-                <h4>Email</h4>
-                <p>ComunicacionesLySanti@hotmail.com</p>
+                <div class="num">
+                    <h4>Phone</h4>
+                    <p class="icon-phone">3005893148</p>
+                </div>
+
+                <div class="email">
+                    <h4>Email</h4>
+                    <p class="icon-gmail">ComunicacionesLysanti@hotmail.com</p>
+                </div>
             </div>
+
             <div class="content-foo">
                 <h4>Ubicacion</h4>
-                <a href="Contactos.html">Ibague-Tolima</a>
+                <a href="Contactos.html" class="icon-location">Ibague-Tolima</a>
             </div>
         </div>
-        <h2 class="titulo-final">&copy; ComunicacionesLySanti 2021</h2>
+        <h2 class="titulo-final">&copy; ComunicacionesLisanty 2021</h2>
     </footer>
 
     <script src="js/joyeria_bd.js"></script>

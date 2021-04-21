@@ -68,29 +68,9 @@ setInterval( function(){
 
 // window.addEventListener('scroll', showScroll);
 
-window.sr = ScrollReveal();
-
-    sr.reveal('.prod-animados',{
-        duration: 1200,
-        origin: 'top',
-        distance: '-200px'
-    });
-
-    // ScrollReveal().reveal('.prod-animados', { reset: true });
 
 
-    window.sr = ScrollReveal();
 
-    sr.reveal('.info__joyeria',{
-        duration: 3000,
-        origin: 'right',
-        distance: '-500px'
-    });
 
-    window.sr = ScrollReveal();
 
-    sr.reveal('.info__separator',{
-        duration: 3000,
-        origin: 'left',
-        distance: '-500px'
-    });
+
