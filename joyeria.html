@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
     <meta charset="UTF-8">
-    <title>Comunicaciones Lisanty</title>
+    <title>Comunicaciones LySanti</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Css/joyeria.css">
     <link rel="stylesheet" href="Css/MenuFooter.css">
     <link rel="stylesheet" href="Css/fontello.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="stylesheet" href="Css/fontello.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="icon" href="https://i.ibb.co/F8C6RcS/etiqueta.png">
@@ -31,11 +33,6 @@
                 <li><a href="index.html" class="icon-home"><span></span>Inicio</a></li>
                 <li>
                     <a class="icon-mobile" href="Tecnologia.html"><span></span>Tecnologia</a>
-                    <!-- <ul class="children">
-                        <li><a href="">Telefonos</a></li>
-                        <li><a href="">Bafles</a></li>
-                        <li><a href="">Accesorios Tecnologicos</a></li>
-                    </ul> -->
                 </li>
 
                 <li class="subMenu">
@@ -52,8 +49,8 @@
                 <li class="subMenu">
                     <a class="icon-angle-circled-down"><span class="icon-shopping-bag"></span>Ofertas<span></span></a>
                     <ul class="children">
-                        <li><a href="#nosotros" class="desplazar">¿Quienes somos?</a></li>
                         <li><a href="#portafolio" class="desplazar">Portafolio</a></li>
+                        <li><a href="#nosotros" class="desplazar">¿Quienes somos?</a></li>
                         <li><a href="#servicios" class="desplazar">Nuestros servicios</a></li>
                     </ul>
                 </li>
@@ -77,74 +74,101 @@
         </div>
             <!-- Volver arriba -->
     </section>
-
     <section>
-        <!-- <div class="buttons-top">
-            <a class="btn-top" href=""><i class="fas fa-tags"></i></i></a>
-            <a class="btn-top" href=""><i class="fas fa-map-marked-alt"></i></a>
-            <a class="btn-top" href=""><i class="fas fa-mail-bulk"></i></a>
-        </div> -->
         <div class="container-slider" id="top">
             <div class="slider" id="slider">
                 <div class="slider__section">
-                    <img src="images/principal-joyeria/JoyeriaF.jpg" alt="" class="slider__img">
+                    <img src="images/principal-joyeria/slider-portada.jpg" alt="" class="slider__img">
                 </div>
                 <div class="slider__section">
-                    <img src="images/principal-joyeria/separador2.jpg" alt="" class="slider__img">
+                    <img src="images/principal-joyeria/slider-collar.jpg" alt="" class="slider__img">
+                        <a id="btn-Collar" class="despMenu" href="#collares">Collares</a>
                 </div>
                 <div class="slider__section">
-                    <img src="images/principal-joyeria/icon.png" alt="" class="slider__img">
+                    <img src="images/principal-joyeria/slider-arete.jpg" alt="" class="slider__img">
+                        <a id="btn-Arete" class="despMenu" href="#aretes">Aretes</a>
                 </div>
                 <div class="slider__section">
-                    <img src="images/principal-joyeria/collar.jpg" alt="" class="slider__img">
+                    <img src="images/principal-joyeria/slider-anillo-manilla.jpg" alt="" class="slider__img">
+                        <a id="btn-Anillo" class="despMenu" href="#anillos">Anillos &<br>Manillas</a>
                 </div>
             </div>
             <div class="slider__btn slider__btn__rigth" id="btn-right">&#62;</div>
             <div class="slider__btn slider__btn__left" id="btn-left">&#60;</div>
         </div>
     </section>
-    
+
     <section>
         <!-- Titulo de la caja que contiene el menu de imagenes -->
         <div class="cont-joyeria" id="products">
             <div class="title__products__father">
                 <h2 class="title-products">Joyería <br> Femenina</h2>
             </div>
-            <br>
             <!-------------------------------Menu de imagenes de los collares------------------------------->
             <div class="prod-collares prod-animados">
-                <div class="prod__collares__text">
-                    <h2>Collares</h2>
-                </div>
                 <!-- Imagen principal -->
-                <label><img src="images/principal-joyeria/collar.jpg" alt="collares" id="collares"></label>
-            </div>
+                <label><img src="images/principal-joyeria/collar.jpg" alt="collares" id="collares"></label><br><br>
+                <section class="botonesProd">
+                    <a id="btnCollar" href="#contCollares"> VER TODOS LOS COLLARES </a>
+                </section>
+            </div> 
             <!-------------------------------Menu de imagenes de los anillos------------------------------->
-            <div class="prod-anillos prod-animados">
-                <div class="prod__anillos__text">
-                    <h2>Anillos</h2>
-                </div>
-                <!-- Imagen principal -->
-                <label><img src="images/principal-joyeria/anillo.jpg" alt="anillos" id="anillos"></label>
-            </div>
-            <!-------------------------------Menu de imagenes de las maninillas------------------------------->
             <div class="prod-aretes prod-animados">
-                <div class="prod__aretes__text">
-                    <h2>Aretes</h2>
-                </div>
                 <!-- Imagen principal -->
-                <label><img src="images/principal-joyeria/aretes.jpg" alt="aretes" id="aretes"></label>
+                <label><img src="images/principal-joyeria/aretes.jpg" alt="aretes" id="aretes"></label><br><br>
+               
+                <section class="botonesProd">
+                    <a id="btnArete" href="#contAretes">VER TODOS LOS ARETES</a><br>
+                 </section>
+            <!-------------------------------Menu de imagenes de las maninillas------------------------------->
             </div>
-            <a class="text__link-products" href="productosJoyeria.html">
-                <p> Ver todos los productos </p>
-            </a>
+            <div class="prod-anillos prod-animados">
+                <!-- Imagen principal -->
+                <label><img src="images/principal-joyeria/anillo.jpg" alt="anillos" id="anillos"></label><br><br>
+                
+                <section class="botonesProd">
+                    <a id="btnAnilloManilla" href="#contAnillos">VER TODOS LOS ANILLOS Y MANILLAS</a>
+                </section>
         </div>
+            </div>
+
+        <div class="cont-father">
+           <section class="botonHide">
+            <a id="btnOcultar" class="hidee"><i class="fas fa-times"></i></a> 
+           </section>     
+            <!-------------------Collares-------------------->
+            <div class="container-Collares" id="contCollares">
+                <div class="title__products__father">
+                    <h1 class="title-products">Collares</h1>
+                </div>
+                <main id="productos-collares" class="targetas"></main>
+            </div>
+            <!----------------------------------------------> 
+
+            <!-------------------Aretes-------------------->
+            <div class="container-Aretes" id="contAretes">
+                <div class="title__products__father">
+                    <h1 class="title-products">Aretes</h1>
+                </div>
+                <main id="productos-aretes" class="targetas"></main>
+            </div>
+            <!---------------------------------------------->
+
+            <div class="container-Anillos" id="contAnillos">
+            <!-------------------Anillos y manillas-------------------->
+                    <h1 class="title-products">Anillos<br> Y Manillas</h1>
+                <div class="title__products__father">
+                </div>  
+                <main id="productos-anillos" class="targetas"></main>
+            </div>
+        </div>
+        <!---------------------------------------------->
         <!-- Seperador con efecto parallax -->
         <div class="separator__parallax">
-            <p><cite>Si deseas más información ponte en contacto con nosotros.<br>
-                    Num - Telefonico</cite></p>
+            <p><cite>Si deseas más información ponte en contacto con nosotros.
+                    </cite></p>
         </div>
-      
+
         <a class="return-up" href="#top"><i class="fas fa-chevron-up"></i></a>
     </section>
 
@@ -173,6 +197,7 @@
         <h2 class="titulo-final">&copy; ComunicacionesLisanty 2021</h2>
     </footer>
 
+    <script src="js/joyeria_bd.js"></script>
     <script src="js/joyeria.js"></script>
     <script src="js/MenuFooter.js"></script>
 </body>

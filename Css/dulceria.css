@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
 
 @font-face{
 	font-family: 'myFont';
@@ -10,14 +11,14 @@ body{
     margin: 0;
 }
 
-*, *:active, *:before{
+/* *, *:active, *:before{
     text-decoration: none;
     margin: 0;
     padding: 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
     box-sizing: border-box;
-}
+} */
 
 *{
     font-family: 'Open Sans', sans-serif;
@@ -28,59 +29,10 @@ html{
 	scroll-behavior: smooth;
 }
 
-
-/* Estilos de los iconos de las redes sociales */
-
-.redes-sociales{
-    position: fixed;
-    display: flex;
-    top: 35%;
-    left: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 30px;
-    z-index: 200;
-}
-
-.redes-buttom{
-    display: block;
-	text-align:center;
-    padding: .7rem;
-    transition: .5s;
-    /* border-bottom-right-radius: 12px; */
-}
-
-.redes-buttom:nth-child(1){
-    border-top-right-radius: 12px;
-}
-
-.redes-buttom:nth-child(3){
-    border-bottom-right-radius: 12px;
-}
-
-.red-facebook{
-	box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-    background-color: #1877f2;
-    color: #fff;
-    padding-left: 17.5px;
-}
-
-.red-whatsapp{
-    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-    background-color: #25d366;
-    color: #fff; 
-}
-
-.red-instagram{
-    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    color: #fff;
-}
-
-.redes-buttom:hover{
-    padding-left: 3rem;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
+/*  */
+.list-section{
+    display: inline;
+    text-align: center;
 }
 
 /* Estilos del contenedor principal de la página */
@@ -88,7 +40,7 @@ html{
 .container{
     position: relative;
     background-color: rgb(232, 227, 211);
-    width: 98.9vw;
+    width: 100%;
     height: 100vh;
     padding-top: 100px;
     overflow: hidden;
@@ -121,18 +73,12 @@ html{
     top: 90px;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 1px 10px 15px #888888; */
 }
 
 #image img{
-    width: 200%;
+    width: 100%;
     height: 100%;
-    transition: 2s;
-}
-
-#image img:hover{
-    transform: translateX(-50%);
-    filter: brightness(80%);
 }
 
 #frase1-section{
@@ -178,111 +124,42 @@ html{
 
 .section-lateral{
     float: right;
+    margin-right: 20px;
     width: 30vw;
     height: 472.7vh;
     z-index: -2;
-    /* background-color: #aa2222; */
+    background-image: url(../images/fondo.jpg);
 }
 
-#frase2-section{
-    text-align: center;
-    margin-bottom: 100px;
-    margin-top: -30px;
-}
-
-.section-lateral h2{
-    position: absolute;
-    color: #000;
-    left: 90%;
-    top: 40em;
-    right: 10px;
-    font-size: 50px;
-    font-family: 'myFont';
-    white-space: pre;
-    transform: rotate(90deg);
-}
-
-.section-lateral h3{
-    color: #000;
-    font-size: 30px;
-    margin-left: 30px;
-    margin-top: 30px;
-}
-
-.section-lateral h3:after, .section-lateral h3:before{
-	content: "";
-	position: absolute;
-	width: 30px;
-	height: 3px;
-	background-color: red;
-	/* background-color: currentColor;  */
- }  
-
-.section-lateral h3:before{
-    visibility: hidden;
-}
-
-.section-lateral h3:after{
-    visibility: hidden;
-}
-
-.section-lateral h3:hover:after{
-    visibility: visible;
-    left: -35px;
-    top: 50%;
-    transform: rotate(-140deg);
-}
-
-.section-lateral h3:hover:before{
-    visibility: visible;
-    right: 370px;
-	top: 50%;
-    transform: rotate(140deg);
-}
-
-.section-lateral h3:hover{
-    filter: blur(1.3px);
-}  
-
-.section-lateral h4{
-    position: relative;
-    top: 65px;
+.sub-section-lateral{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* lista */
 .list-section ul{
+    text-align: left;
+    color: #fff;
     list-style: none;
-    margin-top: 30px;
+    margin-left: 35px;
 }
 
-.list-section .item-1{
+.list-section li{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 25px;
+}
+
+.list-section .item-1 p{
+    font-family: 'Akaya Kanadaka', cursive;
     text-align: center;
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 30px;
+    /* margin-top: 75px; */
 }
-
-.item-1 p:before{
-	content: "";
-	position: absolute;
-	width: 21%;
-    top: 137%;
-	height: 3px;
-	background-color: #642a73;
-	z-index: 1;
-	transform: scaleX(0);
-	transform-origin: right;
-	transition: transform 0.5s ease-in-out;
-}
-
-.item-1 p:hover:before{
-	transform: scaleX(1);
-	transform-origin: left;
-}
-
 
 .list-section ul li{
     width: 300px;
-    height: 40px;
+    height: 100px;
     margin-bottom: 10px;
 }
 
@@ -298,42 +175,18 @@ html{
     margin-top: 30px;
 }
 
-.list2-section .item-2{
+.list2-section .item-2 p{
+    font-family: 'Akaya Kanadaka', cursive;
     text-align: center;
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 30px;
+    margin-bottom: 5px;
 }
-
-.item-2 p:before{
-	content: "";
-	position: absolute;
-	width: 17%;
-    top: 189%;
-	height: 3px;
-	background-color: #642a73;
-	z-index: 1;
-	transform: scaleX(0);
-	transform-origin: right;
-	transition: transform 0.5s ease-in-out;
-}
-
-.item-2 p:hover:before{
-	transform: scaleX(1);
-	transform-origin: left;
-}
-
 
 .list2-section ul li{
     width: 300px;
-    height: 40px;
-    margin-bottom: 20px;
+    height: 100px;
+    margin-bottom: 10px;
 }
-
-
-/* .divider{
-    width: 350px;
-    height: 150px;
-} */
 
 .fondo__images1 img{
     position: absolute;
@@ -458,17 +311,6 @@ html{
     }
 }
 
-
-
-
-/* Google map */
-/* .map iframe{
-    position: absolute;
-	width: 350px;
-	height: 200px;
-    top: 240em;
-} */
-
 /* Contenedor de las imagenes */
 .targets{
     display: flex;
@@ -494,37 +336,90 @@ html{
 }
 
 .img-fluid:hover{
-    box-shadow: 10px -10px 12px #222;
+    box-shadow: 10px -10px 12px #888888;
     transform: scale(1.03) rotate(0deg);
     cursor: pointer;
 }
 
+/* Botón para subir */
+.return-up{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	padding-top: 7px;
+	background-color:#642a73;
+	color:#fff;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+	z-index:100;
+}
 
-/*  ------------------RESPONSIVE TABLET------------------ */
+.return-up:hover{
+	text-decoration: none;
+	color: #fff;
+	background-color: #aa2222;
+}
 
-@media screen and (max-width: 800px){
+.btn-menu2{
+    visibility: hidden;
+}
 
+#btn-menu2{
+    display: none;
+}
+
+.cancel-icon{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1175px){
+
+    .btn-menu2{
+        visibility: visible;
+        float: right;
+        padding-right: 20px;
+        line-height: 40px;
+    }
+
+    .btn-menu2 label{
+        font-size: 20px;
+    }
+
+    #btn-menu2{
+        display: none;
+    }
+
+    .lists label{
+        position: absolute;
+        left: 32em;
+        top: 46.8em;
+    }
+    
     #dulceria-info{
         display: inline-block;
         position: relative;
-        font-size: 60px;
+        font-size: 65px;
         padding: 0 0 0 60px;
     }
     
     #products-info{
-        font-size: 20px;
+        font-size: 25px;
         padding-left: 60px;
     }
     
     #image{
         position: absolute;
-        width: 350px;
-        height: 280px;
-        left: 48%;
+        width: 410px;
+        height: 300px;
+        left: 47%;
         top: 80px;
         overflow: hidden;
         cursor: pointer;
-        box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+        /* box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5); */
     }
     
     
@@ -572,6 +467,264 @@ html{
 
     }
 
+     .section-lateral{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+
+    .section-lateral::before{
+        content: "¡ Sorprende a esa persona tan especial !";
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* top: 40px; */
+        font-size: 25px;
+        padding: 20px;
+        background-color: #aa2222
+    }
+
+    #btn-menu2:checked ~ .section-lateral{
+        display: block;
+    }
+
+    .list-section ul{
+        float: left;
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+
+    .list-section .item-1{
+        margin-bottom: 80px;
+    }
+
+    .list-section ul li{
+        width: 300px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .list2-section ul li{
+        width: 300px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    
+
+    .list2-section ul{
+        float: right;
+        margin-top: 5px;
+        margin-right: 50px;
+    }
+
+    .sub-section-lateral{
+        width: 100%;
+        height: 39em;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .fondo__images1 img{
+        position: absolute;
+        top: 89em;
+        bottom: 0%;
+        left: 10% ;
+        width: 30px;
+        opacity: .3;
+    
+        animation: animationImg 8s linear infinite;
+        animation-delay: 2s;
+    }
+    
+    .fondo__images2 img{
+        position: absolute;
+        top: 88em;
+        bottom: 0%;
+        left: 30% ;
+        width: 60px;
+        opacity: .3;
+    
+        animation: animationImg 8s linear infinite;
+        animation-delay: 1s;
+    }
+    
+    .fondo__images3 img{
+        position: absolute;
+        top: 89em;
+        bottom: 0%;
+        left: 40% ;
+        width: 40px;
+        opacity: .3;
+    
+        animation: animationImg 7s linear infinite;
+        animation-delay: 2s;
+    
+    }
+    
+    .fondo__images4 img{
+        position: absolute;
+        top: 89em;
+        bottom: 0%;
+        left: 85% ;
+        width: 40px;
+        opacity: .3;
+    
+        animation: animationImg 9s linear infinite;
+        animation-delay: 1s;
+    }
+    
+    .fondo__images5 img{
+        position: absolute;
+        top: 89em;
+        bottom: 0%;
+        left: 60% ;
+        width: 45px;
+        opacity: .3;
+    
+        animation: animationImg 12s linear infinite;
+        animation-delay: 2s;
+    }
+    
+    .fondo__images6 img{
+        position: absolute;
+        top: 89em;
+        bottom: 0%;
+        left: 95% ;
+        width: 42px;
+        opacity: .3;
+    
+        animation: animationImg 9s linear infinite;
+        animation-delay: 1s;    
+    }
+    
+    .fondo__images7 img{
+        position: absolute;
+        top: 89em;
+        bottom: 0%;
+        left: 75% ;
+        width: 35px;
+        opacity: .3;
+    
+        animation: animationImg 7s linear infinite;
+        animation-delay: 2s;
+    }
+    
+    .fondo__images8 img{
+        position: absolute;
+        top: 89em;
+        bottom: 0%;
+        left: 20% ;
+        width: 37px;
+        opacity: .3;
+    
+        animation: animationImg 8s linear infinite;
+        animation-delay: 1s;
+    }
+} 
+
+/*  ------------------RESPONSIVE TABLET------------------ */
+
+@media screen and (max-width: 820px){
+
+    #dulceria-info{
+        display: inline-block;
+        position: relative;
+        font-size: 60px;
+        padding: 0 0 0 60px;
+    }
+    
+    #products-info{
+        font-size: 20px;
+        padding-left: 60px;
+    }
+    
+    #image{
+        position: absolute;
+        width: 350px;
+        height: 280px;
+        left: 48%;
+        top: 80px;
+        overflow: hidden;
+        cursor: pointer;
+        /* box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5); */
+    }
+    
+    
+    #frase1-section{
+        position: relative;
+        font-size: 22px;
+        left: 10px;
+        top: 90px;
+    }
+
+    #separate-info{
+        font-size: 22px;
+        position: relative;
+        left: 10px;
+        padding-top: 100px;
+    }
+
+    #separate-contacto{
+        display: inline-block;
+        font-size: 16px;
+        color: #000;
+        padding-top: 10px;
+        padding-left: 100px;
+        font-family: 'Be Vietnam', sans-serif;
+    }
+
+    #separate-contacto:before{
+        content: "";
+        position: absolute;
+        width: 8%;
+        top: 103px;
+        height: 3px;
+        background-color: #642a73;
+        z-index: 500;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s ease-in-out;
+        visibility: hidden;
+    }
+
+    #separate-contacto:hover:before{
+        transform: scaleX(1);
+        transform-origin: left;
+        visibility: hidden;
+
+    }
+
+    .list-section ul{
+        float: left;
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+
+    .list-section .item-1{
+        margin-bottom: 80px;
+    }
+
+    .list-section ul li{
+        width: 300px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .list2-section ul li{
+        width: 300px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    
+
+    .list2-section ul{
+        float: right;
+        margin-top: 5px;
+        margin-right: 30px;
+    }
+
     .targets{
         display: flex;
         flex-wrap: wrap;
@@ -582,20 +735,118 @@ html{
         grid-column-gap: 20px;
         grid-row-gap: 20px;
     }
-
-    .section-lateral{
-        float: right;
-        width: 30vw;
-        height: 472.7vh;
-        z-index: -2;
-        /* background-color: #aa2222; */
-        display: none;
-    }   
 }
 
+@media screen and (max-width: 769px){
+
+    #dulceria-info{
+        position: relative;
+        font-size: 60px;
+        top: 290px;
+    }
+
+    #products-info{
+        position: relative;
+        font-size: 20px;
+        text-align: center;
+        top: -60px;
+    }
+    
+    #image{
+        position: relative;
+        width: 380px;
+        height: 300px;
+        left: 15%;
+        top: -190px;
+        overflow: hidden;
+        cursor: pointer;
+        /* box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5); */
+    }
+    
+    #frase1-section{
+       display: none;
+    }
+
+    #separate-info{
+        font-size: 25px;
+        position: relative;
+        top: -100px;
+        display: none;
+    }
+
+    #separate-contacto{
+        text-align: center;
+        font-size: 20px;
+        color: #000;
+        padding-top: -100px;
+        font-family: 'Be Vietnam', sans-serif;
+        display: none;
+    }
+
+    #separate-contacto:before{
+        content: "";
+        position: absolute;
+        width: 8%;
+        top: 103px;
+        height: 3px;
+        background-color: #642a73;
+        z-index: 500;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s ease-in-out;
+        visibility: hidden;
+    }
+
+    #separate-contacto:hover:before{
+        transform: scaleX(1);
+        transform-origin: left;
+        visibility: hidden;
+
+    }
+
+    .list-section ul{
+        float: left;
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+
+    .list-section .item-1{
+        margin-bottom: 80px;
+    }
+
+    .list-section ul li{
+        width: 300px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .list2-section ul li{
+        width: 300px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    
+
+    .list2-section ul{
+        float: right;
+        margin-top: 5px;
+        /* margin-right: 15px; */
+    }
+
+
+    .img-fluid{
+        width: 330px;
+        height: 250px;
+        object-fit: cover;
+        border: 4px solid;
+        border-image-source: linear-gradient(45deg, #642a73, #aa2222);
+        border-image-slice: 1;   
+    
+}
+}
 /*  ------------------RESPONSIVE CELULAR------------------ */
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 749px){
 
     #dulceria-info{
         display: inline-block;
@@ -616,11 +867,11 @@ html{
         position: relative;
         width: 350px;
         height: 270px;
-        left: 75px;
-        top: -50px;
+        left: 5px;
+        top: -20px;
         overflow: hidden;
         cursor: pointer;
-        box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+        /* box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5); */
     }
     
     #frase1-section{
@@ -681,20 +932,65 @@ html{
         grid-row-gap: 20px;
     }
 
-    .section-lateral{
-        float: right;
-        width: 30vw;
-        height: 472.7vh;
-        z-index: -2;
-        /* background-color: #aa2222; */
-        display: none;
-    } 
-    
     .content-foo p {
         color: #ccc;
         font-size: 13px ;
     
     }
 
-}
+    .list-section ul{
+        float: left;
+        margin-top: 20px;
+        margin-left: 100px;
 
+    }
+
+    .list-section .item-1{
+        margin-bottom: 80px;
+    }
+
+    .list-section ul li{
+        width: 300px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .list2-section ul li{
+        width: 300px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    
+
+    .list2-section ul{
+        float: left;
+        margin-top: 35px;
+        margin-left: 100px;
+    }
+
+    .sub-section-lateral{
+        width: 100%;
+        height: 49em;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .container{
+        position: relative;
+        background-color: rgb(232, 227, 211);
+        width: 100%;
+        height: 700px;
+        padding-top: 100px;
+        overflow: hidden;
+    }
+    
+    .container figure{
+        text-align: center;
+    }
+
+    .container-separate{
+        position: relative;
+        left: 20%;
+        top: 20px;
+    }
+
+}
