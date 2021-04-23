@@ -134,35 +134,6 @@ a:link, a:visited{
 
 }
 
-/*Estilos para el texto del menu de imagenes*/
-
-.title-products{
-	display: inline-block;
-	position: relative;
-	font-family: 'myFont';
-	font-size: 40px;
-	top: -35px;
-}
-
-.title-products::after, .title-products::before{
-	content: "";
-	position: absolute;
-	width: 120px;
-	height: 3px;
-	background-color: #000;
-	top: 0.6em;
-} 
-
-.title-products::before{
-	left: -130px;
-	top: 50px;
-}
-
-.title-products::after{
-	right: -130px;
-	top: 50px;
-}
-
 /*---Estilos para la cajas que contiene los menu de imagenes*/
 .prod-collares, .prod-anillos, .prod-aretes{
 	position: relative;
@@ -243,7 +214,7 @@ a:link, a:visited{
 }
 
 /*Estilos para el texto del menu de imagenes*/
-.title__products__father {
+.title__products__father{
     text-align: center;
     top: auto;
 }
@@ -563,7 +534,6 @@ a:link, a:visited{
 		top: 50px;
 	}
 
-		
 	.prod-collares, .prod-anillos, .prod-aretes{
 		position: relative;
 		display: inline-block;
@@ -637,61 +607,6 @@ a:link, a:visited{
 		font-size: 20px;
 		font-family: 'Noto Serif', serif;
 		padding: 10px;
-	}
-
-	/* redes */
-	
-	.redes-sociales{
-		position: fixed;
-		display: flex;
-		top: 35%;
-		left: 0;
-		flex-direction: column;
-		align-items: flex-start;
-		font-size: 25px;
-		z-index: 200;
-	}
-	
-	.redes-buttom{
-		display: block;
-		text-align:center;
-		padding: .6rem;
-		transition: .5s;
-		/* border-bottom-right-radius: 12px; */
-	}
-	
-	.redes-buttom:nth-child(1){
-		border-top-right-radius: 0px;
-	}
-	
-	.redes-buttom:nth-child(3){
-		border-bottom-right-radius: 0px;
-	}
-	
-	.red-facebook{
-		box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-		background-color: #1877f2;
-		color: #fff;
-		padding-left: 15.5px;
-	}
-	
-	.red-whatsapp{
-		box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-		background-color: #25d366;
-		color: #fff; 
-	}
-	
-	.red-instagram{
-		box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-		background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-		color: #fff;
-	}
-	
-
-	.redes-buttom:hover{
-		padding-left: 1em;
-		border-top-right-radius: 0px;
-		border-bottom-right-radius: 0px;
 	}
 
 	.slider__section a{
@@ -866,68 +781,7 @@ a:link, a:visited{
 	
 		transition: .6s;
 	}
-	
-	/* redes */
-	
-	.redes-sociales{
-		position: fixed;
-		display: flex;
-		top: 35%;
-		left: 0;
-		flex-direction: column;
-		align-items: flex-start;
-		font-size: 25px;
-		z-index: 200;
-	}
-	
-	.redes-buttom{
-		display: block;
-		text-align:center;
-		padding: .6rem;
-		transition: .5s;
-		/* border-bottom-right-radius: 12px; */
-	}
-	
-	.redes-buttom:nth-child(1){
-		border-top-right-radius: 0px;
-	}
-	
-	.redes-buttom:nth-child(3){
-		border-bottom-right-radius: 0px;
-	}
-	
-	.red-facebook{
-		box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-		background-color: #1877f2;
-		color: #fff;
-		padding-left: 15.5px;
-	}
-	
-	.red-whatsapp{
-		box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-		background-color: #25d366;
-		color: #fff; 
-	}
-	
-	.red-instagram{
-		box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-		background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-		color: #fff;
-	}
-	
-
-	.redes-buttom:hover{
-		padding-left: 1em;
-		border-top-right-radius: 0px;
-		border-bottom-right-radius: 0px;
-	}
-
-	.content-foo p {
-        color: #ccc;
-        font-size: 13px ;
-    
-    }
-
+		
 	.slider__section a{
 		font-size: 12px;
 		bottom:5em;

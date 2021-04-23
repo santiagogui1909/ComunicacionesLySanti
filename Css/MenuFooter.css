@@ -23,6 +23,7 @@ header nav{
     max-width: 1000px;
     margin: 0px 175px;
     text-align: center;
+    z-index: 100;
 }
 
 header nav ul{
