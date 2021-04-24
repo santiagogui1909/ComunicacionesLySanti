@@ -373,22 +373,22 @@ footer {
 }
 
 .logo img{
-    width: 250px;
-    height: 200px;
+    width: 320px;
+    height: 320px;
     border-radius: 20px;
 }
 
 .content-foo h4 {
     color: #fff;
-    border-bottom: 3px solid #af20d3;
+    border-bottom: 4px solid #af20d3;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     
 }
 
 .content-foo p {
     color: #ccc;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .content-foo a {
@@ -405,15 +405,15 @@ footer {
 
 /**editar la barra lateral*/
 body::-webkit-scrollbar {
-    width: 15px;
+    width: 11px;
 }
 
 body::-webkit-scrollbar-track {
     background-color: transparent;
-    border-radius: 20px;
+    border-radius: 0px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.781);
+    background-color:#000000e5;
     border-radius: 0px;
 }
