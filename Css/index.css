@@ -22,6 +22,7 @@ header nav{
     max-width: 1000px;
     margin: 0px 175px;
     text-align: center;
+    
 }
 
 header nav ul{
@@ -624,9 +625,10 @@ main .sobre-nosotros{
 }
 
 .imagen-port {
-    width: 25%;
+    width: 21%;
+    background: rgb(248, 248, 248);
     margin-bottom: 15px;
-    height: 150px;
+    height: 180px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -634,11 +636,11 @@ main .sobre-nosotros{
 }
 
 .imagen-port>img {
-    width: 100%;
+    width: 66%;
+    margin-left: 35px;
     height: 100%;
     object-fit: cover;
     display: block;
-
 }
 
 .hover-galeria {
@@ -736,6 +738,7 @@ main .sobre-nosotros{
 
 .servicio-ind h3 {
     margin: 10px 0;
+    color: #642a73;
 
 }
 
@@ -762,11 +765,47 @@ main .sobre-nosotros{
         width: 90%;
     }
 
+
     /* Galeria */
 
-    .imagen-port{
-        width: 44%;
-    }
+.imagen-port {
+    width: 10px;
+    background: rgb(248, 248, 248);
+    margin-bottom: 15px;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port>img {
+    width: 30%;
+    margin-left: 140px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    transform: scale(0);
+    background: hsla(273, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hover-galeria img {
+    width: 50px;
+
+}
 
     /* Clientes */
 
@@ -804,6 +843,40 @@ main .sobre-nosotros{
     .servicio-ind img{
         width: 90%;
 
+    }
+
+
+    .about-services {
+        background: #f2f2f2;
+        padding-bottom: 30px;
+    }
+    
+    .servicio-cont {
+        width: 80%;
+        margin: 16px;
+        columns: 1;
+    }
+    
+    .servicio-ind {
+        text-align: center;
+        margin: 15px;
+        padding: 8px;
+    }
+    
+    .servicio-ind img {
+        width: 70%;
+    }
+    
+    .servicio-ind h3 {
+        margin: 10px 0;
+        font-size: 25px;
+        color: #642a73;
+    
+    }
+    
+    .servicio-ind p {
+        font-weight: 300;
+        text-align: justify;
     }
 
 }
@@ -953,7 +1026,7 @@ footer {
     bottom: 40px;
     right: 5px;
     padding-top: 7px;
-    background-color: #b500e2;
+    background-color: #af20d3;
     color: #fff;
     border-radius: 50px;
     text-align: center;
@@ -975,15 +1048,15 @@ footer {
 }
 
 body::-webkit-scrollbar {
-    width: 15px;
+    width: 11px;
 }
 
 body::-webkit-scrollbar-track {
     background-color: transparent;
-    border-radius: 20px;
+    border-radius: 0px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.781);
-    border-radius: 0px;
+    background-color:#000000e5;
+    border-radius: 5px;
 }
