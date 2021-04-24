@@ -600,7 +600,7 @@ main .sobre-nosotros{
     padding: 60px 0;
     width: 90%;
     max-width: 1000px;
-    margin: auto;
+    margin:auto;
     overflow: hidden;
 
 }
@@ -624,8 +624,8 @@ main .sobre-nosotros{
 }
 
 .imagen-port {
-    width: 24%;
-    margin-bottom: 10px;
+    width: 25%;
+    margin-bottom: 15px;
     height: 150px;
     overflow: hidden;
     position: relative;
@@ -679,7 +679,7 @@ main .sobre-nosotros{
 .cards .card {
     margin: 10px;
     padding:20px;
-    background: #4d0686;
+    background: rgb(230, 15, 15);
     display: flex;
     width: 46%;
     height: 200px;
@@ -774,6 +774,7 @@ main .sobre-nosotros{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
 
     .cards .card{
