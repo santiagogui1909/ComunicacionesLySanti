@@ -22,7 +22,7 @@ header nav{
     max-width: 1000px;
     margin: 0px 175px;
     text-align: center;
-    
+    z-index: 100;
 }
 
 header nav ul{
@@ -973,7 +973,7 @@ footer {
     text-align: center;
     max-width: 100px;
     padding: 5px;
-    margin-right: 190px;
+    margin-right: 235px;
 }
 
 .logo img{
