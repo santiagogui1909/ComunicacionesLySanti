@@ -23,6 +23,7 @@ header nav{
     max-width: 1000px;
     margin: 0px 170px;
     text-align: center;
+    z-index: 100;
 }
 
 header nav ul{
@@ -369,7 +370,7 @@ footer {
     text-align: center;
     max-width: 100px;
     padding: 25px;
-    margin-right: 190px;
+    margin-right: 270px;
 }
 
 .logo img{
@@ -381,8 +382,8 @@ footer {
 .content-foo h4 {
     color: #fff;
     border-bottom: 4px solid #af20d3;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
     
 }
 
