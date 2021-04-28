@@ -168,12 +168,8 @@ header nav ul li .children li a {
 header {
     width: 100%;
     height: 600px;
-    background: #eb575793;
+    background-image: url(https://i.ibb.co/55K4TQ9/Fondo-Pag-web-Recuperado.jpg);;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #00000071, #EB5757), url(https://i.ibb.co/55K4TQ9/Fondo-Pag-web-Recuperado.jpg);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #00000071, #e8777796), url(https://i.ibb.co/55K4TQ9/Fondo-Pag-web-Recuperado.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -374,13 +370,12 @@ header .textos-header {
     top: 131em;
     background-color: #fff;
     z-index: 1;
-    transform: scaleX(0);
+
     transform-origin: right;
     transition: transform 0.5s ease-in-out;
 }
 
 .text__link-products p:hover:before {
-    transform: scaleX(1);
     transform-origin: left;
 }
 
@@ -388,8 +383,9 @@ header .textos-header {
     display: inline-block;
     text-align: left;
     margin-top: 50px;
-    color: #000;
-    font-family: 'Be Vietnam', sans-serif;
+    color: #642a73;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .text-link p:before {
@@ -397,7 +393,7 @@ header .textos-header {
     position: absolute;
     width: 16%;
     height: 3px;
-    top: 87%;
+    top: 83%;
     background-color: #642a73;
     z-index: 1;
     transform: scaleX(0);
@@ -406,13 +402,13 @@ header .textos-header {
 }
 
 .text-link p:hover:before {
-    transform: scaleX(2.8);
+    transform: scaleX(3.5);
     transform-origin: left;
 }
 
 p span {
     color: #642a73;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);   
 }
 
 /* ----- Info separator ----- */
